@@ -86,7 +86,7 @@ Advantages:
 - A panel of judges.
 
 **BC Court of Appeal**<br>
-- Appeal to Court of Appeal
+- Appeal to Supreme Court of Canada
 - Decide if hear
 - A panel of a minimum of 5 judges.
 
@@ -120,7 +120,7 @@ Alternatives to litigation:<br>
 > ### Methods of enforcing a judgement
 
 **Execution**
-: A writ of execution issued by **court** to **sheriff** directing seizure and slae of debtor's assets to pay the judgment plus the cost of seizure.
+: A writ of execution issued by **court** to **sheriff** directing seizure and sale of debtor's assets to pay the judgment plus the cost of seizure.
 
 Remedies against  Land
 - Not enforcement method

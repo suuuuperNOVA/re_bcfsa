@@ -1,12 +1,12 @@
 # Chapter 8
 ## Financial Statements
 
-> ### Forms of business organization<br>rights and responsibilities
+> ### Forms of business organization, and their rights and responsibilities
 
 **Sole proprietorship**
 : Business enterprise owned by a single individual.
-    - Owner has unlimited liability
-    - Pay personal income tax.
+- Owner has unlimited liability
+- Pay personal income tax.
 
 **Partnership**
 - Unlimited liability
@@ -15,6 +15,7 @@
 
 **Limited partnership**
 : One or more general partners and one or more limited partners.
+
 - Unlimited liability for general partners
 - Limited liability for limited partners (passive investors receive income from partnership) if they don't take part in operation.
 
@@ -26,6 +27,7 @@
 
 **Corporation**
 : Owned by shareholders who decide on general policies through their elected Board of Directors; A separate legal entity with the rights and liabilities of an individuals.
+
 - Legal entity
 - Directors are primarily liable
 - Corporation pays income tax at flat rate

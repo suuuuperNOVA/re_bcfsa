@@ -137,7 +137,7 @@ Suspect is based on:
 - Fact<br>Actual evernt, action, occurance, or element that exists
 - Context
 - ML/TF indicators - inconsistency
-|   |   |
+|ML/TF indicators|Description|
 |---|---|
 |General|Use of corporate entity, trusts, and nominees<br>Cash purchases<br>Unregulated lenders<br>Foreign ownership|
 |Client behavior|大量现金支付<br>过度解释购买理由<br>过度考虑洗钱条款<br>不管交易风险<br>现金重装|

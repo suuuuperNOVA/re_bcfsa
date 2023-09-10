@@ -145,7 +145,7 @@ Items on title
     - contamination
     - danger
 - Heritage designation
-    - HCA applies to a property no't designated.
+    - HCA applies to a property not designated.
 
 > ### When a manufactured home must be registered
 

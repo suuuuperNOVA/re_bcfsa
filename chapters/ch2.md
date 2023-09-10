@@ -94,7 +94,7 @@ Rule
     [x] 收押金，准备文件，代收签字合同<br>
     [ ] 收租，代支付，代管理，代商议合同<br>
     [ ] 准备租赁合同
-    - manage rental property by licensee self or b immediate family member
+    - manage rental property by licensee self or by immediate family member
         - service in own name, not brokerage
         - disclose to perspective tenant, family member (in writing) and managing broker (in writing)
         - no remuneration
@@ -186,7 +186,7 @@ Withdrawn from trust account if
 - Commission paid to licensee in accordance with the Rules
 - Unclaimed money
 - Money paid in accordance with court order
-- Money paid with the instructions of the instructions of principal
+- Money paid with the instructions of principal
     - Not for deposit for RE acquisition
     - Trust account as stakeholder.
     - 购房押金能被退还：
@@ -276,5 +276,5 @@ Recission rights:
 Failure to deliver DS to purchasers makes contracts void.
 
 Failure to deliver amendment drives the last rescission right:
-    - Reasonably relevant to purchaser's decision
-    - No more than 1 year has elapsed after the title transfer.
+- Reasonably relevant to purchaser's decision
+- No more than 1 year has elapsed after the title transfer.

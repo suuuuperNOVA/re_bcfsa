@@ -23,7 +23,7 @@ Lease or license?<br>If an agreement has conferred a right to exclusive possessi
 |---|---|
 |Common law|Statue law|
 |*Commercial Tenancy Act*|*Residential Tenancy Act*|
-|Factories<br>warehouses<br>stores<offices>|Living accommodation rented<br>Caretakers' premises<br>Residential premises provided to employee during employment|
+|Factories<br>Warehouses<br>Stores<offices>|Living accommodation rented<br>Caretakers' premises<br>Residential premises provided to employee during employment|
 
 *Residential Tenancy Act* NOT apply to:
 - Business purposes
