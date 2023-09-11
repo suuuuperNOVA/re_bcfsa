@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 15 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 16" href="ch16.html" />
+    <link rel="prev" title="Chapter 14" href="ch14.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch15.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-mortgage-law">
+   Introduction to Mortgage Law
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mortgage-mortgagee-and-mortgagor">
+     Mortgage, mortgagee and mortgagor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#legal-mortgage-vs-equitable-mortgage">
+     Legal mortgage vs. Equitable mortgage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implied-and-express-terms-of-mortgage">
+     Implied and express terms of mortgage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#special-types-of-mortgages">
+     Special types of mortgages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scope-and-effect-of-federal-interest-act-and-criminal-code">
+     Scope and effect of federal
+     <em>
+      Interest Act
+     </em>
+     and
+     <em>
+      Criminal Code
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scope-and-effect-of-relevant-provincial-legislation">
+     Scope and effect of relevant provincial legislation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assigning-mortgage-by-lender-and-rights-and-obligations-of-lender-borrower-and-assignee">
+     Assigning mortgage by lender, and rights and obligations of lender, borrower and assignee
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assuming-mortgage-and-risks-involved">
+     Assuming mortgage and risks involved
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#provisions-of-various-provincial-and-federal-legislation-to-the-issue-of-priority">
+     Provisions of various provincial and federal legislation to the issue of priority
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relief-available-to-lender-in-foreclosure-proceeding">
+     Relief available to lender in foreclosure proceeding
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-in-foreclosure-proceeding-and-rights-of-parties-involved">
+     Steps in foreclosure proceeding and rights of parties involved
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#agreement-for-sale-vs-vendor-take-back-mortgage">
+     Agreement for sale vs. Vendor take-back mortgage
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-15">
+<h1>Chapter 15<a class="headerlink" href="#chapter-15" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-to-mortgage-law">
+<h2>Introduction to Mortgage Law<a class="headerlink" href="#introduction-to-mortgage-law" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mortgage-mortgagee-and-mortgagor">
+<h3>Mortgage, mortgagee and mortgagor<a class="headerlink" href="#mortgage-mortgagee-and-mortgagor" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Mortgage</strong>
+: Document evidencing debt owed by borrower (mortgagor) to lender (mortgagee). Not a debt itself.<br><br>Registration of mortgage in LTO transfers mortgagor’s interest in land to mortgagee as security for repayment of debt and creates enforceable security interest in land.</p>
+<div class="section" id="legal-mortgage-vs-equitable-mortgage">
+<h3>Legal mortgage vs. Equitable mortgage<a class="headerlink" href="#legal-mortgage-vs-equitable-mortgage" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Legal mortgage</strong>
+: Registered as charge against title to property in order to be enforceable security interest and to have legal effect as against third party.</p>
+<p><strong>Equitable mortgage</strong>
+: Agreements not registered on title as legal mortgage. Enforceable against borrower, but not against third party.</p>
+<ul class="simple">
+<li><p>By deposit of duplicate certificate of title</p>
+<ul>
+<li><p>delivery of duplicate certificate</p></li>
+<li><p>intention to create mortgage</p></li>
+</ul>
+</li>
+<li><p>By agreement to give mortgage</p>
+<ul>
+<li><p>lender files caveat to protect</p></li>
+<li><p>procedurally unregisterable, but not prohibited by statue</p></li>
+</ul>
+</li>
+<li><p>By disguising mortgage as transfer</p>
+<ul>
+<li><p>can’t circumvent doctrine of equity of redemption.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="implied-and-express-terms-of-mortgage">
+<h3>Implied and express terms of mortgage<a class="headerlink" href="#implied-and-express-terms-of-mortgage" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>==<strong>Implied terms</strong>==</p>
+<p><strong>Prohibition against clogging</strong><br>
+Borrower can’t be prevented by mortgage terms from eventually redeeming property.</p>
+<p><strong>Stipulations for a collateral advantage</strong><br>
+If collateral advantage is subject of independent bargain, it may be valid after redemption.</p>
+<p><strong>Principle of good faith</strong><br><strong>Duty of honest performance</strong></p>
+<p>==<strong>Express terms</strong>==<br>
+Lender must obtain acknowledge from borrower that they have received standard terms and modifications.</p>
+<ul class="simple">
+<li><p>Repayment clause</p></li>
+<li><p>Acceleration on default<br>贷款人违约，借款人可以要求提前还款，结束贷款<br>At option of lender, borrow can’t compel</p></li>
+<li><p>Omnibus clause<br>Foreclosure with unpaid property taxes or strata charges, but mortgage in good standing</p></li>
+<li><p>Insurance<br>Property is adequately insured</p></li>
+<li><p>Repairs<br>No alteration or improvements without lender’s consent and lender’s security is maintained</p></li>
+<li><p>Fixtures</p></li>
+<li><p>Lender’s remedies</p></li>
+<li><p>Advances</p></li>
+<li><p>Costs</p></li>
+<li><p>Charges in priority</p></li>
+<li><p>Further charges</p></li>
+<li><p>Strata property clause</p></li>
+<li><p>Guarantor</p>
+<ul>
+<li><p>covenantor (primary debtor)</p></li>
+</ul>
+</li>
+<li><p>Due on sale clause<br>Prevent mortgage from being assumed by anyone unacceptable to lender</p></li>
+<li><p>Portability<br>Current mortgage to new property.</p></li>
+</ul>
+<div class="section" id="special-types-of-mortgages">
+<h3>Special types of mortgages<a class="headerlink" href="#special-types-of-mortgages" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Interim blanket mortgage</p>
+<ul class="simple">
+<li><p>For development units</p></li>
+</ul>
+<p>Vendor take-back mortgage</p>
+<ul class="simple">
+<li><p>Buyer not qualified for financing through conventional lender</p></li>
+<li><p>No restriction with private vendor financing</p></li>
+<li><p>No fee for arranging mortgages</p></li>
+</ul>
+<p>Reverse annuity mortgage</p>
+<p>Bridge financing</p>
+<div class="section" id="scope-and-effect-of-federal-interest-act-and-criminal-code">
+<h3>Scope and effect of federal <em>Interest Act</em> and <em>Criminal Code</em><a class="headerlink" href="#scope-and-effect-of-federal-interest-act-and-criminal-code" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><em>Interest Act</em></p>
+<ul class="simple">
+<li><p>5% per annum (如果约定付利息，但是没有约定利率)</p></li>
+<li><p>Interest rate calculated either annually or semi-annually</p></li>
+<li><p>Unenforceable if charging higher rate on monies owing after default</p></li>
+<li><p>Prepayment + prepayment penalty (3 months’ interest)</p>
+<ul>
+<li><p>Conditions</p>
+<ul>
+<li><p>individual borrower</p></li>
+<li><p>mortgage is not payable until <span class="math notranslate nohighlight">\(\geq\)</span> 5 years from date of mortgage</p></li>
+<li><p>expiration of 5 years</p></li>
+</ul>
+</li>
+<li><p>Renew vs. Extend</p></li>
+<li><p>Lender loses prepayment penalty when commencing foreclosure proceedings.</p></li>
+</ul>
+</li>
+</ul>
+<p><em>Criminal Code</em></p>
+<ul class="simple">
+<li><p>Interest rate</p>
+<ul>
+<li><p>criminal rate <span class="math notranslate nohighlight">\(\geq\)</span> 60%, including aggregate fees, fine, bonus, and commissions</p></li>
+</ul>
+</li>
+<li><p>Mortgage fraud</p>
+<ul>
+<li><p>诈骗贷款，用于不属于贷款目</p></li>
+<li><p>卖方代理人欺骗性隐藏贷款、房屋信息，引诱买房购买</p></li>
+<li><p>明知有未注册贷款，欺骗性卖出房产。</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="scope-and-effect-of-relevant-provincial-legislation">
+<h3>Scope and effect of relevant provincial legislation<a class="headerlink" href="#scope-and-effect-of-relevant-provincial-legislation" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><em><strong>Business Practices and Consume Protection Act</strong></em><br>
+Allow court to intervene if loan is excessive and transaction is harsh and unconscionable.</p>
+<p><em><strong>Mortgage Brokers Act</strong></em><br>
+Regulate persons dealing in mortgages to ensure public feels their interests as consumers of mortgage products are protected.<br><br>Mortgage brokers and sub-mortgage brokers must be registered in mortgage broker register.</p>
+<p>Mortgage broker</p>
+<ul class="simple">
+<li><p>从事借贷业务</p></li>
+<li><p>自称mortgage broker</p></li>
+<li><p>从事抵押贷款交易</p></li>
+<li><p>收入$1,000贷款交易费每年</p></li>
+<li><p>每年交易10单</p></li>
+<li><p>从事抵押贷款收款业务。</p></li>
+</ul>
+<p>Sub-mortgage broker
+: Employed by mortgage broker.</p>
+<p>不需要登记</p>
+<ul class="simple">
+<li><p>保险业务员、银行、信托、credit union、律师、政府部门</p></li>
+<li><p>法院指派处理人员</p></li>
+<li><p>借贷自己的钱，给自己员工提供住房。</p></li>
+</ul>
+<p><em><strong>Environmental Management Act</strong></em><br>Create exemption from remediation liability for lenders.<br><br>
+Lenders are liable when</p>
+<ul class="simple">
+<li><p>control over or impose requirements causing site contaminated</p></li>
+<li><p>become registered owner of contaminated property.</p></li>
+</ul>
+<div class="section" id="assigning-mortgage-by-lender-and-rights-and-obligations-of-lender-borrower-and-assignee">
+<h3>Assigning mortgage by lender, and rights and obligations of lender, borrower and assignee<a class="headerlink" href="#assigning-mortgage-by-lender-and-rights-and-obligations-of-lender-borrower-and-assignee" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Lender can transfer interest in land and its right to receive money, <strong>without consent of, or prior notice to</strong>, borrower</p></li>
+<li><p>After assignment, assignee needs to give written notice to borrower</p></li>
+<li><p>Assignee is entitled to enforce lender’s rights directly against borrower</p></li>
+<li><p>Unless lender fraudulently misrepresents balance, lender will not be liable to assignee at default.</p></li>
+</ul>
+<div class="section" id="assuming-mortgage-and-risks-involved">
+<h3>Assuming mortgage and risks involved<a class="headerlink" href="#assuming-mortgage-and-risks-involved" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Continuing liability of original borrower</strong>
+: Original borrower may remain liable on personal covenant if buyer who assumes mortgage defaults on their payment.</p>
+<p><em>Property Law Act</em> provides for the right of lender to maintain direct action against buyer assuming mortgage.</p>
+<p>Limitation of vendor’s liability where purchaser assumes vendor’s mortgage for residential purpose</p>
+<ul class="simple">
+<li><p>拨款方同意</p></li>
+<li><p>贷款到期，并未在3个月内要求付清</p></li>
+<li><p>在转让的3个月内，拨款方并未要求vendor付清。</p></li>
+</ul>
+<p><strong>Novation</strong>
+: Substitution of one contract for another.<br>Broader than <em>Property Law Act</em>, not limited to residential mortgage.</p>
+<ul class="simple">
+<li><p>New borrower must assume complete liability</p></li>
+<li><p>Lender must accept new borrower as principal borrower, neither guarantor nor agent</p></li>
+<li><p>Lender must accept new contract in full satisfaction and substitution.</p></li>
+</ul>
+<div class="section" id="provisions-of-various-provincial-and-federal-legislation-to-the-issue-of-priority">
+<h3>Provisions of various provincial and federal legislation to the issue of priority<a class="headerlink" href="#provisions-of-various-provincial-and-federal-legislation-to-the-issue-of-priority" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Priority depends on order of registration in LTO</p></li>
+<li><p>如果抵押贷款明确说明是基于另一个抵押贷款，那么另外抵押贷款优先</p></li>
+<li><p>分批入账贷款</p>
+<ul>
+<li><p>如果后面的贷款借款人没有书面通知，前贷款优先</p></li>
+<li><p>贷款协议说明分批入账，该贷款保持优先</p></li>
+<li><p>后面贷款借款人协议同意贷款优先级。</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Statutory priorities</strong></p>
+<p>Builders Lien Act</p>
+<ul class="simple">
+<li><p>自lien提交日，优先于任何抵押贷款自lien提交日</p></li>
+<li><p>优先于之后进款贷款。</p></li>
+</ul>
+<p>Employment Standards Act</p>
+<ul class="simple">
+<li><p>优先于任何lien、judgments、charges，但是低于先前mortgage registered。</p></li>
+</ul>
+<p>Local Government Act/Community Charter</p>
+<ul class="simple">
+<li><p>不用注册</p></li>
+<li><p>高于其他</p></li>
+<li><p>可以强制售卖付税款。</p></li>
+</ul>
+<p>Strata Property Act</p>
+<ul class="simple">
+<li><p>Fines can’t form part of lien.</p></li>
+</ul>
+<p>Workers Compensation Act</p>
+<ul class="simple">
+<li><p>Wage claim lien &gt; Worker compensation lien</p></li>
+</ul>
+<p>Deemed Trust Claim</p>
+<ul class="simple">
+<li><p>欠CRA税款</p></li>
+<li><p>如果贷款人已经卖出房产，借款人需要付清税款</p></li>
+<li><p>Priority above all security interest.</p></li>
+</ul>
+<p>Wage claim lien &gt; Property tax lien &gt; Builder lien &gt; Strata corporation’s lien</p>
+<div class="section" id="relief-available-to-lender-in-foreclosure-proceeding">
+<h3>Relief available to lender in foreclosure proceeding<a class="headerlink" href="#relief-available-to-lender-in-foreclosure-proceeding" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Foreclosure</strong>
+: Legal action by mortgagee to realize on security by reason of mortgagor’s default on mortgage.</p>
+<ul class="simple">
+<li><p>优先抵押贷款可以foreclose后面的</p></li>
+<li><p>后面的可以redeem前面的抵押贷款。</p></li>
+</ul>
+<p>Relief in foreclosing proceeding</p>
+<ul class="simple">
+<li><p>寻求优先权</p></li>
+<li><p>Order to set redemption period</p></li>
+<li><p>计算所有欠款</p></li>
+<li><p>计算每个人欠款，并分离</p></li>
+<li><p>Appoint receiver<br> To collect rents, pay bills and keep business going if mortgaged property has been abandoned or contains commercial operation.</p></li>
+<li><p>Possession of property</p></li>
+<li><p>Certificate of pending litigation</p></li>
+<li><p>Costs of proceeding</p></li>
+</ul>
+<div class="section" id="steps-in-foreclosure-proceeding-and-rights-of-parties-involved">
+<h3>Steps in foreclosure proceeding and rights of parties involved<a class="headerlink" href="#steps-in-foreclosure-proceeding-and-rights-of-parties-involved" title="Permalink to this headline">¶</a></h3>
+</div>
+<ol class="simple">
+<li><p>Demand letter</p>
+<ul class="simple">
+<li><p>借款方出具通知函，告知贷款人和担保人已经违约，要求付清全款</p></li>
+<li><p>Prescribed form</p></li>
+<li><p>10日后强制收回抵押物</p></li>
+<li><p>农场15日</p></li>
+</ul>
+</li>
+<li><p>Petition and supporting affidavit</p>
+<ul class="simple">
+<li><p>File petition in BC Supreme Court</p></li>
+<li><p>Lender aka petitioner</p></li>
+<li><p>All other charge holders whose interests rank in priority behind lender aka respondents</p></li>
+</ul>
+</li>
+<li><p>Service of petition and support affidavit</p>
+<ul class="simple">
+<li><p>Respondents回复提供证词</p></li>
+</ul>
+</li>
+<li><p>Petition hearing</p></li>
+<li><p>Court proceedings</p>
+<ul class="simple">
+<li><p>Order Nisi -&gt; Conduct of sale -&gt; Order approving sale</p>
+<ul>
+<li><p>取决于redemption period长短，决定是不是马上卖</p></li>
+<li><p>Conduct of sale时，所有权归借款人</p></li>
+</ul>
+</li>
+<li><p>Order Nisi -&gt; Order absolute of foreclosure</p>
+<ul>
+<li><p>借款人不能付清</p></li>
+</ul>
+</li>
+<li><p>Immediate order absolute of foreclosure<br>If no equity</p>
+<ul>
+<li><p>Lender becoming registered owner</p></li>
+<li><p>Personal covenant in mortgage is extinguished.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><em><strong>Order nisi</strong></em>
+: Final order of court in foreclosure process which may not be challenged except by way of appeal.</p>
+<ul class="simple">
+<li><p>Grant relief</p></li>
+<li><p>Fix redemption period</p></li>
+<li><p>In redemption period, 贷款人可以自己卖房，不需要司法监督。</p></li>
+</ul>
+<p><strong>Order absolute of foreclosure</strong>
+: Declares that the respondents are foreclosed of any right, title, or interest in the mortgaged property, extinguishes the right of redemption, and directs them to deliver up possession of the property to the petitioner.<br><br> Once the order is pronounced, the foreclosure proceedings are concluded</p>
+<p>Distribution of sale proceeds<br></p>
+<ol class="simple">
+<li><p>Property tax and utilities</p></li>
+<li><p>Strata fees</p></li>
+<li><p>RE commission</p></li>
+<li><p>Petitioner’s mortgage + court cost</p></li>
+<li><p>Into court to credit of foreclosure proceeding</p></li>
+</ol>
+<p><strong>Order absolute of foreclosure vs. Judicial sale</strong>
+Respondent is not liable for any deficiency of funds where foreclosure takes place.</p>
+<div class="section" id="agreement-for-sale-vs-vendor-take-back-mortgage">
+<h3>Agreement for sale vs. Vendor take-back mortgage<a class="headerlink" href="#agreement-for-sale-vs-vendor-take-back-mortgage" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Agreement for sale</strong>
+: Contract by which owner of land agrees to sell land to buyer (right to purchase).<br>Buyer’s interest is registered in LTO as charge against seller’s certificate of title.<br>Contract provides that purchase price will be paid by installments.</p>
+<ul class="simple">
+<li><p>Seller remains on title</p></li>
+<li><p>Agreement for sale is registered as charge against title</p></li>
+<li><p>For vendor take-back mortgage, fee simple is transferred to buyer, and mortgage is registered as charge.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch14.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 14</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch16.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 16</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 12 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 13" href="ch13.html" />
+    <link rel="prev" title="Chapter 11" href="ch11.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch12.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#law-of-agency">
+   Law of Agency
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reasons-for-using-agent">
+     Reasons for using agent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#agency-and-dual-agency">
+     Agency and dual agency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#major-ways-to-provide-trading-services-in-bc-by-licensee">
+     3 major ways to provide trading services in BC by licensee
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-of-designated-agency">
+     Model of designated agency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ban-on-dual-agency">
+     Ban on dual agency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exception-for-practice-of-dual-agency">
+     Exception for practice of dual agency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-and-value-of-standard-forms-in-re-industry-in-bc">
+     Use and value of standard forms in RE industry in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-create-and-terminate-agency-relationship">
+     To create and terminate agency relationship
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-and-when-agent-becomes-personally-liable-to-third-party">
+     How and when agent becomes personally liable to third party
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#duties-of-agent-to-principal">
+     Duties of agent to principal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ways-to-address-conflict-of-interest">
+     Ways to address conflict of interest
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#duties-of-principal-to-agent">
+     Duties of principal to agent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disclosures-related-to-agency-relationship-in-bc">
+     Disclosures related to agency relationship in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disclosures-related-to-remuneration-of-licensee-in-bc">
+     Disclosures related to remuneration of licensee in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-of-disclosure-of-interest-in-trade-latent-defects-and-notice-related-to-contract-assignments">
+     Purpose of disclosure of interest in trade, latent defects, and notice related to contract assignments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-12">
+<h1>Chapter 12<a class="headerlink" href="#chapter-12" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="law-of-agency">
+<h2>Law of Agency<a class="headerlink" href="#law-of-agency" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="reasons-for-using-agent">
+<h3>Reasons for using agent<a class="headerlink" href="#reasons-for-using-agent" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Knowledge, skills and abilities of agent, but principal lacks</p></li>
+<li><p>For geographical or other limitations, agent can perform certain action, but principal can’t</p></li>
+<li><p>Principal doesn’t have time or desire.</p></li>
+</ul>
+<div class="section" id="agency-and-dual-agency">
+<h3>Agency and dual agency<a class="headerlink" href="#agency-and-dual-agency" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Agency</strong>
+: Relationship in which one (agent) is granted authority to represent and act for another (principal) in dealings with others.</p>
+<p><strong>Warranty of authority</strong>
+: Agent’s promise to third parties that their actions fall within scope if authority given by principal.</p>
+<p>In BC, agent doesn’t have authority to sign a contract on behalf of principal.</p>
+<div class="section" id="major-ways-to-provide-trading-services-in-bc-by-licensee">
+<h3>3 major ways to provide trading services in BC by licensee<a class="headerlink" href="#major-ways-to-provide-trading-services-in-bc-by-licensee" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Seller sub-agency relationship</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Seller</p></th>
+<th class="head"><p>Buyer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Listing agent</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Selling Agent</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Selling agent gets compensation from listing agent, assumed to be sub-agent of seller</p></li>
+<li><p>Both agents owe duties to seller.</p></li>
+</ul>
+<p><strong>Buyer agency relationship</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Seller</p></th>
+<th class="head"><p>Buyer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Listing agent</p></td>
+<td><p>Selling agent</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Ensure buyer’s best interest to be achieved.</p></li>
+</ul>
+<p><strong>Brokerage agency</strong>
+: Model of agency where brokerage acts as agent for client. All of brokerage’s licensees are considered at law to be agents for client.</p>
+<ul class="simple">
+<li><p>Licensee provides RE services on behalf of brokerage</p></li>
+<li><p>Can’t act for multiple clients within single transaction.</p></li>
+</ul>
+<p><strong>Limited dual agency</strong>
+: Because duty of loyalty can’t be fulfilled to both clients, clients agree to limited form of agency representation.</p>
+<ul class="simple">
+<li><p>Follow instructions of each client</p></li>
+<li><p>Provide relevant information</p></li>
+<li><p>Assist clients to enter into binding trade in RE.</p></li>
+</ul>
+<div class="section" id="model-of-designated-agency">
+<h3>Model of designated agency<a class="headerlink" href="#model-of-designated-agency" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Designated agency</strong>
+: Brokerage appoints one or more specific licensees to act as sole agent of buyer or seller.<br><br>Designated agent owes fundamental agency duties to buyer or seller, while brokerage and other licensee don’t.</p>
+<div class="section" id="ban-on-dual-agency">
+<h3>Ban on dual agency<a class="headerlink" href="#ban-on-dual-agency" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Rules clarify that dual agency doesn’t occur if different designated agents within brokerage act for each of clients under designated agency system.<br><br>Licensees are permitted to provide limited trading services to consumers outside of agency relationship (unrepresented party).<br><br>Licensees need to provide both <em>Disclosure of Representation in Trading Services form</em> and <em>Disclosure of Risks to Unrepresented Parties form</em>.</p>
+<p>Rationale behind ban on dual agency</p>
+<ul class="simple">
+<li><p>Fail to be completely loyal and impartial</p></li>
+<li><p>在不能披露信息情况下，不能提供有效建议</p></li>
+<li><p>自己佣金利益优先。</p></li>
+</ul>
+<div class="section" id="exception-for-practice-of-dual-agency">
+<h3>Exception for practice of dual agency<a class="headerlink" href="#exception-for-practice-of-dual-agency" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>In remote location</p></li>
+<li><p>Impracticable for parties to be provided trading services by different licensees</p></li>
+<li><p>Provide <em>Disclosure of Risks Associated with Dual Agency form</em>.</p></li>
+</ul>
+<div class="section" id="use-and-value-of-standard-forms-in-re-industry-in-bc">
+<h3>Use and value of standard forms in RE industry in BC<a class="headerlink" href="#use-and-value-of-standard-forms-in-re-industry-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>BCFSA prescribed standard forms</p>
+<ul class="simple">
+<li><p>Disclosure of Interest in Trade form</p></li>
+<li><p>Disclosure of Representation in Trading Services from</p></li>
+<li><p>Disclosure of Risks to Unrepresented Parties form.</p></li>
+</ul>
+<div class="section" id="to-create-and-terminate-agency-relationship">
+<h3>To create and terminate agency relationship<a class="headerlink" href="#to-create-and-terminate-agency-relationship" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>==<strong>Contract creation</strong>==</p>
+<ul class="simple">
+<li><p>Agency by express contract</p>
+<ul>
+<li><p>Writing or oral</p></li>
+<li><p>Writing for listing agreement unless waived by client</p></li>
+</ul>
+</li>
+<li><p>Agency by implication</p>
+<ul>
+<li><p>Established by conduct rather than express contract</p></li>
+</ul>
+</li>
+<li><p>Agency by <em>estoppel</em></p>
+<ul>
+<li><p>Actions lead third party to believe agent has authority to act on behalf of principal, like</p>
+<ul>
+<li><p>representation by principal</p></li>
+<li><p>reliance by third party</p></li>
+<li><p>alteration of third party’s position resulting from reliance</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Agency by ratification<br>Granted retroactively.</p></li>
+</ul>
+<p><em><strong>Estoppel</strong></em>
+: Legal principle prevents someone from denying or contradicting a set of facts that he or she has previously expressly or impliedly asserted to be true.</p>
+<p>Types of listing contract</p>
+<ul class="simple">
+<li><p>Exclusive listing<br>Exclusive right to sell for specific period</p></li>
+<li><p>Multiple listing<br>Exclusive right to sell in cooperation of other brokerage acting for perspective buyer</p></li>
+<li><p>Open listing<br>Through designated agent to list property, but no prevent other brokerages to represent.</p></li>
+</ul>
+<p>Items in listing contract</p>
+<ul class="simple">
+<li><p>Parties</p></li>
+<li><p>Property</p></li>
+<li><p>Listing term</p></li>
+<li><p>Agent’s authority</p></li>
+<li><p>Remuneration paid by seller to listing brokerage</p></li>
+<li><p>Handling client’s personal information.</p></li>
+</ul>
+<p><strong>Scope of agent’s authority</strong></p>
+<ul class="simple">
+<li><p>Actual authority given in agency agreement</p>
+<ul>
+<li><p>Express authority</p></li>
+<li><p>Implied authority<br>Actions to carry out express authority</p></li>
+<li><p>Usual or customary authority</p></li>
+</ul>
+</li>
+<li><p>Apparent authority<br>Refer to agent by <em>estoppel</em>.</p></li>
+</ul>
+<p>==<strong>Contract termination</strong>==</p>
+<ul class="simple">
+<li><p>Express termination<br>Orally or in writing</p></li>
+<li><p>Termination by conduct<br>Inconsistent act of principal</p></li>
+<li><p>Operation of law</p></li>
+</ul>
+<div class="section" id="how-and-when-agent-becomes-personally-liable-to-third-party">
+<h3>How and when agent becomes personally liable to third party<a class="headerlink" href="#how-and-when-agent-becomes-personally-liable-to-third-party" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>No disclosure of agency</p></li>
+<li><p>No authority or insufficient authority</p></li>
+<li><p>Torts committed by agent<br>Principal may also be liable for damages (vicarious liability).</p></li>
+</ul>
+<div class="section" id="duties-of-agent-to-principal">
+<h3>Duties of agent to principal<a class="headerlink" href="#duties-of-agent-to-principal" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Common law</p>
+<ul>
+<li><p>Contractual duties</p></li>
+<li><p>Tort law duties</p>
+<ul>
+<li><p>negligence</p></li>
+</ul>
+</li>
+<li><p>Agency duties</p>
+<ul>
+<li><p>Fiduciary duties<br>Agent to proof evidence of fulfillment of their duties</p>
+<ul>
+<li><p>duty of loyalty<br>act solely for benefit of principal and put ahead of all others</p></li>
+<li><p>duty to avoid conflicts of interest<br>预见冲突，提早沟通，及时披露</p>
+<ul>
+<li><p>disclose and obtain consent of principal</p></li>
+<li><p>stop acting in conflict</p></li>
+</ul>
+</li>
+<li><p>Duty of full disclosure (both profit and loss if relevant to seller)</p></li>
+<li><p>Duty of confidentiality<br>Not terminated after completion</p></li>
+<li><p>Duty to obey lawful instructions.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Statute (<strong>the Rules</strong>)</p>
+<ul>
+<li><p>Duties to clients</p></li>
+<li><p>Duty to act honestly and with reasonable care and skill.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="ways-to-address-conflict-of-interest">
+<h3>Ways to address conflict of interest<a class="headerlink" href="#ways-to-address-conflict-of-interest" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Stop providing trading services to both clients<br>Can’t work with either client as an unrepresented party</p></li>
+<li><p>Can continue represent only one client if obtaining written agreement by all of clients</p>
+<ul>
+<li><p>licensee</p></li>
+<li><p>continuing client<br>Licensee can’t disclose any confidential information of released client</p></li>
+<li><p>released client<br>Licensee owe duty of confidentiality to released client.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="duties-of-principal-to-agent">
+<h3>Duties of principal to agent<a class="headerlink" href="#duties-of-principal-to-agent" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Duty to comply with agency agreement</p></li>
+<li><p>Duty to remunerate agent</p></li>
+<li><p>Duty to indemnify agent</p></li>
+</ul>
+<div class="section" id="disclosures-related-to-agency-relationship-in-bc">
+<h3>Disclosures related to agency relationship in BC<a class="headerlink" href="#disclosures-related-to-agency-relationship-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name of Form</p></th>
+<th class="head"><p>Trigger</p></th>
+<th class="head"><p>Purpose</p></th>
+<th class="head"><p>Mandatory BCFSA Form</p></th>
+<th class="head"><p>Submitted to Brokerage?</p></th>
+<th class="head"><p>Submitted to BCFSA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Disclosure of Representation in Trading Services form</p></td>
+<td><p>Before providing trading services to or on behalf of party</p></td>
+<td><p>Ensure consumers to understand trading services;<br>Get informed consent to be represented or unrepresented</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-odd"><td><p>Disclosure of Risks to Unrepresented Parties form</p></td>
+<td><p>To unrepresented party while licensee representing a client in trade</p></td>
+<td><p>Understand risks of being unrepresented</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-even"><td><p>Disclosure for Residential Tenancies</p></td>
+<td><p>To unrepresented tenant when licensee acting for landlord</p></td>
+<td><p>Ensure tenants to understand licensee’s duties</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-odd"><td><p>Disclosure of Risks Associated with Dual Agency form</p></td>
+<td><p>Before narrow exception permitted</p></td>
+<td><p>Ensure consumers to understand risks involved;<br>Consumers can choose other options or provide informed consent</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] (with statement signed by managing broker)</ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+</tr>
+</tbody>
+</table>
+<p>Agreement Regarding Conflict of Interest Between Clients is not a disclosure, but rather a written agreement.</p>
+<div class="section" id="disclosures-related-to-remuneration-of-licensee-in-bc">
+<h3>Disclosures related to remuneration of licensee in BC<a class="headerlink" href="#disclosures-related-to-remuneration-of-licensee-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name of Form</p></th>
+<th class="head"><p>Trigger</p></th>
+<th class="head"><p>Purpose</p></th>
+<th class="head"><p>Mandatory BCFSA Form</p></th>
+<th class="head"><p>Submitted to Brokerage?</p></th>
+<th class="head"><p>Submitted to BCFSA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Disclosure of Remuneration - Trading Services form</p></td>
+<td><p>Receive or anticipate receive, directly or indirectly</p></td>
+<td><p>Ensure clients to have full disclosure</p></td>
+<td><p><ul>[ ] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-odd"><td><p>Disclosure to Sellers of Expected Remuneration(Payment) form</p></td>
+<td><p>Required by seller’s licensee when presenting an offer or counteroffer to acquire RE to seller</p></td>
+<td><p>Ensure sellers to have full disclosure if a particular offer or counteroffer accepted</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="purpose-of-disclosure-of-interest-in-trade-latent-defects-and-notice-related-to-contract-assignments">
+<h3>Purpose of disclosure of interest in trade, latent defects, and notice related to contract assignments<a class="headerlink" href="#purpose-of-disclosure-of-interest-in-trade-latent-defects-and-notice-related-to-contract-assignments" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name of Form</p></th>
+<th class="head"><p>Trigger</p></th>
+<th class="head"><p>Purpose</p></th>
+<th class="head"><p>Mandatory BCFSA Form</p></th>
+<th class="head"><p>Submitted to Brokerage?</p></th>
+<th class="head"><p>Submitted to BCFSA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Disclosure of Material Latent Defects</p></td>
+<td><p>Licensee aware of undisclosed material latent defect;<br>不能加在买卖协议中</p></td>
+<td><p>Ensure all parties beware before making decision</p></td>
+<td><p><ul>[ ] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-odd"><td><p>Disclosure of Interest in Trade form</p></td>
+<td><p>持牌人直接或间接买卖房产(个人或亲戚公司持股5%以上)之前</p></td>
+<td><p>客户知晓持牌人参与，保护自己权益</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-even"><td><p>HBRP Form</p></td>
+<td><p>买方持牌人prepare offer;卖方持牌人帮买家present offer</p></td>
+<td><p>买家卖家知晓HBRP以及各方的权益</p></td>
+<td><p>BCFSA批准的文件</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+<tr class="row-odd"><td><p>Notice to Seller Regarding Assignment Terms</p></td>
+<td><p>买家offer没有包含assignment terms</p></td>
+<td><p>卖方知晓协议不包含转让条款</p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p><ul>[x] </ul></p></td>
+<td><p>If requested</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch11.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 11</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch13.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 13</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

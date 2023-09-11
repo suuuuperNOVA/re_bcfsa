@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 11 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 12" href="ch12.html" />
+    <link rel="prev" title="Chapter 10" href="ch10.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch11.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contracts-for-re-transactions">
+   Contracts for RE Transactions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#principles-of-contract-law-to-listing-agreements-and-contracts-of-purchase-and-sale">
+     Principles of contract law to listing agreements and contracts of purchase and sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#requirement-of-writing-in-land-contracts">
+     Requirement of writing in land contracts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remedies-to-requirement-not-met">
+     Remedies to requirement not met
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#information-required-in-listing-contract-and-verifying-information">
+     Information required in listing contract and verifying information
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#home-buyer-rescission-period">
+     Home buyer rescission period
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terms-and-conditions">
+     Terms and conditions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditions-precedent-and-subsequent">
+     Conditions precedent and subsequent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vendor-to-be-protected-from-conditions-precedent-in-contract-of-purchase-and-sale">
+     Vendor to be protected from conditions precedent in contract of purchase and sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#properly-remove-condition-precedent-from-contract-of-purchase-and-sale">
+     Properly remove condition precedent from contract of purchase and sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#amend-contract-of-purchase-and-sale">
+     Amend contract of purchase and sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assign-contract-of-purchase-and-sale">
+     Assign contract of purchase and sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#provisions-of-competition-act">
+     Provisions of
+     <em>
+      Competition Act
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#negotiation">
+     Negotiation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#behavioral-principles-and-strategies-for-effective-negotiations">
+     Behavioral principles and strategies for effective negotiations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strategies-for-managing-and-reducing-risk-of-litigation-for-professional-activities">
+     Strategies for managing and reducing risk of litigation for professional activities
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-11">
+<h1>Chapter 11<a class="headerlink" href="#chapter-11" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="contracts-for-re-transactions">
+<h2>Contracts for RE Transactions<a class="headerlink" href="#contracts-for-re-transactions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="principles-of-contract-law-to-listing-agreements-and-contracts-of-purchase-and-sale">
+<h3>Principles of contract law to listing agreements and contracts of purchase and sale<a class="headerlink" href="#principles-of-contract-law-to-listing-agreements-and-contracts-of-purchase-and-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Listing agreement
+: Contract between owner and RE brokerage whereby brokerage agrees to try to find purchaser for lister property in return for vendor paying a stipulated amount of commission should the brokerage be successful.</p>
+<p>Contract of purchase and sale
+: Contains obligations of vendor and purchaser.</p>
+<ul class="simple">
+<li><p>Names and occupations of parties</p></li>
+<li><p>Description of property being sold</p></li>
+<li><p>Description of price and related financing</p></li>
+<li><p>HBRP (can’t be waived)</p></li>
+<li><p>Terms and conditions</p></li>
+<li><p>Deposit</p></li>
+<li><p>PDS</p></li>
+<li><p>Remuneration<br>Parties acknowledge compensation</p></li>
+<li><p>Builders liens</p>
+<ul>
+<li><p>Strata强制7%，不需要加条款。</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="requirement-of-writing-in-land-contracts">
+<h3>Requirement of writing in land contracts<a class="headerlink" href="#requirement-of-writing-in-land-contracts" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>除了3年以内的租赁，其他房地产活动都需要书面合同。<br>Contracts are enforceable only against persons signing the documents</p>
+<ul class="simple">
+<li><p>Prove existence of contract</p>
+<ul>
+<li><p>否认方的一些行为确认合同存在</p></li>
+<li><p>否认方同意对方的行为确认</p></li>
+</ul>
+</li>
+<li><p>合理基于合同，上诉方采取一些行为，并改变了他们的情况。</p></li>
+</ul>
+<p>Incomplete contract is enforceable.</p>
+<p>Offers, acceptances, counter-offers and amendments should be in writing.</p>
+<div class="section" id="remedies-to-requirement-not-met">
+<h3>Remedies to requirement not met<a class="headerlink" href="#remedies-to-requirement-not-met" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Specific performance</p></li>
+<li><p>Damages</p></li>
+<li><p>Restitution</p></li>
+</ul>
+<div class="section" id="information-required-in-listing-contract-and-verifying-information">
+<h3>Information required in listing contract and verifying information<a class="headerlink" href="#information-required-in-listing-contract-and-verifying-information" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Subject property</p>
+<ul>
+<li><p>financial encumbrances</p></li>
+<li><p>type of dwelling, size, type of insulation</p></li>
+</ul>
+</li>
+<li><p>Environmental information</p>
+<ul>
+<li><p>historic factor</p></li>
+<li><p>geographic factors</p></li>
+<li><p>contamination</p></li>
+</ul>
+</li>
+<li><p>Land title search</p>
+<ul>
+<li><p>registered owners</p></li>
+<li><p>charges registered against property</p></li>
+<li><p>plan in LTO can’t be used as survey of property</p></li>
+</ul>
+</li>
+<li><p>Physical features of property</p></li>
+</ul>
+<div class="section" id="home-buyer-rescission-period">
+<h3>Home buyer rescission period<a class="headerlink" href="#home-buyer-rescission-period" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Within 3 business days of entering into contract</p></li>
+<li><p>Pay seller fee of 0.25% of purchase price</p></li>
+<li><p>Can’t be waived by parties to contract</p></li>
+<li><p>Include manufactured home affixed to land</p></li>
+<li><p>Exclude leasehold interest and property sold at auction, under court order, <strong>development units</strong>.</p></li>
+<li><p>Written notice of rescission</p>
+<ul>
+<li><p>PID, address, name of parties, signature, date of rescission</p></li>
+<li><p>by registered mail, fax, email with requested read receipt</p></li>
+</ul>
+</li>
+<li><p>Informed consent to be obtained through delivery of Disclosure of Representation in Trading Services form</p>
+<ul>
+<li><p>Walk through for clients</p></li>
+<li><p>Only provide to unrepresented party</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="terms-and-conditions">
+<h3>Terms and conditions<a class="headerlink" href="#terms-and-conditions" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Condition</strong>
+: Fundamental term of contract, a breach of which allows injured party to terminate contract, and/or sue for damages or specific performance.</p>
+<p><strong>Term</strong>/<strong>Warranty</strong>
+: Subsidiary term of contract, a breach of which allows injured party to sue for damages but doesn’t allow termination.</p>
+<p><strong>Collateral warranty</strong>
+: Associated with, but outside of, particular agreement.</p>
+<p><strong>Doctrine of Merge</strong>
+: Agreement and parties’ rights are merged in conveyance so that party must look to deed itself for remedy except</p>
+<ul class="simple">
+<li><p>Fraud</p></li>
+<li><p>Mutual mistake</p></li>
+<li><p>Innocent misrepresentation amounts to <em>error in substantialibus</em></p></li>
+<li><p>Contractual condition</p></li>
+<li><p>Warranty collateral to contract surviving the closing.</p></li>
+</ul>
+<p>In buyer’s best interests, PDS should be incorporated into standard contract.</p>
+<div class="section" id="conditions-precedent-and-subsequent">
+<h3>Conditions precedent and subsequent<a class="headerlink" href="#conditions-precedent-and-subsequent" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Condition precedent</strong>
+: Legal term for a ‘subject to’ clause, happening before binding upon parties.</p>
+<ul class="simple">
+<li><p>Subjective criterion depends on personal view</p></li>
+<li><p>Objective criterion depends on external event</p></li>
+<li><p>If too subjective, court will find clause to be uncertain (Even with acceptance, it is no more than an offer).</p></li>
+</ul>
+<p><strong>Condition subsequent</strong>
+: Occurrence of which will discharge principal obligation of party to contract.</p>
+<p><strong>True condition precedent</strong>
+: Dependent on someone who is not a party to contract, which can’t be waived unilaterally.</p>
+<p>By <em>Law and Equity Act</em>, clause is for sole benefit of buyer/seller allows to waive subject clause, thereby overriding common law rule.</p>
+<div class="section" id="vendor-to-be-protected-from-conditions-precedent-in-contract-of-purchase-and-sale">
+<h3>Vendor to be protected from conditions precedent in contract of purchase and sale<a class="headerlink" href="#vendor-to-be-protected-from-conditions-precedent-in-contract-of-purchase-and-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Prequalification of purchaser by licensee</p></li>
+<li><p>Time limit on satisfaction of condition precedent</p></li>
+<li><p>Right to invoke time clause</p></li>
+</ul>
+<div class="section" id="properly-remove-condition-precedent-from-contract-of-purchase-and-sale">
+<h3>Properly remove condition precedent from contract of purchase and sale<a class="headerlink" href="#properly-remove-condition-precedent-from-contract-of-purchase-and-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Deliver written notice to every party before subject removal deadline</p></li>
+<li><p>Fulfill or waive.</p></li>
+</ul>
+<div class="section" id="amend-contract-of-purchase-and-sale">
+<h3>Amend contract of purchase and sale<a class="headerlink" href="#amend-contract-of-purchase-and-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Discussion about proposed change will not terminate existing contract</p></li>
+<li><p>Amendment amounts to contract</p></li>
+</ul>
+<div class="section" id="assign-contract-of-purchase-and-sale">
+<h3>Assign contract of purchase and sale<a class="headerlink" href="#assign-contract-of-purchase-and-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Developers collect assignment information to report to CSAIR periodically (quarterly and annually), helping CRA to compare tax return against assignors.</p>
+<div class="section" id="provisions-of-competition-act">
+<h3>Provisions of <em>Competition Act</em><a class="headerlink" href="#provisions-of-competition-act" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Federal statute, by Competition Bureau</p></li>
+<li><p>Contains both criminal and civil prohibitions</p></li>
+<li><p>Criminal (不需要明确合同，可以推断，但是要证明 beyond reasonable doubt)</p>
+<ul>
+<li><p>Agreements in restraint of trade</p>
+<ul>
+<li><p>限定费率、划分区域业务、限定公司与员工分成、限定员工涉及业务</p></li>
+<li><p>限制操纵其他人在行业内业务</p></li>
+<li><p>设定特殊服务费</p></li>
+</ul>
+</li>
+<li><p>Misleading ads/Deceptive practice<br>False or misleading in material respect</p></li>
+</ul>
+</li>
+<li><p>Civil by Competition Tribunal (proof on balance of probability)</p>
+<ul>
+<li><p>Agreements between competitors</p>
+<ul>
+<li><p>lessen or prevent competition</p></li>
+<li><p>协议禁止某人从事</p></li>
+<li><p>从事业务需要同意</p></li>
+</ul>
+</li>
+<li><p>Misleading ads/Deceptive practice</p></li>
+<li><p>Price maintenance</p></li>
+<li><p>Sale above advertised price</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="negotiation">
+<h3>Negotiation<a class="headerlink" href="#negotiation" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Effective negotiation</p>
+<ul class="simple">
+<li><p>Time and efforts</p></li>
+<li><p>Satisfaction of parties</p></li>
+<li><p>Resources wasted.</p></li>
+</ul>
+<div class="section" id="behavioral-principles-and-strategies-for-effective-negotiations">
+<h3>Behavioral principles and strategies for effective negotiations<a class="headerlink" href="#behavioral-principles-and-strategies-for-effective-negotiations" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Preparation principles</p>
+<ul>
+<li><p>What are issues</p></li>
+<li><p>What are interests</p></li>
+<li><p>What are priorities</p></li>
+<li><p>What are some possible solutions</p></li>
+<li><p>Consider objective standards</p></li>
+<li><p>What are your alternatives</p></li>
+<li><p>Know your resistance point</p></li>
+<li><p>Set a high goal</p></li>
+</ul>
+</li>
+<li><p>Exchange principles</p>
+<ul>
+<li><p>Focus on interests</p></li>
+<li><p>Packaging and trading off</p></li>
+<li><p>Focus on objective standards</p></li>
+<li><p>Strategic concessions</p></li>
+</ul>
+</li>
+<li><p>Principles of communication</p>
+<ul>
+<li><p>Listen actively</p></li>
+</ul>
+</li>
+<li><p>Relationship principles</p>
+<ul>
+<li><p>Firm but conciliatory</p></li>
+<li><p>Perspective taking</p></li>
+<li><p>Dirty tactics</p>
+<ul>
+<li><p>false authority</p></li>
+<li><p>eleventh hour throw in</p></li>
+<li><p>deception</p></li>
+<li><p>stress</p></li>
+<li><p>negative emotions</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Additional considerations</p>
+<ul>
+<li><p>Time is an asset</p></li>
+<li><p>Anchoring effect</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="strategies-for-managing-and-reducing-risk-of-litigation-for-professional-activities">
+<h3>Strategies for managing and reducing risk of litigation for professional activities<a class="headerlink" href="#strategies-for-managing-and-reducing-risk-of-litigation-for-professional-activities" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Risk shifting</p>
+<ul class="simple">
+<li><p>Insurance</p></li>
+<li><p>Referring certain work out</p></li>
+<li><p>PDS</p></li>
+<li><p>Third party experts</p></li>
+</ul>
+<p>Risk anticipation</p>
+<ul class="simple">
+<li><p>Avoid purchaser’s remorse</p></li>
+<li><p>Document disclosures and disclaimers</p></li>
+<li><p>Avail yourself of others’ experience</p></li>
+<li><p>Continuing education</p></li>
+</ul>
+<p>Risk control</p>
+<ul class="simple">
+<li><p>Procedures and policies</p></li>
+<li><p>Avoid litigation flashpoint</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch10.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 10</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch12.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 12</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 21 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 22" href="ch22.html" />
+    <link rel="prev" title="Chapter 20" href="ch20.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch21.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-real-estate-appraisal">
+   Introduction to Real Estate Appraisal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-of-appraisal-serving">
+     Purpose of appraisal serving
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relationship-between-ceiling-price-floor-price-and-sale-price">
+     Relationship between ceiling price, floor price, and sale price
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#value-to-owner-and-market-value">
+     Value to owner and market value
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#redevelopment-potential-and-property-s-highest-and-best-use">
+     Redevelopment potential and property’s highest and best use
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#factors-affecting-demand-and-supply-of-real-property">
+     Factors affecting demand and supply of real property
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classification-of-re-markets">
+     Classification of RE markets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-sources-of-data-data-collection-and-analysis-of-subject-property">
+     Potential sources of data, data collection, and analysis of subject property
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#appraisal-approaches">
+     Appraisal approaches
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#options-for-reporting-final-value-estimates">
+     Options for reporting final value estimates
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#legal-consideration-for-appraisers-legal-consequences-resulting-from-negligently-prepared-appraisal-report-and-compensation">
+     Legal consideration for appraisers, legal consequences resulting from negligently prepared appraisal report, and compensation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#avms-and-future-of-appraisal">
+     AVMs and future of appraisal
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-21">
+<h1>Chapter 21<a class="headerlink" href="#chapter-21" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-to-real-estate-appraisal">
+<h2>Introduction to Real Estate Appraisal<a class="headerlink" href="#introduction-to-real-estate-appraisal" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="purpose-of-appraisal-serving">
+<h3>Purpose of appraisal serving<a class="headerlink" href="#purpose-of-appraisal-serving" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Why appraisal needed</p>
+<ul class="simple">
+<li><p>Limited data and information available</p></li>
+<li><p>Uniqueness</p></li>
+<li><p>Low response to market pressures</p></li>
+<li><p>Effected by externalities.</p></li>
+</ul>
+<p>Purpose of appraisal</p>
+<ul class="simple">
+<li><p>Statutory reason</p></li>
+<li><p>Market reason</p></li>
+</ul>
+<div class="section" id="relationship-between-ceiling-price-floor-price-and-sale-price">
+<h3>Relationship between ceiling price, floor price, and sale price<a class="headerlink" href="#relationship-between-ceiling-price-floor-price-and-sale-price" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Ceiling price</strong>
+: Maximum price a purchaser is willing to pay for a property.</p>
+<p><strong>Floor price</strong>
+: Minimum price at which seller is willing to sell their property.</p>
+<div class="section" id="value-to-owner-and-market-value">
+<h3>Value to owner and market value<a class="headerlink" href="#value-to-owner-and-market-value" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Appraiser is not to justify MV. Justification of MV falls in the area of investment.</p>
+<p><strong>Value to owner</strong>
+: Personal opinion of property’s value held by individual owner. Whether to buy or not question.</p>
+<p><strong>Market value</strong>
+: Price might reasonably be expected to realized when sold by a willing seller to a willing buyer after adequate time and exposure to market.</p>
+<ul class="simple">
+<li><p>Value is related to certain point in time</p></li>
+<li><p>Reasonably expected</p></li>
+<li><p>Willing seller and willing buyer</p></li>
+<li><p>Adequate time and exposure to market.</p></li>
+</ul>
+<p>Reasons for using MV</p>
+<ul class="simple">
+<li><p>Objective</p></li>
+<li><p>Applies to large proportion of past transactions</p></li>
+<li><p>Applies to large number of appraisal situations.</p></li>
+</ul>
+<p><strong>Investment value</strong>
+: Value that is specific to a particular investor.</p>
+<p>Economic forces tend to change more slowly and less important to appraiser than factors affecting supply and demand.</p>
+<div class="section" id="redevelopment-potential-and-property-s-highest-and-best-use">
+<h3>Redevelopment potential and property’s highest and best use<a class="headerlink" href="#redevelopment-potential-and-property-s-highest-and-best-use" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Highest and best value</strong>
+: Use of land, within all legal, physical, financial and market constraints, will provide maximum net return during foreseeable future.</p>
+<p><strong>Latent value</strong>
+: Value possessed by property that has potential for redevelopment because it’s currently not employed at its highest and best use.</p>
+<div class="section" id="factors-affecting-demand-and-supply-of-real-property">
+<h3>Factors affecting demand and supply of real property<a class="headerlink" href="#factors-affecting-demand-and-supply-of-real-property" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Influences on demand</p>
+<ul class="simple">
+<li><p>Population</p></li>
+<li><p>Income</p></li>
+<li><p>Preference and tastes</p></li>
+<li><p>Cost of alternatives</p></li>
+<li><p>Technological changes</p></li>
+<li><p>Transportation facilities</p></li>
+<li><p>Government policies</p></li>
+</ul>
+<p>Influences on supply</p>
+<ul class="simple">
+<li><p>Price of property</p></li>
+<li><p>Price of alternative properties</p></li>
+<li><p>Technology</p></li>
+<li><p>Goals of owner</p></li>
+</ul>
+<p>Supply of real property can’t be increased or decreased rapidly. Supply of real property is fixed in location.</p>
+<div class="section" id="classification-of-re-markets">
+<h3>Classification of RE markets<a class="headerlink" href="#classification-of-re-markets" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Land use types</p></li>
+<li><p>Location</p></li>
+<li><p>Price ranges</p></li>
+</ul>
+<div class="section" id="potential-sources-of-data-data-collection-and-analysis-of-subject-property">
+<h3>Potential sources of data, data collection, and analysis of subject property<a class="headerlink" href="#potential-sources-of-data-data-collection-and-analysis-of-subject-property" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Data collection</p>
+<ul class="simple">
+<li><p>General data</p>
+<ul>
+<li><p>Economic factors</p></li>
+<li><p>Regional analysis</p></li>
+<li><p>Neighborhood analysis</p></li>
+</ul>
+</li>
+<li><p>Specific data</p>
+<ul>
+<li><p>Physical factors</p></li>
+<li><p>Location factors</p></li>
+<li><p>Government factors</p></li>
+<li><p>Financial factors</p></li>
+<li><p>Environmental factors</p></li>
+</ul>
+</li>
+<li><p>Transactional elements</p>
+<ul>
+<li><p>Time allowed</p></li>
+<li><p>Advertising</p></li>
+<li><p>Relationship between parties</p></li>
+<li><p>Financing involved</p></li>
+<li><p>Special purchasers</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="appraisal-approaches">
+<h3>Appraisal approaches<a class="headerlink" href="#appraisal-approaches" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Direct comparison approach<br>Based on <em>principle of substitution</em>
+: Property’s value should not exceed cost of purchasing alternate property providing similar utility.<br><br></p>
+<p>Income/Investment approach
+: PV of all its anticipated future net benefits, which is often used for commercial RE as income-producing investment.<br><br>Similar principles to comparative approaches requiring market evidence from similar properties.<br><br></p>
+<p>Cost approach
+: Property value can never exceed cost of replacing one.<br> MV = land value + improvement cost - depreciation<br>
+Least exact because</p>
+<ul class="simple">
+<li><p>Cost of building may be different from MV</p></li>
+<li><p>Difficulty in measuring depreciation.</p></li>
+</ul>
+<p>Residual method
+: Mix of above methods, used for latent value.</p>
+<div class="section" id="options-for-reporting-final-value-estimates">
+<h3>Options for reporting final value estimates<a class="headerlink" href="#options-for-reporting-final-value-estimates" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Oral or written</p>
+<ul>
+<li><p>Narrative</p></li>
+<li><p>Short form narrative</p></li>
+<li><p>Form report</p></li>
+</ul>
+</li>
+<li><p>CMA<br>Short-form narrative report prepared by registrant for seller of property to establish an estimated MV and recommended listing price.</p></li>
+</ul>
+<div class="section" id="legal-consideration-for-appraisers-legal-consequences-resulting-from-negligently-prepared-appraisal-report-and-compensation">
+<h3>Legal consideration for appraisers, legal consequences resulting from negligently prepared appraisal report, and compensation<a class="headerlink" href="#legal-consideration-for-appraisers-legal-consequences-resulting-from-negligently-prepared-appraisal-report-and-compensation" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Appraisers are exempted from licensing requirements</p></li>
+<li><p>Code of Ethics of appraisal organizations provides guidance</p></li>
+<li><p>Appraisers owe duty of care to those persons being foreseen to take action based on appraisal report</p></li>
+<li><p>Appraisers can use disclaimers and reliance letters to limit liability</p>
+<ul>
+<li><p>requiring consent from original client in the case of breaching confidentiality.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="avms-and-future-of-appraisal">
+<h3>AVMs and future of appraisal<a class="headerlink" href="#avms-and-future-of-appraisal" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Automated valuation models (AVMs)
+: Computer program analyses large volumes of data using an automated process to estimate MV.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch20.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 20</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch22.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 22</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

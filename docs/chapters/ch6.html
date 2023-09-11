@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 6 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 7" href="ch7.html" />
+    <link rel="prev" title="Chapter 5" href="ch5.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commercial-and-residential-tenancies">
+   Commercial and Residential Tenancies
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lease-vs-license">
+     Lease vs. License
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commercial-vs-residential-tenancy">
+     Commercial vs. Residential tenancy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#features-applying-to-residential-and-commercial-situations">
+     Features applying to residential and commercial situations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-of-reasons-a-residential-landlord-must-give-for-terminating-a-tenancy">
+     Types of reasons a residential landlord must give for terminating a tenancy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#residential-landlord-must-give-notice-of-end-of-tenancy">
+     Residential landlord must give notice of end of tenancy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tenants-right-to-dispute">
+     Tenant’s right to dispute
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#when-and-how-a-rent-increase-notice-is-given-in-residential-tenancies">
+     When and how a rent increase notice is given in residential tenancies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#role-of-an-arbitrator-and-or-a-court-in-settling-disputes">
+     Role of an arbitrator and/or a court in settling disputes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rights-and-obligations-of-commercial-or-residential-landlords-and-tenants-with-respect-to-security-deposits-repair-privacy-and-assignment-and-subletting">
+     Rights and obligations of commercial or residential landlords and tenants with respect to security deposits, repair, privacy, and assignment and subletting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implied-rights-and-obligations-of-commercial-or-residential-landlords-and-tenants">
+     Implied rights and obligations of commercial or residential landlords and tenants
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quiet-enjoyment">
+     Quiet enjoyment
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-6">
+<h1>Chapter 6<a class="headerlink" href="#chapter-6" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="commercial-and-residential-tenancies">
+<h2>Commercial and Residential Tenancies<a class="headerlink" href="#commercial-and-residential-tenancies" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lease-vs-license">
+<h3>Lease vs. License<a class="headerlink" href="#lease-vs-license" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Lease</strong>
+: Instrument granting exclusive possession of land to another for a specific term.</p>
+<p><strong>License</strong>
+: With respect to real property, privilege to enter onto premises for a certain purpose, but not confer the licensee any right to possession of the property.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Lease</p></th>
+<th class="head"><p>License</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Interest in land</p></td>
+<td><p>Not run with land</p></td>
+</tr>
+<tr class="row-odd"><td><p>Create relationship of landlord and tenant</p></td>
+<td><p>Rights and obligations in contract</p></td>
+</tr>
+<tr class="row-even"><td><p>Governed by <em>Residential Tenancy Act</em> and <em>Commercial Tenancy Act</em></p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p>Lease or license?<br>If an agreement has conferred a right to exclusive possession.</p>
+<div class="section" id="commercial-vs-residential-tenancy">
+<h3>Commercial vs. Residential tenancy<a class="headerlink" href="#commercial-vs-residential-tenancy" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Commercial</p></th>
+<th class="head"><p>Residential</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Common law</p></td>
+<td><p>Statue law</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Commercial Tenancy Act</em></p></td>
+<td><p><em>Residential Tenancy Act</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Factories<br>Warehouses<br>Stores<offices></p></td>
+<td><p>Living accommodation rented<br>Caretakers’ premises<br>Residential premises provided to employee during employment</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Residential Tenancy Act</em> NOT apply to:</p>
+<ul class="simple">
+<li><p>Business purposes</p></li>
+<li><p>Rented by not for profit housing cooperative to the member</p></li>
+<li><p>Share space with owner</p></li>
+<li><p>Communal living accommodations</p></li>
+<li><p>Term <span class="math notranslate nohighlight">\(\geq\)</span> 20 years</p></li>
+<li><p>Airbnb.</p></li>
+</ul>
+<div class="section" id="features-applying-to-residential-and-commercial-situations">
+<h3>Features applying to residential and commercial situations<a class="headerlink" href="#features-applying-to-residential-and-commercial-situations" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Commercial</strong><br>In writing to be enforceable if term over 3 years.</p>
+<ul class="simple">
+<li><p>Names of parties</p></li>
+<li><p>Description of premises</p></li>
+<li><p>Date starts</p></li>
+<li><p>Duration</p></li>
+<li><p>Rent</p></li>
+<li><p>Other material terms<br>Otherwise, common law imposes unexpected implied obligations on parties.</p></li>
+</ul>
+<p><strong>Residential</strong><br>Written, signed, dated by both landlord and tenant. A copy to tenant in 21 days after the contract date.</p>
+<ul class="simple">
+<li><p>Standard terms</p></li>
+<li><p>Legal names of landlord and tenant</p></li>
+<li><p>Address</p></li>
+<li><p>合同时间</p></li>
+<li><p>服务地址，房东或代理电话</p></li>
+<li><p>租赁开始日期</p></li>
+<li><p>If periodic, periodic basis</p></li>
+<li><p>If fixed</p>
+<ul>
+<li><p>end date</p></li>
+<li><p>之后转成fixed or periodic，以及搬离时间</p></li>
+</ul>
+</li>
+<li><p>房租</p></li>
+<li><p>房租周期</p></li>
+<li><p>包含服务及设备</p></li>
+<li><p>押金</p></li>
+</ul>
+<div class="section" id="types-of-reasons-a-residential-landlord-must-give-for-terminating-a-tenancy">
+<h3>Types of reasons a residential landlord must give for terminating a tenancy<a class="headerlink" href="#types-of-reasons-a-residential-landlord-must-give-for-terminating-a-tenancy" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tenancy type</p></th>
+<th class="head"><p>Lease type</p></th>
+<th class="head"><p>How to terminate</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fixed</p></td>
+<td><p>Commercial<br>Residential over 20 years</p></td>
+<td><p>No notice needed</p></td>
+</tr>
+<tr class="row-odd"><td><p>Periodic</p></td>
+<td><p>Commercial</p></td>
+<td><p>Reasonable notice</p></td>
+</tr>
+<tr class="row-even"><td><p>Fixed</p></td>
+<td><p>Residential</p></td>
+<td><p>Vacate clause if sublease or 房东自用</p></td>
+</tr>
+<tr class="row-odd"><td><p>Periodic</p></td>
+<td><p>Residential</p></td>
+<td><p>双方书面同意结束<br>租客撤离<br>Tenancy agreement is frustrated<br>行政命令<br>Sublease</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="residential-landlord-must-give-notice-of-end-of-tenancy">
+<h3>Residential landlord must give notice of end of tenancy<a class="headerlink" href="#residential-landlord-must-give-notice-of-end-of-tenancy" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Non-payment of rent</strong></p>
+<ul class="simple">
+<li><p>给notice并通知10天后解除租约</p></li>
+<li><p>收到通知5天内付款，取消通知；或者上诉</p></li>
+<li><p>不付房租，租客10天后要搬离</p></li>
+<li><p>Utility charge notice within 30 days.</p></li>
+</ul>
+<p><strong>For cause</strong><br>Notice not less than 1 month and effective on the last day of an ensuing rental payment period.</p>
+<ul class="simple">
+<li><p>30天内未缴押金</p></li>
+<li><p>持续晚交房租</p></li>
+<li><p>租客人数过多，不合理使用，非法活动，损害权益资产</p></li>
+<li><p>违反租房合同，私自二房东，阻碍新房客看房</p></li>
+<li><p>政府命令，仲裁结果。</p></li>
+</ul>
+<p><strong>Landlord use of property</strong><br>Give 2 month notice of the end of tenancy agreement, in good faith with a purchaser. 房东支付一个月房租。</p>
+<ul class="simple">
+<li><p>购买协议条件均已满足</p></li>
+<li><p>买家准备搬入；</p></li>
+</ul>
+<p>手续齐全后，拆除改建需提前4个月通知。 (e.g. demolish, change to strata etc.)</p>
+<p>如果买家并未搬入住满6个月，仲裁罚买家支付租客12月房租。</p>
+<p><strong>Renovations or repairs</strong><br>Approved by Residential Tenancy Branch.</p>
+<ul class="simple">
+<li><p>At least 4 months after the date of order</p></li>
+<li><p>If fixed, not earlier than the fixed term</p></li>
+<li><p>If periodic, last day of the rental payment period</p></li>
+<li><p>Tenant has the right of first refusal</p></li>
+<li><p>Landlord pay 1 month rent to compensate</p></li>
+<li><p>If fail to comply with first refusal right or finish work in a reasonable period of time, 12 month rent will be paid to tenant.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Delivery</p></th>
+<th class="head"><p>Received date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mail</p></td>
+<td><p>5th day</p></td>
+</tr>
+<tr class="row-odd"><td><p>Email</p></td>
+<td><p>3rd day</p></td>
+</tr>
+<tr class="row-even"><td><p>Fax</p></td>
+<td><p>3rd day</p></td>
+</tr>
+<tr class="row-odd"><td><p>Attaching on door<br>Mail box</p></td>
+<td><p>3rd day</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="tenants-right-to-dispute">
+<h3>Tenant’s right to dispute<a class="headerlink" href="#tenants-right-to-dispute" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Days to dispute for arbitration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Non-payment</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>For cause</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Landlord use</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>Demolition<br>Major renovation</p></td>
+<td><p>30</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="when-and-how-a-rent-increase-notice-is-given-in-residential-tenancies">
+<h3>When and how a rent increase notice is given in residential tenancies<a class="headerlink" href="#when-and-how-a-rent-increase-notice-is-given-in-residential-tenancies" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>At least 12 months since last increase with the same tenant</p></li>
+<li><p>A change of landlord doesn’t give a right to raise the rent</p></li>
+<li><p>Written notice at least 3 months</p></li>
+<li><p>Up to BC’s CPI.</p></li>
+</ul>
+<div class="section" id="role-of-an-arbitrator-and-or-a-court-in-settling-disputes">
+<h3>Role of an arbitrator and/or a court in settling disputes<a class="headerlink" href="#role-of-an-arbitrator-and-or-a-court-in-settling-disputes" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Residential Tenancy Branch</p>
+<ul class="simple">
+<li><p>Conduct or refuse hearing</p></li>
+<li><p>Receive and accept evidence</p></li>
+<li><p>Make decisions on the merits of the matter and is not bound by legal precedent.</p></li>
+</ul>
+<div class="section" id="rights-and-obligations-of-commercial-or-residential-landlords-and-tenants-with-respect-to-security-deposits-repair-privacy-and-assignment-and-subletting">
+<h3>Rights and obligations of commercial or residential landlords and tenants with respect to security deposits, repair, privacy, and assignment and subletting<a class="headerlink" href="#rights-and-obligations-of-commercial-or-residential-landlords-and-tenants-with-respect-to-security-deposits-repair-privacy-and-assignment-and-subletting" title="Permalink to this headline">¶</a></h3>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Commercial</p></th>
+<th class="head"><p>Residential</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Deposit</p></td>
+<td><p>Negotiate deposit amount;<br>Landlord obligation to return deposit.</p></td>
+<td><p><span class="math notranslate nohighlight">\(\leq \frac{1}{2}\)</span> month rent when tenancy agreement entered;<br>(Same to pet deposit);<br>Landlord needs to pay annually compounded interest in 15 days after termination;<br>Run with land, buyer obligation to return deposit;<br>双方在场检查房子、签字、拷贝版给租客，否则缺失一方会失去收回押金权利。</p></td>
+</tr>
+<tr class="row-odd"><td><p>Distress</p></td>
+<td><p><span class="math notranslate nohighlight">\(\checkmark\)</span></p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p>Mitigation<br>Who suffered loss takes reasonable action to minimize loss.</p></td>
+<td><p>X<br>Preserve all rights</p></td>
+<td><p><span class="math notranslate nohighlight">\(\checkmark\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Landlord’s duty to repair</p></td>
+<td><p>Fit for human habitation for furnished premises, but not apply to unfurnished.</p></td>
+<td><p>Landlord to maintain residential property with health, safety and housing standards by law.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tenant’s duty to repair</p></td>
+<td><p>Tenant-like manner</p></td>
+<td><p>Maintain reasonable health, cleanliness and sanitary standards;<br>Repair caused by action.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Assign or sublet</p></td>
+<td><p>Less than remainder;<br>If not prohibited, don’t need consent of landlord.</p></td>
+<td><p>Landlord’s written consent</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="implied-rights-and-obligations-of-commercial-or-residential-landlords-and-tenants">
+<h3>Implied rights and obligations of commercial or residential landlords and tenants<a class="headerlink" href="#implied-rights-and-obligations-of-commercial-or-residential-landlords-and-tenants" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Quiet enjoyment</strong></p>
+<p><strong>Covenant of non-derogation from the grant</strong>
+: Guarantee to the tenant that the landlord will not substantially deprive them of the benefit conferred by the tenancy agreement.</p>
+<p><strong>Interesse termini</strong>
+: Let the tenant into possession of the leased premises at the beginning of the term of the lease.</p>
+<p>Commercial tenant may sue for damages, but residential can get an order for possession.</p>
+<div class="section" id="quiet-enjoyment">
+<h3>Quiet enjoyment<a class="headerlink" href="#quiet-enjoyment" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Commercial</strong><br>
+Can be altered by terms of the lease. Landlord can keep an unrestricted right to enter.</p>
+<p><strong>Residential</strong><br>
+Landlord’s right to enter</p>
+<ul class="simple">
+<li><p>租客同意时间或不多于30天</p></li>
+<li><p>Written notice不少于24小时，不多于30天，并有合理理由，早8到晚9，除非租客同意，包括例行检查</p></li>
+<li><p>房东需要提供的服务</p></li>
+<li><p>法院允许、房客逃离、紧急情况。</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch5.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 5</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch7.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 7</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

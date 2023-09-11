@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 9 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 10" href="ch10.html" />
+    <link rel="prev" title="Chapter 8" href="ch8.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch9.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#professionalism-and-ethics-professions-professionals-and-professionalism">
+   Professionalism and Ethics Professions, Professionals, and Professionalism
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-elements-professions-share">
+     Common elements professions share
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relationship-between-ethics-and-professionalism">
+     Relationship between ethics and professionalism
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bcfsa-s-mandate-of-regulating-in-public-interest">
+     BCFSA’s mandate of regulating in public interest
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trust-is-fundamental">
+     Trust is fundamental
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sources-of-duties-to-clients">
+     Sources of duties to clients
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-duties-owed-to-clients-under-section-30-33-and-34-of-the-rules">
+     Key duties owed to clients under Section 30, 33, and 34 of the Rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conflicts-of-interest-undermine-trust">
+     Conflicts of interest undermine trust
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#components-of-early-continuous-and-full-written-disclosure">
+     Components of early, continuous, and full written disclosure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rationale-behind-duty-to-report">
+     Rationale behind duty to report
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#obligations-to-report-under-resa-the-rules-and-general-professionalism">
+     Obligations to report under RESA, the Rules, and general professionalism
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#framework-for-ethical-decision-making">
+     Framework for ethical decision making
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-9">
+<h1>Chapter 9<a class="headerlink" href="#chapter-9" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="professionalism-and-ethics-professions-professionals-and-professionalism">
+<h2>Professionalism and Ethics Professions, Professionals, and Professionalism<a class="headerlink" href="#professionalism-and-ethics-professions-professionals-and-professionalism" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="common-elements-professions-share">
+<h3>Common elements professions share<a class="headerlink" href="#common-elements-professions-share" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Responsibility to put public interest (and clients and employers) ahead</p></li>
+<li><p>High level of expertise valued by public</p></li>
+<li><p>Complete specific requirements</p>
+<ul>
+<li><p>initial entry</p></li>
+<li><p>ongoing training and education</p></li>
+</ul>
+</li>
+<li><p>Objective when making decision</p></li>
+<li><p>Follow specific rules of conduct</p></li>
+<li><p>Accountable for their actions</p></li>
+<li><p>Hold other members accountable for their actions.</p></li>
+</ul>
+<div class="section" id="relationship-between-ethics-and-professionalism">
+<h3>Relationship between ethics and professionalism<a class="headerlink" href="#relationship-between-ethics-and-professionalism" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Ethics</strong>
+: Moral principles governing a person’s behavior.</p>
+<ul class="simple">
+<li><p>Identify ethical issues</p></li>
+<li><p>Respond accordingly is a foundational aspect of professionalism.</p></li>
+</ul>
+<div class="section" id="bcfsa-s-mandate-of-regulating-in-public-interest">
+<h3>BCFSA’s mandate of regulating in public interest<a class="headerlink" href="#bcfsa-s-mandate-of-regulating-in-public-interest" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Misconduct</strong></p>
+<ul class="simple">
+<li><p>Professional misconduct</p></li>
+<li><p>Conduct unbecoming a licensee</p></li>
+</ul>
+<p>Both professional and personal actions to clients and non-clients are important.</p>
+<div class="section" id="trust-is-fundamental">
+<h3>Trust is fundamental<a class="headerlink" href="#trust-is-fundamental" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Trust</p>
+<ul class="simple">
+<li><p>Honesty<br>sincere and truthful, and free of deceit</p></li>
+<li><p>Integrity(真诚)</p></li>
+</ul>
+<p>Use headline test.</p>
+<div class="section" id="sources-of-duties-to-clients">
+<h3>Sources of duties to clients<a class="headerlink" href="#sources-of-duties-to-clients" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Common law</p>
+<ul>
+<li><p>Contractual duties</p></li>
+<li><p>Tort Law duties</p></li>
+<li><p>Agency and fiduciary</p></li>
+</ul>
+</li>
+<li><p>Legislation</p>
+<ul>
+<li><p>The Rules</p></li>
+<li><p>RESA</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="key-duties-owed-to-clients-under-section-30-33-and-34-of-the-rules">
+<h3>Key duties owed to clients under Section 30, 33, and 34 of the Rules<a class="headerlink" href="#key-duties-owed-to-clients-under-section-30-33-and-34-of-the-rules" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Section 30</p>
+<ul class="simple">
+<li><p>Act in client’s best interests</p></li>
+<li><p>Act in accordance with client’s lawful instructions</p>
+<ul>
+<li><p>ask instructions in writing</p></li>
+</ul>
+</li>
+<li><p>Act only with scope of authority given by client</p>
+<ul>
+<li><p>establish scope of authority in writing</p></li>
+</ul>
+</li>
+<li><p>Advise client to seek professional advice</p></li>
+<li><p>Maintain confidentiality</p></li>
+<li><p>Disclose all known material information</p>
+<ul>
+<li><p>Material information refers to any information that might affect value of property or client’s decision</p></li>
+</ul>
+</li>
+<li><p>Communicate all offers to client in a timely, objective, and unbiased manner</p></li>
+<li><p>Use reasonable efforts to discover relevant facts</p></li>
+<li><p>Avoiding and disclosing conflicts of interest</p>
+<ul>
+<li><p>disclose if any.</p></li>
+</ul>
+</li>
+</ul>
+<p>Section 33 &amp; 34</p>
+<ul class="simple">
+<li><p>Acting with reasonable care and skill</p></li>
+<li><p>Act honestly with reasonable care and sill.</p></li>
+</ul>
+<div class="section" id="conflicts-of-interest-undermine-trust">
+<h3>Conflicts of interest undermine trust<a class="headerlink" href="#conflicts-of-interest-undermine-trust" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Keep managing broker informed to oversee situation effectively.</p></li>
+</ul>
+<div class="section" id="components-of-early-continuous-and-full-written-disclosure">
+<h3>Components of early, continuous, and full written disclosure<a class="headerlink" href="#components-of-early-continuous-and-full-written-disclosure" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Early disclosure</p>
+<ul class="simple">
+<li><p>Ensures consumer decision-making most efficiently</p></li>
+<li><p>Rules specify</p></li>
+<li><p>Licensee should always.</p></li>
+</ul>
+<p>Continuous disclosure</p>
+<ul class="simple">
+<li><p>Keep updated if any change</p></li>
+<li><p>Help build trust in the process.</p></li>
+</ul>
+<p>Full disclosure</p>
+<ul class="simple">
+<li><p>No summarizing</p></li>
+<li><p>Doubt, then disclose.</p></li>
+</ul>
+<p>Written disclosure</p>
+<ul class="simple">
+<li><p>Required by rules</p></li>
+<li><p>Safest</p></li>
+<li><p>Ensure no misunderstanding</p></li>
+<li><p>Verbal followed up with written.</p></li>
+</ul>
+<div class="section" id="rationale-behind-duty-to-report">
+<h3>Rationale behind duty to report<a class="headerlink" href="#rationale-behind-duty-to-report" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Ensure that the public has confidence in RE profession</p>
+<ul class="simple">
+<li><p>Licensees are boots on the ground</p></li>
+<li><p>Many consumers do not file complaints</p></li>
+<li><p>Consumer complaints often occur ‘after the fact</p></li>
+<li><p>Power of peer pressure.</p></li>
+</ul>
+<div class="section" id="obligations-to-report-under-resa-the-rules-and-general-professionalism">
+<h3>Obligations to report under RESA, the Rules, and general professionalism<a class="headerlink" href="#obligations-to-report-under-resa-the-rules-and-general-professionalism" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Report to managing broker what they consider may be</p>
+<ul class="simple">
+<li><p>Professional misconduct</p></li>
+<li><p>Conduct unbecoming a licensee</p></li>
+<li><p>Improper or negligent conduct</p></li>
+<li><p>Breach of other legislation.</p></li>
+</ul>
+<p>Direct reporting to BCFSA if</p>
+<ul class="simple">
+<li><p>Great risk to public and immediate action by BCFSA required</p></li>
+<li><p>Managing broker is not immediately available and misconduct is serious</p></li>
+<li><p>Concern about their managing broker</p></li>
+<li><p>Managing broker committed professional misconduct</p></li>
+<li><p>Feel more comfortable.</p></li>
+</ul>
+<p>If no risk of harm to the public, it may be appropriate to deal with the licensee without reporting to BCFSA.</p>
+<div class="section" id="framework-for-ethical-decision-making">
+<h3>Framework for ethical decision making<a class="headerlink" href="#framework-for-ethical-decision-making" title="Permalink to this headline">¶</a></h3>
+</div>
+<ol class="simple">
+<li><p>Consider the situation and identify potential ethical issues</p></li>
+<li><p>Identify stakeholders</p></li>
+<li><p>Specify feasible alternative for evaluation</p></li>
+<li><p>Evaluate each alternative in terms of ethical consequences</p></li>
+<li><p>Make and justify your choice.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch8.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 8</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch10.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 10</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

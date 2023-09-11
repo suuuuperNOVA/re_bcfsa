@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 18 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 19" href="ch19.html" />
+    <link rel="prev" title="Chapter 17" href="ch17.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch18.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#local-government-law">
+   Local Government Law
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#powers-of-federal-and-provincial-governments-regulating-use-of-property">
+     Powers of federal and provincial governments regulating use of property
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#local-governments-derive-their-powers-and-controls-on-these-powers">
+     Local governments derive their powers and controls on these powers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-enabling-legislation-for-local-governments-in-bc">
+     Key enabling legislation for local governments in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#levels-of-local-government-created-by-local-government-act-and-their-powers-and-governance">
+     Levels of local government created by
+     <em>
+      Local Government Act
+     </em>
+     , and their powers and governance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objectives-of-planning-controls-at-local-government-level">
+     Objectives of planning controls at local government level
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planning-process-in-bc">
+     Planning process in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#official-community-plan">
+     Official community plan
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rural-land-use-bylaw">
+     Rural land use bylaw
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zoning-bylaws">
+     Zoning bylaws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rezoning">
+     Rezoning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#impact-of-land-use-contracts-on-land-use">
+     Impact of land use contracts on land use
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#non-conforming-use">
+     Non-conforming use
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#board-of-variance">
+     Board of variance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#permits-of-use-and-development-of-property">
+     Permits of use and development of property
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#process-of-subdivision-and-role-of-approving-officer">
+     Process of subdivision and role of approving officer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#impact-of-building-bylaws-and-licensing-bylaws-on-land-user">
+     Impact of building bylaws and licensing bylaws on land user
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-18">
+<h1>Chapter 18<a class="headerlink" href="#chapter-18" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="local-government-law">
+<h2>Local Government Law<a class="headerlink" href="#local-government-law" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="powers-of-federal-and-provincial-governments-regulating-use-of-property">
+<h3>Powers of federal and provincial governments regulating use of property<a class="headerlink" href="#powers-of-federal-and-provincial-governments-regulating-use-of-property" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Federal government</strong></p>
+<ul class="simple">
+<li><p>Exclusive jurisdiction of development</p></li>
+<li><p>Operation of airports, federal Department of Transportation, Fisheries</p>
+<ul>
+<li><p>height of buildings</p></li>
+<li><p>other objects, like trees</p></li>
+</ul>
+</li>
+<li><p>Rivers</p>
+<ul>
+<li><p>controlling activities near rivers</p></li>
+</ul>
+</li>
+<li><p>Own lands</p></li>
+</ul>
+<p><strong>Provincial government</strong></p>
+<p><em>Agricultural Land Commission Act</em><br>Preserve areas of land to be available for argicultural</p>
+<ul class="simple">
+<li><p>ALC power</p>
+<ul>
+<li><p>pass regulation affecting ALR land</p></li>
+<li><p>exclude land from ALR</p></li>
+<li><p>allow non-farm use of ALR</p></li>
+<li><p>allow subdivision of ALR land</p></li>
+</ul>
+</li>
+<li><p>ALR land</p>
+<ul>
+<li><p>principal residence of total floor area <span class="math notranslate nohighlight">\(\leq\)</span> 500 <span class="math notranslate nohighlight">\(m^2\)</span></p></li>
+<li><p>secondary and additional residence by local government approval</p></li>
+</ul>
+</li>
+<li><p>Local legislation must be consistent with ALC Act and subject to ALC decisions</p></li>
+<li><p>Local governments have land using planning and regulatory responsibilities for ALR land.</p></li>
+</ul>
+<p><em>Public Health Act</em><br>Maintain public health of province, like installation of septic tank disposal fields.</p>
+<p><em>Local Services Act</em><br>Planning regulations and functions.</p>
+<p><em>Islands Trust Act</em><br>Preservation and protection of unique amenities and environment of Gulf Islands. Provincial government assigned planning powers to trust committee.</p>
+<p><em>Transportation Act</em><br>Approval required prior to any rezoning of lands within radius of 800m of intersection of controlled access highway.</p>
+<p><em>Environmental Management Act</em><br>Screening process to screen out contaminated sites.</p>
+<p><em>Heritage Conservation Act</em><br>Regulate and prohibit demolition, relocation, and alteration.</p>
+<div class="section" id="local-governments-derive-their-powers-and-controls-on-these-powers">
+<h3>Local governments derive their powers and controls on these powers<a class="headerlink" href="#local-governments-derive-their-powers-and-controls-on-these-powers" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Local government</strong>
+: Regional districts, municipalities and improvement districts.</p>
+<p><strong>Enabling legislation</strong>
+: Statute that grants entity authorization or legitimacy of power to take certain actions.</p>
+<p>Local governments derive powers from provincial legislature.</p>
+<div class="section" id="key-enabling-legislation-for-local-governments-in-bc">
+<h3>Key enabling legislation for local governments in BC<a class="headerlink" href="#key-enabling-legislation-for-local-governments-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p><em>Local Government Act</em></p></li>
+<li><p><em>Community Charter</em></p></li>
+<li><p><em>Vancouver Charter</em></p></li>
+</ul>
+<div class="section" id="levels-of-local-government-created-by-local-government-act-and-their-powers-and-governance">
+<h3>Levels of local government created by <em>Local Government Act</em>, and their powers and governance<a class="headerlink" href="#levels-of-local-government-created-by-local-government-act-and-their-powers-and-governance" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Regional districts</p>
+<ul>
+<li><p>long term planning power from province</p></li>
+<li><p>public housing, trunk sewer lines, libraries</p></li>
+<li><p>roles if no municipal government</p></li>
+</ul>
+</li>
+<li><p>Municipal governments</p>
+<ul>
+<li><p>adoption and enforcement of planning regulations by mayor and council</p></li>
+</ul>
+</li>
+<li><p>Improvement districts</p>
+<ul>
+<li><p>construction</p></li>
+<li><p>operation</p></li>
+<li><p>maintenance of utilities.</p></li>
+</ul>
+</li>
+</ul>
+<p>Local government regulation of land use</p>
+<ul class="simple">
+<li><p>Official community plans</p></li>
+<li><p>Zoning bylaws</p></li>
+<li><p>Subdivision bylaws</p></li>
+<li><p>Licensing bylaws</p></li>
+<li><p>Land use contracts</p></li>
+<li><p>Permit requirements</p></li>
+<li><p>Building bylaws</p></li>
+</ul>
+<p><strong>Municipality</strong>
+: Village, town, city, or municipal district to whom authority over local affairs has been delegated by provincial government.</p>
+<div class="section" id="objectives-of-planning-controls-at-local-government-level">
+<h3>Objectives of planning controls at local government level<a class="headerlink" href="#objectives-of-planning-controls-at-local-government-level" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Public health and safety</p></li>
+<li><p>Protection of property values</p></li>
+<li><p>Efficiency, convenience and appearance</p></li>
+<li><p>Conservation of natural resources</p></li>
+</ul>
+<div class="section" id="planning-process-in-bc">
+<h3>Planning process in BC<a class="headerlink" href="#planning-process-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Advisory planning commission
+: Committee made up of volunteer members of public who advise local government on planning and land use related matters.</p>
+<p>Professional planners
+: Advisors in analyzing problems, studying alternative solutions, and recommending course of action and means of implementation.</p>
+<p>Elected representatives
+: Mayor and councillors.</p>
+<ol class="simple">
+<li><p>Public will be consulted and opinions obtained</p></li>
+<li><p>Testing and revision of alternatives until elected officials are satisfied.</p></li>
+</ol>
+<div class="section" id="official-community-plan">
+<h3>Official community plan<a class="headerlink" href="#official-community-plan" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Official community plan</strong>
+: High level, long-term plan intended to guide direction of development and growth of local government.</p>
+<p>To encourage local government to prepare long range plans dealing with future development. To plan future growth and financial ability.</p>
+<p>Bylaws, permits issued must be consistent with OCP. If not, amend OCP first.</p>
+<p>OCP includes</p>
+<ul class="simple">
+<li><p>地点、种类等满足至少未来5年房屋居住需求</p></li>
+<li><p>配套商业、工业、功能性商业需求</p></li>
+<li><p>根据环境，土地使用的限制</p></li>
+<li><p>高速、排污等规划</p></li>
+<li><p>Public facilities.</p></li>
+</ul>
+<div class="section" id="rural-land-use-bylaw">
+<h3>Rural land use bylaw<a class="headerlink" href="#rural-land-use-bylaw" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>To consolidate guidelines similar to an OCP along with regulations governing zoning and related matters. Simpler and less costly.</p>
+<div class="section" id="zoning-bylaws">
+<h3>Zoning bylaws<a class="headerlink" href="#zoning-bylaws" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Nature and effect</p>
+<p><strong>Zoning</strong>
+: Division of region into separate districts with different regulations for land use.</p>
+<ul class="simple">
+<li><p>Restrictions on number of buildings on lot</p></li>
+<li><p>Set-backs and yards</p></li>
+<li><p>Height</p></li>
+<li><p>Density</p></li>
+<li><p>Home occupations</p></li>
+<li><p>Off-street loading and parking</p></li>
+<li><p>Signs</p></li>
+<li><p>Specific regulations</p></li>
+</ul>
+<p>OCPs designate current or intended future use of property, higher level and less prescriptive, but zoning bylaws regulate only current land use.</p>
+<div class="section" id="rezoning">
+<h3>Rezoning<a class="headerlink" href="#rezoning" title="Permalink to this headline">¶</a></h3>
+</div>
+<ol class="simple">
+<li><p>Application submitted</p></li>
+<li><p>Review by staff</p></li>
+<li><p>First reading</p></li>
+<li><p>Second reading</p></li>
+<li><p>Public hearing</p></li>
+<li><p>Third hearing</p></li>
+<li><p>Applicant satisfies any conditions of adoption</p></li>
+<li><p>Adoption</p></li>
+</ol>
+<p>Property owner can’t claim compensation for rezoning bylaw.</p>
+<div class="section" id="impact-of-land-use-contracts-on-land-use">
+<h3>Impact of land use contracts on land use<a class="headerlink" href="#impact-of-land-use-contracts-on-land-use" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Land use contract
+: Special type of zoning bylaw amendment. Contract made between property owner and local government, registered as restrictive covenants in LTO. But no longer created.</p>
+<div class="section" id="non-conforming-use">
+<h3>Non-conforming use<a class="headerlink" href="#non-conforming-use" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Lawful non-conforming use</strong>
+: Land use that is impermissible under current zoning restrictions, but is nevertheless permitted because use existed lawfully before restrictions took effect.</p>
+<p>Non-conforming use may continue</p>
+<ul class="simple">
+<li><p>Through successive changes of ownership (period <span class="math notranslate nohighlight">\(\geq\)</span> 6 months, <span class="math notranslate nohighlight">\(\geq\)</span> 90 days in Vancouver)</p></li>
+<li><p>No structural alteration or addition, unless required by law or permitted by board of variance</p></li>
+<li><p>Can’t be extended over larger area of land</p></li>
+<li><p>Change in ownership does not change status of use. Rebuilt if damaged or destroyed value <span class="math notranslate nohighlight">\(\leq\)</span> 75%.</p></li>
+</ul>
+<div class="section" id="board-of-variance">
+<h3>Board of variance<a class="headerlink" href="#board-of-variance" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Board of variance
+: Provide site-by-site exceptions to regulations prescribed by zoning bylaw if zoning bylaw causes undue hardship.</p>
+<div class="section" id="permits-of-use-and-development-of-property">
+<h3>Permits of use and development of property<a class="headerlink" href="#permits-of-use-and-development-of-property" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Permits allow local government to vary provisions of zoning bylaw or subdivision servicing requirements on site-by-site basis.</p>
+<p><strong>Development permit</strong>
+: Manage development in areas with special needs or conditions.</p>
+<ul class="simple">
+<li><p>自然环境保护</p></li>
+<li><p>Protection of development from hazardous conditions</p></li>
+<li><p>农场保护</p></li>
+<li><p>商业重建</p></li>
+<li><p>Establishment of objectives for</p>
+<ul>
+<li><p>高密度住宅</p></li>
+<li><p>商业、工业、多户住宅</p></li>
+<li><p>旅游度假项目</p></li>
+<li><p>绿色环保项目</p></li>
+</ul>
+</li>
+</ul>
+<p>If land is designated as DP area, DP is needed for construction or alteration. DPs include schedules showing site or design plans for property.</p>
+<p><strong>Development variance permit</strong>
+: Can’t vary land use or density provisions in bylaws. For minor variance.</p>
+<p><strong>Temporary use permit</strong>
+: Owner of land apply to local government for temporary commercial or industrial use permit.</p>
+<div class="section" id="process-of-subdivision-and-role-of-approving-officer">
+<h3>Process of subdivision and role of approving officer<a class="headerlink" href="#process-of-subdivision-and-role-of-approving-officer" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><em>Land Title Act</em> creates position of approving officer who consents to subdivision of land. Approving officer may refuse if plan is against public interest or plan doesn’t comply with bylaws.</p>
+<p>Appeal if</p>
+<ul class="simple">
+<li><p>In bad faith</p></li>
+<li><p>歧视业主</p></li>
+<li><p>基于不充分事实。</p></li>
+</ul>
+<p>Under subdivision bylaw, developer may need</p>
+<ul class="simple">
+<li><p>Services (e.g. roads, water lines) are constructed prior to granting approval, or a letter of credit to ensure work to be completed to required standard at their own cost</p></li>
+<li><p>Dedicate up to 5% of land for park purposes</p></li>
+<li><p>Protect riverbanks and streams</p></li>
+<li><p>Development cost charges for certain facilities and infrastructure projects</p></li>
+<li><p>Community amenity contributions (negotiated between developers and local governments).</p></li>
+</ul>
+<div class="section" id="impact-of-building-bylaws-and-licensing-bylaws-on-land-user">
+<h3>Impact of building bylaws and licensing bylaws on land user<a class="headerlink" href="#impact-of-building-bylaws-and-licensing-bylaws-on-land-user" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Building bylaw</strong>
+: Protect public health and safety.</p>
+<ul class="simple">
+<li><p>Need building permit for constructing, repairing, etc</p></li>
+<li><p>Granted if proposed work conforms to standard prescribed in bylaw</p></li>
+<li><p>Building inspectors check.</p></li>
+</ul>
+<p>Contravention of building bylaw</p>
+<ul class="simple">
+<li><p>Fine</p></li>
+<li><p>Order of demolition, removal, or stopping any work in progress</p></li>
+<li><p>Notice on title, may not appear on simply searching title.</p></li>
+</ul>
+<p><strong>Licensing bylaw</strong>
+: Municipalities require that all businesses in their municipality obtain business licences and may also regulate how those businesses are operated.</p>
+<p>Licensee needs to make sure that business is permitted under bylaws.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch17.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 17</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch19.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 19</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

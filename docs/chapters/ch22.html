@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 22 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 23" href="ch23.html" />
+    <link rel="prev" title="Chapter 21" href="ch21.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch22.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#direct-comparison-comparative-and-cost-approaches-of-appraisal">
+   Direct Comparison (Comparative) and Cost Approaches of Appraisal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basis-of-direct-comparison-approach-of-appraisal">
+     Basis of direct comparison approach of appraisal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terms-of-recent-and-similar">
+     Terms of recent and similar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effect-on-value-of-different-building-and-lot-characteristics-and-conditions-of-sale">
+     Effect on value of different building and lot characteristics, and conditions of sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adjustments-made-to-comparable-properties">
+     Adjustments made to comparable properties
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparative-approach-of-appraisal-using-rating-grid">
+     Comparative approach of appraisal using rating grid
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cases-where-comparative-approach-is-most-useful">
+     Cases where comparative approach is most useful
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limitations-of-comparative-approach">
+     Limitations of comparative approach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cost-approach">
+     Cost approach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cost-equals-market-value">
+     Cost equals market value
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estimation-of-cost-of-construction">
+     Estimation of cost of construction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#different-categories-of-depreciation">
+     Different categories of depreciation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cases-where-cost-approach-is-most-useful">
+     Cases where cost approach is most useful
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limitations-of-cost-approach">
+     Limitations of cost approach
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-22">
+<h1>Chapter 22<a class="headerlink" href="#chapter-22" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="direct-comparison-comparative-and-cost-approaches-of-appraisal">
+<h2>Direct Comparison (Comparative) and Cost Approaches of Appraisal<a class="headerlink" href="#direct-comparison-comparative-and-cost-approaches-of-appraisal" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="basis-of-direct-comparison-approach-of-appraisal">
+<h3>Basis of direct comparison approach of appraisal<a class="headerlink" href="#basis-of-direct-comparison-approach-of-appraisal" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Principle of substitution</p>
+<div class="section" id="terms-of-recent-and-similar">
+<h3>Terms of recent and similar<a class="headerlink" href="#terms-of-recent-and-similar" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Recent
+: Timer period just prior to date of valuation over which demand and supply conditions have remained relatively stable.</p>
+<p>Similar
+: Two properties are similar if actual differences between properties will not have material effect on their selling price.</p>
+<div class="section" id="effect-on-value-of-different-building-and-lot-characteristics-and-conditions-of-sale">
+<h3>Effect on value of different building and lot characteristics, and conditions of sale<a class="headerlink" href="#effect-on-value-of-different-building-and-lot-characteristics-and-conditions-of-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Building characteristics</p>
+<ul class="simple">
+<li><p>Design<br>size, number of rooms, floor plan rather than architectural style</p></li>
+<li><p>Construction and maintenance</p></li>
+<li><p>Equipment</p></li>
+<li><p>Age</p></li>
+</ul>
+<p>Lot characteristics</p>
+<ul class="simple">
+<li><p>Natural features</p></li>
+<li><p>Proximity to man-made amenities</p></li>
+<li><p>Lot size</p></li>
+</ul>
+<p>Title and conditions of sale</p>
+<ul class="simple">
+<li><p>Mortgage, such as vendor take-back mortgage with rate lower than market rate</p></li>
+</ul>
+<div class="section" id="adjustments-made-to-comparable-properties">
+<h3>Adjustments made to comparable properties<a class="headerlink" href="#adjustments-made-to-comparable-properties" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Subject property</strong>
+: Standard of comparison.</p>
+<p><strong>Comparable sale</strong>
+: Adjusted towards subject property.</p>
+<p>The fewer the adjustments, the better the comparable. Net adjustment &lt; 20%</p>
+<div class="section" id="comparative-approach-of-appraisal-using-rating-grid">
+<h3>Comparative approach of appraisal using rating grid<a class="headerlink" href="#comparative-approach-of-appraisal-using-rating-grid" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Subject Property value = Comparable Property Sale Price <span class="math notranslate nohighlight">\(\pm\)</span> Adjustments</p>
+<div class="section" id="cases-where-comparative-approach-is-most-useful">
+<h3>Cases where comparative approach is most useful<a class="headerlink" href="#cases-where-comparative-approach-is-most-useful" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Condominiums</p>
+<ul class="simple">
+<li><p>2 condominium units may be affording differences in common area amenities</p></li>
+<li><p>One may own extra property with considerable value, but the other may have liens or mortgages</p></li>
+<li><p>Different common area charges</p></li>
+<li><p>Different condominium corporation bylaws.</p></li>
+</ul>
+<p>Other improved properties</p>
+<ul class="simple">
+<li><p>Applied to apartment building or warehouse</p></li>
+<li><p>Large number of items to be adjusted.</p></li>
+</ul>
+<p>Subdivided and serviced residential lots</p>
+<div class="section" id="limitations-of-comparative-approach">
+<h3>Limitations of comparative approach<a class="headerlink" href="#limitations-of-comparative-approach" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Unusual subject property</p></li>
+<li><p>Very few sales taking place</p></li>
+<li><p>Rapidly changing market</p></li>
+<li><p>Difficulty in establishing similarity</p>
+<ul>
+<li><p>Especially for income producing property because of different return rates expected.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="cost-approach">
+<h3>Cost approach<a class="headerlink" href="#cost-approach" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>MV = Site Value + Cost of Improvements - Depreciation</p>
+<div class="section" id="cost-equals-market-value">
+<h3>Cost equals market value<a class="headerlink" href="#cost-equals-market-value" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Equilibrium between cost and market value.</p>
+<div class="section" id="estimation-of-cost-of-construction">
+<h3>Estimation of cost of construction<a class="headerlink" href="#estimation-of-cost-of-construction" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Site value
+: Market value of land, excluding cost of clearing timer, levelling, draining.</p>
+<p>Reproduction cost
+: Cost of providing exact replica of subject property.</p>
+<p><strong>Replacement cost</strong>
+: Cost of building modern equivalent of subject property.</p>
+<div class="section" id="different-categories-of-depreciation">
+<h3>Different categories of depreciation<a class="headerlink" href="#different-categories-of-depreciation" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Age-life method</strong>
+: Percentage Depreciation = Effective Age / Economic Life</p>
+<p><strong>Breakdown method</strong></p>
+<ul class="simple">
+<li><p>Curable<br>Depreciation can be corrected economically</p></li>
+<li><p>Incurable<br>Cannot</p></li>
+</ul>
+<p><strong>Physical depreciation</strong>
+: Caused by physical wear and tear.</p>
+<p><strong>Functional depreciation</strong>
+: Elements may still be adequately fulfilling their purpose, but are deemed to be below standards expected in market.</p>
+<p><strong>External depreciation</strong>
+: Items outside property itself, often considered incurable.</p>
+<div class="section" id="cases-where-cost-approach-is-most-useful">
+<h3>Cases where cost approach is most useful<a class="headerlink" href="#cases-where-cost-approach-is-most-useful" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Lack of data for income or comparison approaches. Always last resort.</p>
+<div class="section" id="limitations-of-cost-approach">
+<h3>Limitations of cost approach<a class="headerlink" href="#limitations-of-cost-approach" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>If cost and market value are equal</p></li>
+<li><p>Property must represent highest and best use</p></li>
+<li><p>Depends on appraiser’s judgement, particularly for incurable depreciation.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch21.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 21</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch23.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 23</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

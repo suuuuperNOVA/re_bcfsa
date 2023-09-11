@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 10 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 11" href="ch11.html" />
+    <link rel="prev" title="Chapter 9" href="ch9.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch10.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-law-of-contract">
+   The Law of Contract
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#essentials-for-a-binding-contract">
+     Essentials for a binding contract
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vendor-s-and-licensee-s-obligations-in-representing-premises-for-sale">
+     Vendor’s and licensee’s obligations in representing premises for sale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#consequences-of-making-misrepresentations">
+     Consequences of making misrepresentations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#difference-between-void-voidable-and-uneforceable-contracts">
+     Difference between void, voidable and uneforceable contracts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ways-to-terminate-contract">
+     Ways to terminate contract
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#privity-interrelates-with-right-of-party-to-assign-rights-under-contract">
+     Privity interrelates with right of party to assign rights under contract
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remedies-to-an-innocent-party-with-breach-of-contract">
+     Remedies to an innocent party with breach of contract
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-10">
+<h1>Chapter 10<a class="headerlink" href="#chapter-10" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-law-of-contract">
+<h2>The Law of Contract<a class="headerlink" href="#the-law-of-contract" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="essentials-for-a-binding-contract">
+<h3>Essentials for a binding contract<a class="headerlink" href="#essentials-for-a-binding-contract" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>==<strong>Offer</strong>==</p>
+<ul class="simple">
+<li><p>In writing for land sale</p></li>
+<li><p>In clear and unambiguous terms</p></li>
+<li><p>Made to a specific person vs. standing offer (made to public at large) vs. invitation to treat</p></li>
+<li><p>Expiry of offer</p>
+<ul>
+<li><p>time limit</p></li>
+<li><p>no time limit, but reasonable time pass</p></li>
+<li><p>offeror cancels</p>
+<ul>
+<li><p>Revocation must be communicated with offeree</p></li>
+<li><p>Option agreement to make offer open</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Either party becomes insane before acceptance</p></li>
+<li><p>Counter-offer</p></li>
+<li><p>Offer is rejected.</p></li>
+</ul>
+<p>Invitation to treat
+: Induce public to submit their offer.</p>
+<p>==<strong>Acceptance</strong>==</p>
+<ul class="simple">
+<li><p>In clear terms, and positive act</p></li>
+<li><p>No effect until communicated to offeror</p></li>
+<li><p>Postal acceptance rule<br>Effective when acceptance is put in mailbox (offeree to prove).</p></li>
+</ul>
+<p>==<strong>Consideration</strong>==
+: Some right, benefit or profit accruing to the promissor<br>Or some forbearance, detriment, loss or responsibility suffered by the promissee.</p>
+<ul class="simple">
+<li><p>Not review adequacy of consideration</p></li>
+<li><p>Past consideration is not legally effective</p></li>
+<li><p>Bind a contract without consideration, but if made under seal</p></li>
+</ul>
+<p><strong>Amendment</strong>
+: Contract to change an existing contract.</p>
+<ul class="simple">
+<li><p>Need fresh consideration in exchange for amendment<br>OR</p></li>
+<li><p>Mutually agreed-upon changes.</p></li>
+</ul>
+<p><em><strong>Quantum meruit</strong></em>
+: As much as is deserved.</p>
+<p>==<strong>Legal intention</strong>==
+: Serious intention to be bound in agreement between strangers or in a commercial contract.<br>No intention to be bound between friends or family members.</p>
+<p>==<strong>Capacity</strong>==</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\geq\)</span> 19 years of age</p></li>
+<li><p>Incapacity</p>
+<ul>
+<li><p>infancy</p>
+<ul>
+<li><p>unenforceable against infant, but enforceable by infant</p></li>
+<li><p>except</p>
+<ul>
+<li><p>法律允许</p></li>
+<li><p>19岁以后同意合约有效</p></li>
+<li><p>18岁时履行合约</p></li>
+<li><p>19岁那年没有否定合同</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>mental incapacity<br>因为认知损伤，不能意识自己的行为及后果</p>
+<ul>
+<li><p>common law test (to proof, otherwise presume capable)</p>
+<ul>
+<li><p>理解合同条款</p></li>
+<li><p>合同会如何影响他们的权益</p></li>
+<li><p>对方不能在知道mental incapacity情况下签订合同</p></li>
+</ul>
+</li>
+<li><p>enforceable transfer of property</p>
+<ul>
+<li><p>full and fair price</p></li>
+<li><p>not know incapacity</p></li>
+</ul>
+</li>
+<li><p>powers of attorney</p>
+<ul>
+<li><p>donor is alive</p></li>
+<li><p>expire after 3 years, but valid if donor becomes incapable</p></li>
+<li><p>in scope of authority</p></li>
+</ul>
+</li>
+<li><p>adult guardianship and committee</p></li>
+</ul>
+</li>
+<li><p>foreigner and illiterate</p>
+<ul>
+<li><p>bound if they neglect terms of contract</p></li>
+<li><p>Misrepresentation leads to non est factum.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>==<strong>Legal object</strong>==</p>
+<p>==<strong>Genuine consent</strong>==
+: Understanding substance of contract.</p>
+<p><strong>Misrepresentation</strong>
+: False assertion of fact leading one to an incorrect belief.</p>
+<ul class="simple">
+<li><p>Fasle statement</p></li>
+<li><p>Induce other party to enter into contract</p></li>
+<li><p>Induce reasonable person to enter.</p></li>
+</ul>
+<p>Expert’s opinion is treated by court as statement of fact.</p>
+<p><strong>Disclosure of defects</strong></p>
+<p>Defect
+: Characteristic or feature of property materially affects property’s value or use.</p>
+<p>Silence recognized as a form of misrepresentation.</p>
+<p>Patent defect
+: Visible or can be discovered by conducting a reasonable inspection or inquiries about the property.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Caveat emptor applies (let buyer beware).
+</pre></div>
+</div>
+<p>Latent defect<br>Only latent defects that render a property dangerous or unfit for habitation need to be disclosed to buyers.</p>
+<div class="section" id="vendor-s-and-licensee-s-obligations-in-representing-premises-for-sale">
+<h3>Vendor’s and licensee’s obligations in representing premises for sale<a class="headerlink" href="#vendor-s-and-licensee-s-obligations-in-representing-premises-for-sale" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Vendor<br>
+Only latent defects that render a property dangerous or unfit for habitation need to be disclosed to buyers.</p>
+<p>Licensee<br>
+Disclose to all other parties to the trade, any material latent defect in RE that is known to licensee.</p>
+<p>Material latent defect
+: Can’t be discerned through a reasonable inspection, including</p>
+<ul class="simple">
+<li><p>危险的、不适合居住的、不符合购房者购买意图的</p></li>
+<li><p>高额维修费用</p></li>
+<li><p>政府责令修补</p></li>
+<li><p>没有执照的。</p></li>
+</ul>
+<p>Disclosure can’t be made in contract of purchase and sale itself.</p>
+<div class="section" id="consequences-of-making-misrepresentations">
+<h3>Consequences of making misrepresentations<a class="headerlink" href="#consequences-of-making-misrepresentations" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Innocent misrepresentation</p>
+<ul class="simple">
+<li><p>Plaintiff can sue for rescission prior to execution of contract</p></li>
+<li><p>Sue for damages.</p></li>
+</ul>
+<p>Fraudulent misrepresentation</p>
+<ul class="simple">
+<li><p>Sue for recission at any time</p></li>
+<li><p>Sue for damages</p></li>
+<li><p>Escape clause can’t protect vendor if fraud occurs</p></li>
+<li><p>Escape clause never protect licensees.</p></li>
+</ul>
+<div class="section" id="difference-between-void-voidable-and-uneforceable-contracts">
+<h3>Difference between void, voidable and uneforceable contracts<a class="headerlink" href="#difference-between-void-voidable-and-uneforceable-contracts" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Void</strong>
+: One has never existed at all.</p>
+<p><strong>Illegal</strong>
+: Offend against public policy or statute, also void. Illegal contract will not be able to recover money.</p>
+<p><strong>Voidable</strong>
+: Any party has option to rescind.</p>
+<p><strong>Unenforceable</strong>
+: For some procedural reason, contract cannot be sued.</p>
+<p>Mistake</p>
+<ul class="simple">
+<li><p>Common mistake<br>Void contract (一个已经不存在的东西)</p></li>
+<li><p>Mutual mistake<br>双方各自指向不同东西</p></li>
+<li><p>Unilateral mistake<br>Non est factum.</p></li>
+</ul>
+<p>Void contract</p>
+<ul class="simple">
+<li><p>Duress</p></li>
+<li><p>Undue influence</p></li>
+<li><p>Unconscionable transaction</p></li>
+</ul>
+<div class="section" id="ways-to-terminate-contract">
+<h3>Ways to terminate contract<a class="headerlink" href="#ways-to-terminate-contract" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Performance</strong></p>
+<p><strong>Agreement to waive performance or substitute another agreement</strong></p>
+<ul class="simple">
+<li><p>Mutual waiver of obligations</p></li>
+<li><p>New consideration to be given to support variation</p></li>
+<li><p>Under seal.</p></li>
+</ul>
+<p><strong>Nonfulfillment of a condition precedent</strong></p>
+<ul class="simple">
+<li><p>收益方才能免去条件</p></li>
+<li><p>合同执行不受影响</p></li>
+<li><p>免去条件必须在规定时间之内。</p></li>
+</ul>
+<p><strong>Frustration</strong>
+: Beyond anyone’s control, a specific thing is no longer in existence at the time for performance.</p>
+<p><strong>Breach of a condition of the contract which is accepted by the injured party</strong></p>
+<ul class="simple">
+<li><p>Only a breach of a fundemental term of contract (aka condition)</p></li>
+</ul>
+<p>Warranty可以起诉要求赔偿，但是只有condition才能要求结束合约以及起诉要求specific performance。</p>
+<div class="section" id="privity-interrelates-with-right-of-party-to-assign-rights-under-contract">
+<h3>Privity interrelates with right of party to assign rights under contract<a class="headerlink" href="#privity-interrelates-with-right-of-party-to-assign-rights-under-contract" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Statutory assignment</p>
+<ul class="simple">
+<li><p>In writing</p></li>
+<li><p>Absolute (for the whole amount) and unconditional</p></li>
+<li><p>Notice of assignment in writing to original promissor.</p></li>
+</ul>
+<p>If any missed, the assignment will be an equitable assignment.</p>
+<p>For court action</p>
+<ul class="simple">
+<li><p>Equitable assignment<br>All parties</p></li>
+<li><p>Statutory assignment<br>Assignee and original promissor.</p></li>
+</ul>
+<p>Except sales under REDMA, offer needs to contain Standard Assignment Terms</p>
+<ul class="simple">
+<li><p>转让需要卖家书面同意</p></li>
+<li><p>转让收益归卖家所有</p></li>
+<li><p>如果offer没有转让条款，买方代表需要提醒卖方。</p></li>
+</ul>
+<p>Vicarious performance is not an assignment.</p>
+<div class="section" id="remedies-to-an-innocent-party-with-breach-of-contract">
+<h3>Remedies to an innocent party with breach of contract<a class="headerlink" href="#remedies-to-an-innocent-party-with-breach-of-contract" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Damages (common law remedy)<br>Liquidated damages clause is enforceable, but penalty will be unenforceable.</p></li>
+</ul>
+<p>Others are at court’s discretion (equitable remedy)</p>
+<ul class="simple">
+<li><p>Specific performance</p></li>
+<li><p>Injunction</p></li>
+<li><p><em>Quantum meruit</em></p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch9.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 9</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch11.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 11</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

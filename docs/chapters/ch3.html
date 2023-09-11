@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 3 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 4" href="ch4.html" />
+    <link rel="prev" title="Chapter 2" href="ch2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch3.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-the-purchaser-buys-estates-and-interests-in-land">
+   What the Purchaser Buys: Estates and Interests in Land
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evolution-of-real-property-law-in-bc">
+     Evolution of real property law in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estate">
+     Estate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interest-in-land-less-than-an-estate">
+     Interest in land less than an estate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interest-runs-with-the-land">
+     Interest “runs with the land”
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scope-and-extent-of-ownership-of-land">
+     Scope and extent of ownership of land
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fixture-vs-chattel">
+     Fixture vs. Chattel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#co-ownership-of-land">
+     Co-ownership of land
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-of-tort">
+     Types of tort
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-3">
+<h1>Chapter 3<a class="headerlink" href="#chapter-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-the-purchaser-buys-estates-and-interests-in-land">
+<h2>What the Purchaser Buys: Estates and Interests in Land<a class="headerlink" href="#what-the-purchaser-buys-estates-and-interests-in-land" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="evolution-of-real-property-law-in-bc">
+<h3>Evolution of real property law in BC<a class="headerlink" href="#evolution-of-real-property-law-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Real property</strong>
+: Land and whatever is erected or affixed to the land, as well as rights related to the land.</p>
+<p><strong>Personal property</strong>
+: Everything else, and related rights or interests.</p>
+<p>The Crown is the <em>absolute owner</em> of land, including <em>expropriation</em> and <em>“escheat back to the Crown”</em>.</p>
+<p>Expropriation
+: Taking away private’s interest in land without consent.</p>
+<div class="section" id="estate">
+<h3>Estate<a class="headerlink" href="#estate" title="Permalink to this headline">¶</a></h3>
+<p>  A right to possess and use land for a period of time.</p>
+</div>
+<p><strong>Fee simple</strong>
+: Legal term for the greatest estate in land known to Canadian law.</p>
+<p><strong>Life estate</strong>
+: A charge on fee simple title of the real property. The life tenant is entitled to all of the rights of use and possession of the land.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Estate *pur autre vie*
+: An estate based on the life of another person.
+</pre></div>
+</div>
+<p>Life tenant is liable for all yearly operational expenses:</p>
+<ul class="simple">
+<li><p>Electricity, heat, water</p></li>
+<li><p>Tax</p></li>
+<li><p>Interest of mortgage</p></li>
+<li><p>Waste</p>
+<ul>
+<li><p>voluntary waste<br>
+Direct and positive acts result in damages. Life tenant is liable to the remainderman for this waste.</p></li>
+<li><p>permissive waste<br>
+Without ant positive acts. Not liable.</p></li>
+<li><p>ameliorating waste<br>
+Direct and positive acts with improvements. Liable, but usually no damages awarded.</p></li>
+<li><p>equitable waste<br>
+“without impeachment for waste, including equitable waste”.</p></li>
+</ul>
+</li>
+</ul>
+<p>Life tenants and remaindermen must all be parties to the listing.</p>
+<p><strong>Leasehold estate</strong>
+: Leases are regarded as leasehold estates, binding on successors in title, but inferior to freehold estates.</p>
+<p>A certificate of title is subject to unregistered leases for terms <span class="math notranslate nohighlight">\(\leq\)</span> 3 years.</p>
+<div class="section" id="interest-in-land-less-than-an-estate">
+<h3>Interest in land less than an estate<a class="headerlink" href="#interest-in-land-less-than-an-estate" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Easement</strong>
+: Dominant tenement gets a right from servient tenement to use its property in a specific way without possess.<br><br>A charge against title to the servient lands, and under legal notation for the dominant lands.</p>
+<p>Requirements to meet:</p>
+<ol class="simple">
+<li><p>Both dominant and servient tenement</p></li>
+<li><p>Benefit the land, not merely the land owner</p></li>
+<li><p>Capable of forming the subject matter of a grant.</p></li>
+</ol>
+<p><strong>Restrictive covenant</strong>
+: Negative restriction in nature for the benefit of another piece of land.<br><br></p>
+<p>Building schemes
+: A set of restrictive covenants imposed on 2 or more lots within a particular subdivision.<br><br>For a building scheme to validly come into existence, all initial buyers or lessees of the development must receive their title from <em>a common vendor or lessor</em>.</p>
+<p><strong>Profits à prendre</strong>
+: Right to enter onto the land of another person and to take some profit from the land for the use of the owner of the right.</p>
+<div class="section" id="interest-runs-with-the-land">
+<h3>Interest “runs with the land”<a class="headerlink" href="#interest-runs-with-the-land" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Interest will only run with the land if it is registered under the <em>Land Title Act</em>.</p>
+<p>Discharge of interest:</p>
+<ol class="simple">
+<li><p>Obsolete because of changes in the circumstances</p></li>
+<li><p>Use of land will be impeded without practical benefit to others</p></li>
+<li><p>Expressly or impliedly agree.</p></li>
+</ol>
+<div class="section" id="scope-and-extent-of-ownership-of-land">
+<h3>Scope and extent of ownership of land<a class="headerlink" href="#scope-and-extent-of-ownership-of-land" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Airspace<br>
+Landowner can make effective us.</p></li>
+<li><p>Subsurface</p></li>
+<li><p>Water<br>
+Licence for groundwater.</p></li>
+<li><p>Support</p></li>
+</ul>
+<div class="section" id="fixture-vs-chattel">
+<h3>Fixture vs. Chattel<a class="headerlink" href="#fixture-vs-chattel" title="Permalink to this headline">¶</a></h3>
+</div>
+<ol class="simple">
+<li><p>Not attached to the land</p></li>
+<li><p>If affixed to the land</p>
+<ul class="simple">
+<li><p>how well</p></li>
+<li><p>purpose</p>
+<ul>
+<li><p>fixture: affixed to improve the land</p></li>
+<li><p>chattel: affixed for the better use of the item.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="section" id="co-ownership-of-land">
+<h3>Co-ownership of land<a class="headerlink" href="#co-ownership-of-land" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Joint tenancy</strong>
+: Undivided interest in whole of the estate, and cannot leave their interests to anyone in their wills. Expressly created.</p>
+<ul class="simple">
+<li><p>Unity of time: same time</p></li>
+<li><p>Unity of title: same document</p></li>
+<li><p>Unity of interest: identical extent, nature and duration</p></li>
+<li><p>Unity of possession: possession of the whole of the estate.</p></li>
+</ul>
+<p>No requirement to give notice to other tenants before severing the joint tenancy.</p>
+<p><strong>Tenancy in common</strong>
+: Separate share.</p>
+<ul class="simple">
+<li><p>Unity of possession</p></li>
+</ul>
+<p>Each co-owner signs any documentation, or unilaterally get a court order for partition.</p>
+<div class="section" id="types-of-tort">
+<h3>Types of tort<a class="headerlink" href="#types-of-tort" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Tort</strong>
+: Civil wrongs or injuries, other than breach of contract, for which the courts will grant a legal remedy.</p>
+<p><strong>Tresspass</strong></p>
+<ul class="simple">
+<li><p>Wrongfully entering</p></li>
+<li><p>Remaining on</p></li>
+<li><p>Placing something on another’s land</p></li>
+<li><p>Remedies</p>
+<ul>
+<li><p>damage</p></li>
+<li><p>injunction</p></li>
+<li><p>self-help.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Private nuisance</strong></p>
+<ul class="simple">
+<li><p>substantially</p></li>
+<li><p>unreasonably interfere with the reasonable use and enjoyment of a neighbouring property</p></li>
+<li><p>Remedies</p>
+<ul>
+<li><p>damage</p></li>
+<li><p>injunction</p></li>
+<li><p>abatement: certain restrictions.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch4.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 4</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

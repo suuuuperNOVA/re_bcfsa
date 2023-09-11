@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 2 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 3" href="ch3.html" />
+    <link rel="prev" title="Chapter 1" href="ch1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resa">
+   RESA
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-and-scope-of-resa">
+     Purpose and scope of RESA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#licensing-system">
+     Licensing system
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#levels-of-licenses">
+     Levels of licenses
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#categories-of-licenses">
+     Categories of licenses
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bcfsa">
+     BCFSA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#superintendent-of-re">
+     Superintendent of RE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#re-foundation">
+     RE Foundation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#re-errors-and-omissions-insurance-corporation">
+     RE Errors and Omissions Insurance Corporation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#re-compensation-fund-corporation">
+     RE Compensation Fund Corporation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voluntary-re-organizations-in-bc">
+     Voluntary RE organizations in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#protection-of-resa-to-public">
+     Protection of RESA to public
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trust-account-obligations-on-licensees">
+     Trust account obligations on licensees
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resa-rules">
+     RESA rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#consequences-of-breach">
+     Consequences of breach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resa-s-discipline-and-enforcement-procedures">
+     RESA’s discipline and enforcement procedures
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-and-scope-of-redma">
+     Purpose and scope of REDMA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#developments-requiring-ds-when-units-are-sold">
+     Developments requiring DS when units are sold
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recission-rights-in-redma">
+     Recission rights in REDMA
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-2">
+<h1>Chapter 2<a class="headerlink" href="#chapter-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="resa">
+<h2>RESA<a class="headerlink" href="#resa" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="purpose-and-scope-of-resa">
+<h3>Purpose and scope of RESA<a class="headerlink" href="#purpose-and-scope-of-resa" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Impose licensing requirements on persons who provide RE services related to <em>trading services, rental property management services, and strata management services</em>:</p>
+<ul class="simple">
+<li><p>Meet minimum reasonable competency requirements to obtian a license</p></li>
+<li><p>Ensure licensees to conduct with certain standards</p></li>
+<li><p>Regulator BCFSA</p></li>
+<li><p>Superintendent to perfrom regulatory functions.</p></li>
+</ul>
+<p>Include <strong>the Regulation</strong> and <strong>the Rules</strong> in BC:</p>
+<ul class="simple">
+<li><p>Regulation: the force of law<br>exemptions from licensing, fees payable by licensee, trust account issues, disciplinary proceedings, administrative penalties, required standard terms in contracts, personal RE corporations.</p></li>
+<li><p>Rules<br>licensing, general responsibilities, dealing with licensees and unlicensed persons, brokerage accounts and financial requirements, records, licensee exemptions.</p></li>
+</ul>
+<div class="section" id="licensing-system">
+<h3>Licensing system<a class="headerlink" href="#licensing-system" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Requirements for licensing</strong></p>
+<ul class="simple">
+<li><p>provide RE services<br>trading, rental property management, strata management</p></li>
+<li><p>on behalf of another for remuneration.</p></li>
+</ul>
+<p><strong>Exemptions from licensing</strong><br>
+RESA</p>
+<ul class="simple">
+<li><p>执法人</p></li>
+<li><p>信托受托人（破产、清算、接管、离婚、遗嘱）</p></li>
+<li><p>遗嘱执行管理人</p></li>
+<li><p>执业律师</p></li>
+<li><p>具有信托业务的金融机构</p></li>
+</ul>
+<p>Regulation</p>
+<ul class="simple">
+<li><p>受托人是委托人员工</p>
+<ul>
+<li><p>employee of developer (writing to inform in advance)</p></li>
+</ul>
+</li>
+<li><p>收款代理人进行自身业务时</p></li>
+<li><p>从事矿油汽个体</p></li>
+<li><p>政府部门</p></li>
+<li><p>Rental property management (limited tasks)</p>
+<ul>
+<li><p>caretaker</p></li>
+<li><p>managers employed by owner</p></li>
+<li><p>individuals and non-profit org employed by BC Housing Management Commission, savings institutions, mortgage brokers</p></li>
+</ul>
+</li>
+<li><p>Strata management</p>
+<ul>
+<li><p>lot owners</p></li>
+<li><p>caretakers</p></li>
+<li><p>managers on behalf of strata corporation</p></li>
+<li><p>owner developers</p></li>
+</ul>
+</li>
+</ul>
+<p>Rule</p>
+<ul class="simple">
+<li><p>自己或亲属出租屋</p></li>
+</ul>
+<p><strong>Unlicensed assistants</strong><br>
+[ ] host open house<br>
+[ ] show a property<br>
+[x] show a rental property<br>
+[ ] advice to a consumer on contract<br>
+[ ] presenting or negotiation<br>
+[ ] communicating with consumers about transaction<br><br>
+[x] complete contract under licensee<br>
+[x] answer calls, msg<br>
+[x] filing and bookkeeping<br>
+[x] draft<br>
+[x] place or remove signs on property<br>
+[x] witness signatures<br>
+[x] arrange for repairs on rental property</p>
+<div class="section" id="levels-of-licenses">
+<h3>Levels of licenses<a class="headerlink" href="#levels-of-licenses" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Brokerage (<em>Not</em> personal RE corporation)</p>
+<ul>
+<li><p>service agreement between client and brokerage</p></li>
+<li><p>each branch must have a managing broker</p></li>
+<li><p>keep records for at least 7 years
+-file financial statement, accountant’s report, activity report within 120 days after the end of each fiscal year.</p></li>
+</ul>
+</li>
+<li><p>Managing broker</p>
+<ul>
+<li><p>licensed with only 1 brokerage except brokerages that are affiliated</p></li>
+<li><p>exercise rights and perform duties on brokerage by its license</p></li>
+<li><p>supervision</p></li>
+<li><p>knowledge of improper conduct</p></li>
+<li><p>accounts and records</p></li>
+<li><p>notice to parties respecting deposits in writing.</p></li>
+</ul>
+</li>
+<li><p>Associate broker</p>
+<ul>
+<li><p>meet educational and experience requirements</p></li>
+<li><p>under supervision of managing broker.</p></li>
+</ul>
+</li>
+<li><p>Representative</p></li>
+<li><p>Team</p>
+<ul>
+<li><p>all team members’ names must appear on contracts</p></li>
+<li><p>any team member can execute documents, and signature of every team member is not required.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="categories-of-licenses">
+<h3>Categories of licenses<a class="headerlink" href="#categories-of-licenses" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Trading</p>
+<ul>
+<li><p>limited property service<br>
+[x] find tenants<br>
+[x] find property to rent<br>
+[x] 收押金，准备文件，代收签字合同<br>
+[ ] 收租，代支付，代管理，代商议合同<br>
+[ ] 准备租赁合同</p></li>
+<li><p>manage rental property by licensee self or by immediate family member</p>
+<ul>
+<li><p>service in own name, not brokerage</p></li>
+<li><p>disclose to perspective tenant, family member (in writing) and managing broker (in writing)</p></li>
+<li><p>no remuneration</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Rental property management</p></li>
+<li><p>Strata management</p></li>
+<li><p>Mix</p></li>
+</ul>
+<p>Managing brokers’ licenses determine the services the brokerage has.</p>
+<div class="section" id="bcfsa">
+<h3>BCFSA<a class="headerlink" href="#bcfsa" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Regulatory responsibility for</p>
+<ul>
+<li><p>licensed RE professionals and unlicensed RE activity</p></li>
+<li><p>RE development marketing</p></li>
+<li><p>mortgage brokers</p></li>
+<li><p>pension plans, credit unions, trust companies, insurance companies</p></li>
+<li><p>Credit Union Deposit Insurance Corporation of BC</p></li>
+</ul>
+</li>
+<li><p>Ensure public to have confidence in standards of practice of licensees</p></li>
+<li><p>Ensure RE services not to be performed by unlicensed.</p></li>
+</ul>
+<div class="section" id="superintendent-of-re">
+<h3>Superintendent of RE<a class="headerlink" href="#superintendent-of-re" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Chief executive officer of BCFSA, possesses certain powers and must fulfill specific duties under RESA.</p>
+<div class="section" id="re-foundation">
+<h3>RE Foundation<a class="headerlink" href="#re-foundation" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Receive interest payable on all brokerage trust account</p></li>
+<li><p>Undertake and carry out RE public and professional education, law reform and other activities</p></li>
+<li><p>Undertake and carry out projects and activities at the directions of Minister of Finance.</p></li>
+</ul>
+<div class="section" id="re-errors-and-omissions-insurance-corporation">
+<h3>RE Errors and Omissions Insurance Corporation<a class="headerlink" href="#re-errors-and-omissions-insurance-corporation" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Protect licensees from financial loss</p>
+<ul>
+<li><p>$1 million limit including defense cost</p></li>
+<li><p>$2,000 deductible is payable</p></li>
+</ul>
+</li>
+<li><p>Prevent empty judgement</p></li>
+<li><p>Exclusions:</p>
+<ul>
+<li><p>acting other than as RE licensee</p></li>
+<li><p>claims of self owned property</p></li>
+<li><p>dispute concerning commissions</p></li>
+<li><p>physical injury</p></li>
+<li><p>dishonesty, fraudulent, criminal, or malicious acts or omissions</p></li>
+<li><p>breaches of Human Rights Code</p></li>
+<li><p>claims concerning Residential Tenancy Act</p></li>
+<li><p>fines imposed by BCFSA.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="re-compensation-fund-corporation">
+<h3>RE Compensation Fund Corporation<a class="headerlink" href="#re-compensation-fund-corporation" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Compensate persons suffering loss from misappropriation of funds by licensees or brokerages.</p>
+<div class="section" id="voluntary-re-organizations-in-bc">
+<h3>Voluntary RE organizations in BC<a class="headerlink" href="#voluntary-re-organizations-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>CREA</p>
+<ul>
+<li><p>ethics code, REALTOR <span class="math notranslate nohighlight">\(^\circledR\)</span> Code</p></li>
+<li><p><em>Do unto others as you would have them do unto you.</em></p></li>
+</ul>
+</li>
+<li><p>BCREA</p>
+<ul>
+<li><p>represent the interest of RE boards</p></li>
+<li><p>education, news, practice issues</p></li>
+<li><p>economic forecast</p></li>
+<li><p>emerging issues.</p></li>
+</ul>
+</li>
+<li><p>RE boards</p>
+<ul>
+<li><p>manage MLS <span class="math notranslate nohighlight">\(^\circledR\)</span></p></li>
+</ul>
+</li>
+<li><p>REIBC</p>
+<ul>
+<li><p>educational and experience standards</p></li>
+<li><p><em>RI</em> designation</p></li>
+</ul>
+</li>
+<li><p>REIC</p></li>
+</ul>
+<div class="section" id="protection-of-resa-to-public">
+<h3>Protection of RESA to public<a class="headerlink" href="#protection-of-resa-to-public" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Representative</p>
+<ul class="simple">
+<li><p>License application submitted to BCFSA</p></li>
+<li><p>At least 19 and meet educational and experience requirements</p></li>
+<li><p>Good reputation (no discipline)</p></li>
+<li><p>Term of license, 2 years</p></li>
+<li><p>Renew no later than 30 days before expiration and complete continuing education.</p></li>
+<li><p>Become inoperative if cease to be engaged by brokerage.</p></li>
+</ul>
+<p>Associate broker and managing broker</p>
+<ul class="simple">
+<li><p>Representative license before Broker’s Licensing Course</p></li>
+<li><p>At least 2 years during five years before application.</p></li>
+</ul>
+<div class="section" id="trust-account-obligations-on-licensees">
+<h3>Trust account obligations on licensees<a class="headerlink" href="#trust-account-obligations-on-licensees" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Withdrawn from trust account if</p>
+<ul class="simple">
+<li><p>Money paid by mistake</p></li>
+<li><p>Interest paid to RE Foundation</p></li>
+<li><p>Commission paid to licensee in accordance with the Rules</p></li>
+<li><p>Unclaimed money</p></li>
+<li><p>Money paid in accordance with court order</p></li>
+<li><p>Money paid with the instructions of principal</p>
+<ul>
+<li><p>Not for deposit for RE acquisition</p></li>
+<li><p>Trust account as stakeholder.</p></li>
+<li><p>购房押金能被退还：</p>
+<ul>
+<li><p>双方书面同意</p></li>
+<li><p>支付手续费后，退还买家 (Home Buyer Rescission Period).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="resa-rules">
+<h3>RESA rules<a class="headerlink" href="#resa-rules" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Professional misconduct</strong><br>
+<strong>Conduct unbecoming a licensee</strong></p>
+<div class="section" id="consequences-of-breach">
+<h3>Consequences of breach<a class="headerlink" href="#consequences-of-breach" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Reprimand the licensee (formally warn)</p></li>
+<li><p>暂停、取消执照、加限制、停止商业活动</p></li>
+<li><p>学习、禁止申请执照</p></li>
+<li><p>罚款、退还佣金</p>
+<ul>
+<li><p>enforcement expenses</p></li>
+<li><p>discipline penalties</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\leq\)</span> $500,000 for brokerage</p></li>
+<li><p><span class="math notranslate nohighlight">\(\leq\)</span> $250,000 for licensee for each contravention</p></li>
+</ul>
+</li>
+<li><p>administrative penalties</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="resa-s-discipline-and-enforcement-procedures">
+<h3>RESA’s discipline and enforcement procedures<a class="headerlink" href="#resa-s-discipline-and-enforcement-procedures" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Minor nature of licensed and unlicensed</p>
+<ul class="simple">
+<li><p>Give notice</p></li>
+<li><p>Accept written undertakings</p></li>
+<li><p>Failure to comply with undertakings bond may lead to further investigation.</p></li>
+</ul>
+<p>Investigation on misconduct</p>
+<ul class="simple">
+<li><p>包括持牌人、前持牌人、合作伙伴</p></li>
+<li><p>BCFSA may (during business hours) inspect, remove, and copy records that are located on the business premises of the person subject to an investigation.</p></li>
+</ul>
+<p><strong>Discipline process</strong></p>
+<ol class="simple">
+<li><p>Notice of hearing</p>
+<ul class="simple">
+<li><p>Urgent order before hearing</p></li>
+<li><p>Licensee may give consent order</p></li>
+</ul>
+</li>
+<li><p>Hearing, written or oral</p></li>
+<li><p>Present evidence regarding the complaint</p></li>
+<li><p>Witness to present testimony</p></li>
+<li><p>Conclusion</p></li>
+<li><p>Appeal to Financial Services Tribunal within 30 days.</p></li>
+</ol>
+<div class="section" id="purpose-and-scope-of-redma">
+<h3>Purpose and scope of REDMA<a class="headerlink" href="#purpose-and-scope-of-redma" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>REDMA applies to the marketing of all real estate development properties, whether located in BC or not:</p>
+<ul class="simple">
+<li><p>Subdivision (5+)</p></li>
+<li><p>Strata (5+)</p></li>
+<li><p>Cooperative (2+)</p></li>
+<li><p>Time shares (5+)</p></li>
+<li><p>Other shared interest in land or residential leasehold complexes (2+).</p></li>
+</ul>
+<p>REDMA aims to:</p>
+<ul class="simple">
+<li><p>Meet any preliminary requirements to the property to be marketed</p>
+<ul>
+<li><p>e.g. strata plan, permission</p></li>
+</ul>
+</li>
+<li><p>Ensure to pay cost of utilities and other services, and to assure purchaser’s title</p></li>
+<li><p>Prepare and file a DS in the form required by BCFSA.</p></li>
+</ul>
+<div class="section" id="developments-requiring-ds-when-units-are-sold">
+<h3>Developments requiring DS when units are sold<a class="headerlink" href="#developments-requiring-ds-when-units-are-sold" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Disclosure statement</strong> ensures that investors or purchasers have adequate information upon which to base a purchasing decision. Licensee needs to ensure that:</p>
+<ul class="simple">
+<li><p>Provide purchaser with a copy of DS</p></li>
+<li><p>Purchaser has had ample opportunity to familiarize</p></li>
+<li><p>Confimation in writing before entering into agreement.</p></li>
+</ul>
+<p>Development properties requiring DS except:</p>
+<ul class="simple">
+<li><p>Sale as a whole</p></li>
+<li><p>Industrial or commercial purpose</p></li>
+<li><p>Lease of <span class="math notranslate nohighlight">\(\leq\)</span> 3 years</p></li>
+<li><p>Sale or lease subject to Securities Act</p>
+<ul>
+<li><p>Cooperative interests, sale of shares</p></li>
+</ul>
+</li>
+<li><p>Certain lots within municipalities.</p></li>
+</ul>
+<div class="section" id="recission-rights-in-redma">
+<h3>Recission rights in REDMA<a class="headerlink" href="#recission-rights-in-redma" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>A new disclosure statement gets another 7 days as rescission right, but an amendment doesn’t.</p>
+<p>Recission rights:</p>
+<ul class="simple">
+<li><p>Home Buyer Rescission Period</p>
+<ul>
+<li><p>3 business days</p></li>
+<li><p>a fee of 0.25% to seller</p></li>
+<li><p>NOT apply to contracts under REDMA</p></li>
+</ul>
+</li>
+<li><p>7 day rescission right</p>
+<ul>
+<li><p>written notice</p></li>
+<li><p>in 7 days after later of purchase agreement or confirmation of DS.</p></li>
+</ul>
+</li>
+</ul>
+<p>Failure to deliver DS to purchasers makes contracts void.</p>
+<p>Failure to deliver amendment drives the last rescission right:</p>
+<ul class="simple">
+<li><p>Reasonably relevant to purchaser’s decision</p></li>
+<li><p>No more than 1 year has elapsed after the title transfer.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 1</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 3</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

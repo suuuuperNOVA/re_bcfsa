@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 7 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 8" href="ch8.html" />
+    <link rel="prev" title="Chapter 6" href="ch6.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch7.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#strata-properties-and-cooperatives-in-bc">
+   Strata Properties and Cooperatives in BC
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strata-concepts">
+     Strata concepts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strata-corporation-vs-strata-council-duties">
+     Strata corporation vs. Strata council (duties)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#funds-of-strata-corporation">
+     Funds of strata corporation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-strata-bylaws-and-rules-are-created-and-amended">
+     How strata bylaws and rules are created and amended
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#restrictions-in-bylaws-and-rules">
+     Restrictions in bylaws and rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repairs">
+     Repairs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#winding-up-of-strata-corporation">
+     Winding up of strata corporation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remedies-to-strata-corporation">
+     Remedies to strata corporation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remedies-against-strata-corporation">
+     Remedies against strata corporation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leasehold-strata">
+     Leasehold strata
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cooperative-development-vs-strata-development">
+     Cooperative development vs. Strata development
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-7">
+<h1>Chapter 7<a class="headerlink" href="#chapter-7" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="strata-properties-and-cooperatives-in-bc">
+<h2>Strata Properties and Cooperatives in BC<a class="headerlink" href="#strata-properties-and-cooperatives-in-bc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="strata-concepts">
+<h3>Strata concepts<a class="headerlink" href="#strata-concepts" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>2 ways to exclusively use common property</p>
+<ul class="simple">
+<li><p>Limited common property</p>
+<ul>
+<li><p>designated by developer</p></li>
+<li><p>owners amend strata plan through unanimous vote and strata corporation files to land title office</p></li>
+<li><p>not change strata plan, but through 3/4 vote to change and file resolution to land title office.</p></li>
+</ul>
+</li>
+<li><p>Short-term exclusive use: special privilege no more than 1 year</p>
+<ul>
+<li><p>if significant, 3/4 vote</p></li>
+<li><p>if not, majority vote and grant by council.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="strata-corporation-vs-strata-council-duties">
+<h3>Strata corporation vs. Strata council (duties)<a class="headerlink" href="#strata-corporation-vs-strata-council-duties" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Strata corporation</strong>
+: Legal entity created by deposit of strata plan in land title office.</p>
+<ul class="simple">
+<li><p>Duty to manage</p>
+<ul>
+<li><p>manage and maintain common property and assets for owners</p></li>
+</ul>
+</li>
+<li><p>Repair and maintain common property and assets</p></li>
+<li><p>Insure</p>
+<ul>
+<li><p><em>Strata Property Act</em> requires strata corporation to obtain and maintain replacement-value property insurance against harm to common property, assets and building fixtures</p></li>
+<li><p>Insurance against liability to others for damage and injury</p></li>
+</ul>
+</li>
+<li><p>Enforce bylaws and rules</p></li>
+<li><p>Keep records</p>
+<ul>
+<li><p>会议纪要</p></li>
+<li><p>委员会成员</p></li>
+<li><p>业主、租客信息</p></li>
+<li><p>受抵押贷款人信息</p></li>
+<li><p>业主转移租客权利</p></li>
+<li><p>记账</p></li>
+</ul>
+</li>
+</ul>
+<p>Purchaser can obtain access to strata corporation’s records by</p>
+<ul class="simple">
+<li><p>Information certificate<br>欠款、物业费、纠纷、未执行变更、额外费用、出租情况</p>
+<ul>
+<li><p>少于8天提交，费用不超$35</p></li>
+</ul>
+</li>
+<li><p>Certificate of payment<br>业主有无欠款（过户需要，60天内有效）</p>
+<ul>
+<li><p>less than $15</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Strata council</strong>
+: Executive body elected by the strata lot owners to carry out the duties of the strata corporation abd oversee its affairs (e.g. budget). Only owners are eligible to sit on the council.</p>
+<p>Developer serves as the 1st council once depositing strata plan.</p>
+<p>售出50%以上单位和自售出第一个单位9个月后为先的6周内，召开第一届annual general meeting选出council代表。罚款<span class="math notranslate nohighlight">\(1,000，如果未能在规定期限30日内召开，追加\)</span>1,000每延后7天。每年选出新council。</p>
+<p>财年结束2个月内召开general meeting。<br>Council或者有20%投票可以召开special general meeting。<br>业主可以取消会议或提前通知（至少提前20天）。</p>
+<div class="section" id="funds-of-strata-corporation">
+<h3>Funds of strata corporation<a class="headerlink" href="#funds-of-strata-corporation" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Operating fund</strong></p>
+<p>Interim budget by owner developer before 1st general meeting, including</p>
+<ul class="simple">
+<li><p>Estimated operating expenses</p></li>
+<li><p>Contribution to CRF</p></li>
+<li><p>Monthly share of expenses of each strata lot.</p></li>
+</ul>
+<p>Developer pays for unsold units.</p>
+<p>At 1st general meeting, budget needs to be approved by majority vote.</p>
+<p>If deficit in operating fund at the end of a fiscal year, strata corporation needs to eliminate next year.</p>
+<p>Spend money from operating fund</p>
+<ul class="simple">
+<li><p>预算授权的</p></li>
+<li><p>3/4投票同意的</p></li>
+<li><p>Authorized unapproved expense</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(min\)</span> (5% of operating fund, $2,000)</p></li>
+<li><p>emergency to meet safe standard.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Contingency reserve fund</strong></p>
+<ul class="simple">
+<li><p>Starts from 1st annual general meeting</p></li>
+<li><p>Seeds from developer</p></li>
+<li><p>Within 1 year after strata plan, 5% of estimated operating fund</p></li>
+<li><p>After 1 year, 25%</p></li>
+<li><p>From strata fees, even during the period covered by interim budget.</p></li>
+</ul>
+<p><strong>Mandatory contribution</strong></p>
+<ul class="simple">
+<li><p>Followed 1st AGM, if <span class="math notranslate nohighlight">\(\leq\)</span> 25% of estimated operating fund, deposit at lease 10% of total budget</p></li>
+<li><p>All subsequent years, <span class="math notranslate nohighlight">\(min\)</span>(10% of total budget to operating fund, amount to reach 25% of operating fund).</p></li>
+</ul>
+<p>Spend money of CRF</p>
+<ul class="simple">
+<li><p>3/4投票同意</p></li>
+<li><p>Authorized unapproved expense (emergency).</p></li>
+</ul>
+<p><strong>Special levies</strong>
+: Cash call, requiring either 3/4 vote (based on Schedule of Unit Entitlement) or unanimous vote (on other basis).<br>Apply to Supreme Court of BC if can’t reach resolution.<br><br></p>
+<p><strong>Depreciation report</strong>
+: Estimation of repair and replacement cost for major items owned by strata corporation and expected life of those items.</p>
+<ul class="simple">
+<li><p>1st report within 6 months of 2nd AGM, and then report every three years</p></li>
+<li><p>Waived by 3/4 vote or <span class="math notranslate nohighlight">\(\leq\)</span> 5 lots in strata plan</p></li>
+<li><p>Prepared by qualified person</p></li>
+<li><p>包括库存、维修工作、预测未来30年维修、折损情况、日期、报告人员信息等。</p></li>
+</ul>
+<div class="section" id="how-strata-bylaws-and-rules-are-created-and-amended">
+<h3>How strata bylaws and rules are created and amended<a class="headerlink" href="#how-strata-bylaws-and-rules-are-created-and-amended" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Every strata corporation must have bylaws which can only be amended by members. (Everything including strata lots.)</p>
+<ul class="simple">
+<li><p>Amended Standard Bylaw in <em>Strata Property Act</em>, and becomes enforceable after files to Land Title Office</p></li>
+<li><p>At 1st AGM, unanimous vote except for commercial property</p></li>
+<li><p>Afterwards, amendments needs 3/4 vote</p></li>
+<li><p>Unenforceable if contravene <em>Strata Property Act</em> , or any other law</p></li>
+<li><p>Unenforceable if prohibit disposition, except rental and age restriction.</p></li>
+</ul>
+<p>Rules are optional, made by council to govern common property and assets, but cannot regulate use of strata lots.</p>
+<p>Strata corporation cannot file a lien against lot owner for unpaid fine.</p>
+<div class="section" id="restrictions-in-bylaws-and-rules">
+<h3>Restrictions in bylaws and rules<a class="headerlink" href="#restrictions-in-bylaws-and-rules" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Rentals</strong></p>
+<p><strong>Rental disclosure statement</strong>
+: Form prepared by the owner developer of a strata property containing information about the rental of strata lots that must be filed with BCFSA before the first strata lot is offered for sale.<br><br>If an RDS designates a strata lot for rental, RDS may permit despite bylaw restricting rentals.</p>
+<p>Developer needs to give RDS copy to perspective buyers.</p>
+<p>RDS filed before 2010，只有first owner能参考RDS，subsequent owner不可以。2010-01-01之后，所有owner都可以参考RDS。</p>
+<p><strong>Notice of tenant’s responsibilities</strong></p>
+<p>如果房东或者代理没有在租期开始之后2周内，给到房客bylaw and rules with Notice，并签字，房客在得知房东违反 <em>Strata Property Act</em> 90天内都可以免责退租。</p>
+<div class="section" id="repairs">
+<h3>Repairs<a class="headerlink" href="#repairs" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Strata corporation负责修理common property，以及LCP (less than once a year)，并且包括：外墙、结构等，无论次数。其他维修，LCP个人负责。</p>
+<p>Restructure and improvements of strata lot are carried out with strata corporation’s consent (following bylaws).</p>
+<div class="section" id="winding-up-of-strata-corporation">
+<h3>Winding up of strata corporation<a class="headerlink" href="#winding-up-of-strata-corporation" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Cancel strata plan</p></li>
+<li><p>Resolution passed by 80% vote to terminate strata corporation</p></li>
+<li><p>Order from BC Supreme Court to approve the sale.</p></li>
+</ul>
+<div class="section" id="remedies-to-strata-corporation">
+<h3>Remedies to strata corporation<a class="headerlink" href="#remedies-to-strata-corporation" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Strata corporation may apply to BC Supreme Court for an order.</p>
+<div class="section" id="remedies-against-strata-corporation">
+<h3>Remedies against strata corporation<a class="headerlink" href="#remedies-against-strata-corporation" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Injunction</p></li>
+<li><p>Apply to BC Supreme Court for unfair action, votes</p></li>
+<li><p>Apply to arbitration and appoint administrator.</p></li>
+</ul>
+<div class="section" id="leasehold-strata">
+<h3>Leasehold strata<a class="headerlink" href="#leasehold-strata" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Governed by <em>Strata Property Act</em></p></li>
+<li><p>Ground lease for a term <span class="math notranslate nohighlight">\(\geq\)</span> 50 years</p></li>
+<li><p>Leasehold strata plan filed</p>
+<ul>
+<li><p>fee simple titles for each lot in name of leasehold landlord</p></li>
+<li><p>ground lease convert to individual</p></li>
+</ul>
+</li>
+<li><p>Buyer takes assignment from developer</p></li>
+<li><p>Tenant has additional rent obligation</p></li>
+<li><p>Home Buyer Rescission <strong>NOT</strong> apply.</p></li>
+</ul>
+<p><strong>Schedule of restrictions</strong>
+: List of restrictions, registered at the land title office with the leasehold strata plan, that imposes further leasing, assignment, or occupancy of strata lots in a leasehold strata plan.</p>
+<p><strong>Expiry of lease term</strong></p>
+<ul class="simple">
+<li><p>Renew at least 5 years</p></li>
+<li><p>If not give notice of non-renewal at least 1 year, automatically renew 5 years</p></li>
+<li><p>Not renew, leasehold landlord purchases tenants’ interest in strata lot</p>
+<ul>
+<li><p>based on schedule filed with strata plan</p></li>
+<li><p>if silent, fair market value</p></li>
+<li><p>arbitration.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="cooperative-development-vs-strata-development">
+<h3>Cooperative development vs. Strata development<a class="headerlink" href="#cooperative-development-vs-strata-development" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Created under <em>Cooperative Association Act</em></p></li>
+<li><p>Non-profit corporation owns fee simple interest</p></li>
+<li><p>Board needs to approve sale</p></li>
+<li><p>Buyers are tenants of the company</p></li>
+<li><p>Home Buyer Rescission apply.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch6.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 6</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch8.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 8</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 13 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 14" href="ch14.html" />
+    <link rel="prev" title="Chapter 12" href="ch12.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch13.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-mortgage-finance">
+   Introduction to Mortgage Finance
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importance-of-financing-in-purchase-of-re">
+     Importance of financing in purchase of RE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#market-of-financial-arrangements-traded-and-participants">
+     Market of financial arrangements traded and participants
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#specific-characteristics-of-mortgage-loans-as-investments">
+     Specific characteristics of mortgage loans as investments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#influence-in-supply-of-mortgage-funds">
+     Influence in supply of mortgage funds
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#different-types-of-mortgages-and-repayment-plans-available">
+     Different types of mortgages and repayment plans available
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nominal-vs-periodic-rates-of-interest">
+     Nominal vs. Periodic rates of interest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-13">
+<h1>Chapter 13<a class="headerlink" href="#chapter-13" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-to-mortgage-finance">
+<h2>Introduction to Mortgage Finance<a class="headerlink" href="#introduction-to-mortgage-finance" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="importance-of-financing-in-purchase-of-re">
+<h3>Importance of financing in purchase of RE<a class="headerlink" href="#importance-of-financing-in-purchase-of-re" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Increase purchaser’s ability to buy</p></li>
+<li><p>Diversify investments</p></li>
+<li><p>Get a higher return rate</p></li>
+<li><p>Hedge against inflation with a fixed rate mortgage</p></li>
+<li><p>Save equity for other activities.</p></li>
+</ul>
+<div class="section" id="market-of-financial-arrangements-traded-and-participants">
+<h3>Market of financial arrangements traded and participants<a class="headerlink" href="#market-of-financial-arrangements-traded-and-participants" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Primary mortgage market<br>Loans are initiated from</p>
+<ul>
+<li><p>bank</p></li>
+<li><p>credit union</p></li>
+<li><p>trust</p></li>
+<li><p>insurance</p></li>
+<li><p>mortgage broker</p></li>
+<li><p>vendor of property</p></li>
+</ul>
+</li>
+<li><p>Secondary mortgage market<br>Existing mortgages are traded as financial investment</p>
+<ul>
+<li><p>Canada Mortgage and Housing Corporation.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="specific-characteristics-of-mortgage-loans-as-investments">
+<h3>Specific characteristics of mortgage loans as investments<a class="headerlink" href="#specific-characteristics-of-mortgage-loans-as-investments" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Each mortgage is essentially unique investment</p>
+<ul>
+<li><p>characteristics of borrower</p></li>
+<li><p>characteristics of interest in land pledged</p></li>
+<li><p>specific terms fo mortgage document</p></li>
+</ul>
+</li>
+<li><p>Illiquid, difficult to trade</p></li>
+<li><p>Long repayment terms make reinvestment difficult</p></li>
+<li><p>Heavy administrative work</p></li>
+<li><p>Large capital outlay.</p></li>
+</ul>
+<div class="section" id="influence-in-supply-of-mortgage-funds">
+<h3>Influence in supply of mortgage funds<a class="headerlink" href="#influence-in-supply-of-mortgage-funds" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Demand for capital outside mortgage market</p></li>
+<li><p>Changes in level of savings</p></li>
+<li><p>Changes in government policies.</p></li>
+</ul>
+<div class="section" id="different-types-of-mortgages-and-repayment-plans-available">
+<h3>Different types of mortgages and repayment plans available<a class="headerlink" href="#different-types-of-mortgages-and-repayment-plans-available" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Classification of mortgage loans</p>
+<ul class="simple">
+<li><p>Type of property used as security for loan</p>
+<ul>
+<li><p>Residential</p>
+<ul>
+<li><p>owner-occupied</p></li>
+<li><p>income producing</p></li>
+</ul>
+</li>
+<li><p>Commercial</p>
+<ul>
+<li><p>retail</p></li>
+<li><p>office</p></li>
+<li><p>recreational</p></li>
+<li><p>industrial property</p></li>
+</ul>
+</li>
+<li><p>Subdivision</p></li>
+<li><p>Construction</p></li>
+<li><p>Development financing</p></li>
+</ul>
+</li>
+<li><p>Use of mortgage default insurance</p>
+<ul>
+<li><p>Insured</p>
+<ul>
+<li><p>CMHC</p></li>
+<li><p>private mortgage insurance</p></li>
+</ul>
+</li>
+<li><p>Uninsured/Conventional mortgage</p></li>
+</ul>
+</li>
+<li><p>Source of mortgage funds</p>
+<ul>
+<li><p>Institutional lender</p></li>
+<li><p>Private lender</p></li>
+<li><p>Government</p></li>
+<li><p>MIC</p></li>
+</ul>
+</li>
+<li><p>Rank or priority of mortgage</p>
+<ul>
+<li><p>Junior mortgage</p></li>
+<li><p>Fist equitable mortgage</p></li>
+</ul>
+</li>
+</ul>
+<p>==Repayment plans==</p>
+<p><strong>Interest accruing loan</strong>
+: Principal and all interest are payable when mortgage contract expires.</p>
+<p><strong>Interest only loan</strong>
+: Interest paid periodically. Usually used in developer’s financing.</p>
+<p><strong>Straight line principal reduction loan</strong>
+: Equal amount of principal repaid + interest for every interest compounding period.</p>
+<ul class="simple">
+<li><p>Unattractive to investors expecting income to rise over time</p></li>
+<li><p>Usually for firms with large investments in depreciating assets, such as machinery.</p></li>
+</ul>
+<p><strong>Constant payment mortgage loan</strong>
+: Equal payments throughout life of loan.</p>
+<ul class="simple">
+<li><p>Fully amortized</p></li>
+<li><p>Partially amortized<br>amortized period <span class="math notranslate nohighlight">\(\leq\)</span> loan term</p></li>
+</ul>
+<p><strong>Balloon payment</strong>
+: Any payment of principal over and above regular periodic payments.</p>
+<p><strong>Innovative options</strong></p>
+<ul class="simple">
+<li><p>Ballon payment</p></li>
+<li><p>Increase payment frequency</p></li>
+<li><p>Accelerated payment</p></li>
+</ul>
+<p><strong>Alternative mortgage repayment plans</strong></p>
+<ul class="simple">
+<li><p>Variable rate mortgage</p></li>
+<li><p>Vendor take-back mortgage</p></li>
+<li><p>Graduated payment mortgage<br>Lower payments in early years and gradually increase over time</p></li>
+<li><p>Reverse annuity mortgage<br>Lender makes a series of payments</p></li>
+<li><p>Combination mortgage<br>2 periods, one for fixed, the other for float</p></li>
+<li><p>Home equity loans</p></li>
+<li><p>Construction financing</p></li>
+<li><p>Line of credit<br>Supplement developer’s own reserves</p></li>
+<li><p>Hybrid mortgage</p></li>
+<li><p>Improvement mortgage</p></li>
+<li><p>Participation mortgage<br>Lender obtains some equity.</p></li>
+<li><p>Shared appreciation mortgage</p></li>
+</ul>
+<div class="section" id="nominal-vs-periodic-rates-of-interest">
+<h3>Nominal vs. Periodic rates of interest<a class="headerlink" href="#nominal-vs-periodic-rates-of-interest" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><span class="math notranslate nohighlight">\(j_m = i \times m\)</span><br><span class="math notranslate nohighlight">\(j_m =\)</span> Nominal interest rate compounded m timer per year<br><span class="math notranslate nohighlight">\(m =\)</span> Number of compounding periods per annum<br><span class="math notranslate nohighlight">\(i =\)</span> Interest rate per compounding period</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch12.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 12</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch14.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 14</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 19 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 20" href="ch20.html" />
+    <link rel="prev" title="Chapter 18" href="ch18.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch19.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#taxes-on-real-property">
+   Taxes on Real Property
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#main-taxes-applying-to-purchase-or-sale-of-real-property-in-bc">
+     Main taxes applying to purchase or sale of real property in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#capital-gains-and-how-to-be-taxed-upon-sale-of-property">
+     Capital gains and how to be taxed upon sale of property
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#main-taxes-applying-to-ownership-or-use-of-real-property-in-bc">
+     Main taxes applying to ownership or use of real property in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tax-exemptions-and-reliefs-relating-to-property-tax">
+     Tax exemptions and reliefs relating to Property Tax
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#process-of-property-assessment">
+     Process of property assessment
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-19">
+<h1>Chapter 19<a class="headerlink" href="#chapter-19" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="taxes-on-real-property">
+<h2>Taxes on Real Property<a class="headerlink" href="#taxes-on-real-property" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="main-taxes-applying-to-purchase-or-sale-of-real-property-in-bc">
+<h3>Main taxes applying to purchase or sale of real property in BC<a class="headerlink" href="#main-taxes-applying-to-purchase-or-sale-of-real-property-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Goods and Services Tax</strong>
+: Federal tax paid on goods and services sold or provided in Canada.</p>
+<ul class="simple">
+<li><p>To tax <strong>final value</strong> (no GST on deposit) created through production of item</p></li>
+<li><p>Sellers of real property need to collect tax and can recover GST paid on development and other costs.</p></li>
+</ul>
+<p>Under <em>Excise Tax Act</em></p>
+<ul class="simple">
+<li><p><em>Taxable supply</em> is supply that is made in course of commercial activity, including transfer of real property, every interest in real property</p></li>
+<li><p><em>Supply</em> is provision of property or services in any manner whatever</p></li>
+<li><p><em>Commercial activity</em> includes making of supply other than exempt supply.</p></li>
+</ul>
+<p>Obligations in scheme of GST</p>
+<ul class="simple">
+<li><p>Buyer is tax-payer for GST</p></li>
+<li><p>Buyer pays GST directly for hotel alike (Airbnb)</p></li>
+<li><p>Sellers need to collect and remit GST</p>
+<ul>
+<li><p>If fail to collect, seller will be liable to CRA</p></li>
+<li><p>Exemption</p>
+<ul>
+<li><p>commercial property and buyer is registered for GST by time of closing</p></li>
+<li><p>buyer is entitled to input tax credit, avoiding cash flow problem (self-assessing)</p></li>
+<li><p>non-resident seller</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>If CRA audits and assesses, debt is immediately collectible</p>
+<ul>
+<li><p>90 days to file objection to CTA Appeals Division</p></li>
+<li><p>90 days to appeal to Tax Court of Canada</p></li>
+<li><p>Appeal to Federal Court of Appeal and possibly to Supreme Court of Canada</p></li>
+</ul>
+</li>
+<li><p>No exemption for used housing</p></li>
+<li><p>Exemption for sales by person who isn’t a builder (martial distress), which depends on operating intention, profit</p></li>
+<li><p>Short-term rentals<br>defer GST, but only for nights rented out, not listed</p></li>
+<li><p>Assignment for business is GST taxable</p></li>
+<li><p>Obtain advice on lease and First Nations Land.</p></li>
+</ul>
+<p><strong>Input tax credit</strong>
+: GST deduction a person can claim in their GST return for amount of GST paid by that person on acquisition of property or services.</p>
+<p><strong>Self-supply rule</strong>
+: Builders have sold home to themselves at time of move-in or leased to long-term tenant, and they owe GST on property value even without actual sale.<br><br>Eventual sale is exempt. Buyer can refund if identify issue in 2 years of payment. Seller can’t shift GST to buyer.</p>
+<p><strong>Property Transfer Tax</strong>
+: Applies to any transfer of interest in real property that is registered at LTO, including Crown grant and life estate. Payable by buyer on fair market value.</p>
+<ul class="simple">
+<li><p>May include assignment fee or consideration</p></li>
+<li><p>Include fixture, including machinery and equipment</p></li>
+<li><p>Buyer must pay to government before property registered.</p></li>
+</ul>
+<p>PTT rate</p>
+<ul class="simple">
+<li><p>1% for first $200,000</p></li>
+<li><p>2% for $200,000 <span class="math notranslate nohighlight">\(&lt;\)</span> value <span class="math notranslate nohighlight">\(\leq\)</span> $2,000,000</p></li>
+<li><p>3% for value <span class="math notranslate nohighlight">\(&gt;\)</span> $2,000,000</p></li>
+<li><p>additional 2% for value <span class="math notranslate nohighlight">\(&gt;\)</span> $3,000,000</p></li>
+</ul>
+<p>First Time Home Buyers’ Program<br>
+Conditions to be exempted from PPT</p>
+<ul class="simple">
+<li><p>公民或居民</p></li>
+<li><p>在省内住满1年</p></li>
+<li><p>之前没有在全球范围内有住房</p></li>
+<li><p>Value <span class="math notranslate nohighlight">\(&lt;\)</span> $500,000 and area <span class="math notranslate nohighlight">\(&lt;\)</span> 0.5 hectares</p>
+<ul>
+<li><p>partial exemption if violate any.</p></li>
+</ul>
+</li>
+</ul>
+<p>Newly Built Home Exemption Program</p>
+<ul class="simple">
+<li><p>公民或居民</p></li>
+<li><p>Principal residence</p></li>
+<li><p>Value <span class="math notranslate nohighlight">\(&lt;\)</span> $750,000</p>
+<ul>
+<li><p>partial relief if value <span class="math notranslate nohighlight">\(&lt;\)</span> $800,000.</p></li>
+</ul>
+</li>
+</ul>
+<p>Foreign Buyers’ Tax
+: Applies to foreign nationals, foreign corporations and taxable trustees (rate = 20%) on residential property.</p>
+<ul class="simple">
+<li><p>If property is residential and commercial mix, tax applies to residential</p></li>
+<li><p>If one of buyers is foreigner, tax applies to entire purchase</p></li>
+<li><p>外国人继承遗产，不用付PTT，但是需要支付Foreign Buyers’ Tax</p></li>
+<li><p>BCPNP时期买房，并在一年内成为PR，可以claim back。</p></li>
+</ul>
+<p>Withholding taxes for non-residents selling property</p>
+<ul class="simple">
+<li><p>Withhold 25% of non-depreciable property (residence)</p></li>
+<li><p>Withhold 50% of depreciable property</p></li>
+<li><p>In lawyer’s trust account</p></li>
+<li><p>除非卖家提供清税证明。</p></li>
+</ul>
+<div class="section" id="capital-gains-and-how-to-be-taxed-upon-sale-of-property">
+<h3>Capital gains and how to be taxed upon sale of property<a class="headerlink" href="#capital-gains-and-how-to-be-taxed-upon-sale-of-property" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>50% of capital gains are taxable</p></li>
+<li><p>Principal residence is exempted</p></li>
+<li><p>If defined as business income, 100% of profit is taxable</p></li>
+<li><p>Profit vs. Capital gain</p>
+<ul>
+<li><p>交易目的</p></li>
+<li><p>交易时长，长资金还是短资金，房子拥有时长</p></li>
+<li><p>是否职业</p></li>
+<li><p>其他房产持有者的目的。</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="main-taxes-applying-to-ownership-or-use-of-real-property-in-bc">
+<h3>Main taxes applying to ownership or use of real property in BC<a class="headerlink" href="#main-taxes-applying-to-ownership-or-use-of-real-property-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Property Tax</strong></p>
+<ul class="simple">
+<li><p>Mill rate, tax rate applies to each $1,000 of net taxable value</p></li>
+<li><p>Registered owner at Nov.30th in LTO is liable for property tax</p></li>
+<li><p>Land and improvements are taxable based on actual value and property class</p>
+<ul>
+<li><p>include production machinery</p></li>
+<li><p>property affixed to land</p></li>
+<li><p>property with more than one use has split classification</p></li>
+</ul>
+</li>
+<li><p>Taxing authorities levy various real property taxes grouped together as Property Tax</p>
+<ul>
+<li><p>市政、学校、教育、交通、税务</p></li>
+<li><p>regional districts</p></li>
+<li><p>BC Assessment.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Speculation and Vacancy Tax</strong></p>
+<ul class="simple">
+<li><p>Payable by registered owner or co-owners on Dec. 31 in LTO</p></li>
+<li><p>Applies to corporations, partnerships and trust</p></li>
+<li><p>Each owner needs to complete annual declaration</p></li>
+<li><p>Taxable region in BC except</p>
+<ul>
+<li><p>reserve lands, treaty lands, self-governing Indigenous Nations</p></li>
+<li><p>只有水路和空路交通</p></li>
+<li><p>政府用地、注册慈善</p></li>
+<li><p>housing co-ops</p></li>
+</ul>
+</li>
+<li><p>Tax is based on assessment value and due following Jul.</p></li>
+<li><p>Tax rate</p>
+<ul>
+<li><p>2.0% for foreign owner and satellite family members</p></li>
+<li><p>0.5% for citizens and PR</p></li>
+</ul>
+</li>
+<li><p>Exemptions<br>Citizen or PR + BC resident for income tax</p>
+<ul>
+<li><p>principal residence</p></li>
+<li><p>rental property occupied by tenant for at least 6 months</p>
+<ul>
+<li><p>citizen or PR is eligible for both non-arm length and arm length rental exemption if it’s tenant’s principal residence</p></li>
+</ul>
+</li>
+<li><p>renovation, divorce, illness.</p></li>
+</ul>
+</li>
+</ul>
+<p>Satellite family
+: Spousal unit or individual declares less than 50% of total combined household income.</p>
+<p><strong>City of Vancouver’s Vacancy Tax</strong></p>
+<ul class="simple">
+<li><p>Rate = 5%</p></li>
+<li><p>Short-term rental without hotel or B&amp;B license is payable</p></li>
+<li><p>Owners complete Property Status Declaration in Dec each year</p></li>
+<li><p>EHT到期日四月第十个工作日</p></li>
+<li><p>Exemptions</p>
+<ul>
+<li><p>受限于strata bylaw，不能出租</p></li>
+<li><p>屋主居住180天用于在温哥华上班</p></li>
+<li><p>redevelopment or renovation with permit</p></li>
+<li><p>住院</p></li>
+<li><p>屋主过世，并没有遗嘱</p></li>
+<li><p>房产在年内过户</p></li>
+<li><p>地皮受限不能建住宅</p></li>
+<li><p>under court order prohibiting occupancy.</p></li>
+</ul>
+</li>
+</ul>
+<p>Residential properties located within City of Vancouver may be subject to SVT and EHT.</p>
+<div class="section" id="tax-exemptions-and-reliefs-relating-to-property-tax">
+<h3>Tax exemptions and reliefs relating to Property Tax<a class="headerlink" href="#tax-exemptions-and-reliefs-relating-to-property-tax" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Property Tax relief</p>
+<ul class="simple">
+<li><p>Assess value other than market value for farm land, forest land, and certain residential property</p></li>
+<li><p>Home owner grant for eligible residence (principal residence + citizen or PR)</p>
+<ul>
+<li><p>$570 for properties in Metro Vancouver, Fraser Valley and Capital Regional District</p></li>
+<li><p>$770 for properties in northern and rural area</p></li>
+</ul>
+</li>
+<li><p>Additional grants and defer payment</p>
+<ul>
+<li><p>seniors</p></li>
+<li><p>veterans</p></li>
+<li><p>disabled</p></li>
+<li><p>family with children program</p></li>
+</ul>
+</li>
+<li><p>Tax credit eligibility.</p></li>
+</ul>
+<div class="section" id="process-of-property-assessment">
+<h3>Process of property assessment<a class="headerlink" href="#process-of-property-assessment" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><em><strong>Assessment Notice</strong></em>
+: Notice informing property owner of value of property as of Jul. 1 of previous year.</p>
+<p><em><strong>Tax notice</strong></em>
+: Statement distributed to each property owner within municipality requesting payment of taxes based on next taxable value of their property.</p>
+<p>Property assessment</p>
+<ol class="simple">
+<li><p>Jul. 1<br>Valuation date of Assessment Roll</p></li>
+<li><p>Oct. 31<br>State and condition of property is established for <em>Assessment Notice</em></p>
+<ul class="simple">
+<li><p>Owner has no obligation to report renovation during this period</p></li>
+</ul>
+</li>
+<li><p>Nov. 30<br>Ownership established</p></li>
+<li><p>Dec 31<br><em>Assessment roll</em> mailed to owner</p></li>
+<li><p>Jan. 31<br>Last date for filling appeal of assessed value to Property Assessment Review Panels</p></li>
+<li><p>Mar. 31<br>Property Assessment Review Panels confirm and authenticate Assessment Roll</p></li>
+<li><p>Apr. 30<br>Deadline for filing appeal to Property Assessment Appeal Board</p></li>
+<li><p>Appeal to Supreme Court of BC (21 days)</p></li>
+<li><p>Appeal to BC Court of Appeal (30 days)</p></li>
+<li><p>Appeal to Supreme Court of Canada.</p></li>
+</ol>
+<p>Assessment appeals<br>Any person may make complaint against entry in Assessment Roll</p>
+<ul class="simple">
+<li><p>名字错或漏</p></li>
+<li><p>房产不对</p></li>
+<li><p>房产估值太高或太低</p></li>
+<li><p>错误分类</p></li>
+<li><p>豁免被错误通过或否决</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch18.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 18</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch20.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 20</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

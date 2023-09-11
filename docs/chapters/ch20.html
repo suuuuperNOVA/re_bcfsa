@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 20 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 21" href="ch21.html" />
+    <link rel="prev" title="Chapter 19" href="ch19.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch20.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-design-and-construction">
+   Building Design and Construction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-architectural-and-construction-styles">
+     Common architectural and construction styles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#residential-houses-by-several-methods">
+     Residential houses by several methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distinguish-between-construction-qualities">
+     Distinguish between construction qualities
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-problems-and-remedies-associated-with-different-components-of-house">
+     Common problems and remedies associated with different components of house
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-defects-in-building-design-and-construction">
+     Common defects in building design and construction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#components-of-greened-home-and-various-rating-services-and-programs">
+     Components of greened home and various rating services and programs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#takeaways">
+     Takeaways
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-20">
+<h1>Chapter 20<a class="headerlink" href="#chapter-20" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="building-design-and-construction">
+<h2>Building Design and Construction<a class="headerlink" href="#building-design-and-construction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="common-architectural-and-construction-styles">
+<h3>Common architectural and construction styles<a class="headerlink" href="#common-architectural-and-construction-styles" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Architectural design</p>
+<ul class="simple">
+<li><p>Bauhaus<br>四四方方、不对称、平顶</p></li>
+<li><p>Shingle<br>陡坡顶、不对称、不对称窗户</p></li>
+<li><p>West coast<br>平缓顶、大圆顶、窗户多</p></li>
+<li><p>Prairie<br>单层、陡坡砖顶、横纵线</p></li>
+<li><p>Narrow lot or Vancouver special<br>小房子、浅但是很长阳台、1层是砖面</p></li>
+<li><p>Po-Mo<br>石灰墙面、色彩丰富</p></li>
+<li><p>Environmentally conscious<br>北面没有窗、太阳能板</p></li>
+<li><p>Ranch style<br>单层、特别大、石灰墙面或砖面</p></li>
+</ul>
+<div class="section" id="residential-houses-by-several-methods">
+<h3>Residential houses by several methods<a class="headerlink" href="#residential-houses-by-several-methods" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>By measuring floor area or number of floors</p></li>
+<li><p>By external style</p>
+<ul>
+<li><p>Traditional style</p>
+<ul>
+<li><p>Classical<br>对称、圆柱门廊、三角开放式大门</p></li>
+<li><p>Victorian<br>尖顶、塔尖形状、大烟囱、不对称出、砖面、饼干纹</p></li>
+<li><p>Georgian<br>对称、红砖或白砖、多格窗户、一个门廊、一个大烟囱</p></li>
+<li><p>Elizabethan<br>石灰涂层表面有木条装饰</p></li>
+<li><p>Cape code<br>瓦墙面、尖屋顶、天窗</p></li>
+<li><p>French<br>3层楼、2层墙面是砖、3层屋顶组成</p></li>
+<li><p>Chalet<br>大屋檐、尖屋顶</p></li>
+<li><p>Arts and crafts<br>好木头、大</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>By structural method</p></li>
+</ul>
+<div class="section" id="distinguish-between-construction-qualities">
+<h3>Distinguish between construction qualities<a class="headerlink" href="#distinguish-between-construction-qualities" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Building codes</strong><br>for new building or substantial renovation of existing buildings</p>
+<ul class="simple">
+<li><p>Structural strength to resist forces acting on buildings</p></li>
+<li><p>Resistance to spread of fire</p></li>
+<li><p>Resistance to heat movement and vapour transmission</p></li>
+<li><p>Adequate light and ventilation</p></li>
+<li><p>Resistance to sound transmission</p></li>
+<li><p>Adequate means of egress</p></li>
+<li><p>Protection against smoke penetration</p></li>
+</ul>
+<p><strong>Licensing and Consumer Services</strong><br>Branch of BC Housing</p>
+<ul class="simple">
+<li><p>Licencing residential builders including general contractors and building envelope renovators province-wide</p></li>
+<li><p>Administering owner-builder authorizations</p></li>
+<li><p>Carrying out research and education</p></li>
+<li><p><em>New Homes Registry</em></p>
+<ul>
+<li><p>if built by licensed residential builder or owner builder</p></li>
+<li><p>if covered by home warranty insurance and commencement date</p></li>
+<li><p>name and contact information of warranty provider</p></li>
+</ul>
+</li>
+</ul>
+<p><em><strong>Homeowner Protection Act</strong></em> regulates</p>
+<ul class="simple">
+<li><p>All residential home builders must be licenced and registered</p></li>
+<li><p>All new homes must be registered in New Homes Registry</p></li>
+<li><p>All new homes must be covered by home warranty insurance unless exempt</p>
+<ul>
+<li><p>New home can’t be sold while</p>
+<ul>
+<li><p>being constructed</p></li>
+</ul>
+</li>
+<li><p>Within 10 years from date occupancy permit was issues</p>
+<ul>
+<li><p>new home covered by home warranty insurance</p></li>
+<li><p>owner- builder is exempted</p>
+<ul>
+<li><p>个人</p></li>
+<li><p>建完，居住满1年，期间不能出租</p></li>
+<li><p>个人负责建筑工程</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Minimum coverage</p>
+<ul>
+<li><p>2 years for materials and labour</p></li>
+<li><p>5 years for building envelope</p></li>
+<li><p>10 years for structural defects</p></li>
+<li><p>property in fee simple claim <span class="math notranslate nohighlight">\(&gt;\)</span> $200,000 and strata unit <span class="math notranslate nohighlight">\(&gt;\)</span> $100,000.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>New home</strong></p>
+<ul class="simple">
+<li><p>More than 75% of home’s structure above its foundation has been removed or replaced, or</p></li>
+<li><p>50%以上的地基重建。</p></li>
+</ul>
+<div class="section" id="common-problems-and-remedies-associated-with-different-components-of-house">
+<h3>Common problems and remedies associated with different components of house<a class="headerlink" href="#common-problems-and-remedies-associated-with-different-components-of-house" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Multi-family dwelling substructures</strong></p>
+<p>Foundation
+: Lowest part of building or structure, serving as support of building or structure as a whole and typically placed below ground level.<br><br>Foundation wall must be minimum of 8 inches above ground level.</p>
+<ul class="simple">
+<li><p>Damproofing<br>Black coating applied to outside of foundation below grade to prevent entry of water by sealing minor capillary pores</p></li>
+<li><p>Moisture management<br>Storm water can be directed to municipal storm  system</p></li>
+<li><p>Level of underground water table</p></li>
+<li><p>Soil subsidence</p></li>
+</ul>
+<p><strong>Multi-family dewelling superstructures</strong></p>
+<p>Superstructure
+: Walls, floors, and roof of a building.</p>
+<ul class="simple">
+<li><p>Wood stud frame, concrete framing are more common</p></li>
+<li><p>Steel frame</p></li>
+<li><p>Masonry and timber</p></li>
+</ul>
+<p>Roof designs</p>
+<ul class="simple">
+<li><p>Gable<br><span class="math notranslate nohighlight">\(\Lambda\)</span> shape</p></li>
+<li><p>L-shaped gable</p></li>
+<li><p>Gable with dormer</p></li>
+<li><p>Flat</p></li>
+<li><p>Shed or Lean-to<br>朝一侧倾斜</p></li>
+<li><p>Hip or Cottage</p></li>
+<li><p>Mansard<br>四边都是斜坡，垂下去地方更陡</p></li>
+<li><p>Gambrel<br>两段斜坡屋顶</p></li>
+</ul>
+<p>Roof structures</p>
+<ul class="simple">
+<li><p>Rafter and ceiling joist roof<br>梁(joist)+两边斜顶(rafter)</p></li>
+<li><p>Truss<br>多了斜角支撑(webs)</p></li>
+</ul>
+<p><strong>Building envelope system</strong>
+: Elements that protect structure’s internal environment form moisture, dust, wind, and extreme temperatures, skin of house.</p>
+<p>External cladding</p>
+<ul class="simple">
+<li><p>Options</p>
+<ul>
+<li><p>Wood</p></li>
+<li><p>Aluminum or vinyl siding<br>受热容易膨胀</p></li>
+<li><p>Stucco</p>
+<ul>
+<li><p>普通石灰泥</p></li>
+<li><p>合成石灰泥<br>水汽出不去，太密封</p></li>
+</ul>
+</li>
+<li><p>Face brick</p></li>
+<li><p>Cement board siding</p></li>
+<li><p>Glazing systems</p></li>
+</ul>
+</li>
+</ul>
+<p>Windows</p>
+<ul class="simple">
+<li><p>Sealed double-glazed unites</p></li>
+<li><p>Low-E coatings on window</p></li>
+<li><p>Gas fill</p></li>
+<li><p>Insulated spacer</p></li>
+<li><p>Insulated window frame</p></li>
+<li><p>No-thermal broken vs. thermal broken</p></li>
+</ul>
+<p>Doors</p>
+<ul class="simple">
+<li><p>Fire doors for</p>
+<ul>
+<li><p>逃生楼梯间</p></li>
+<li><p>燃烧炉室</p></li>
+<li><p>停车间</p></li>
+<li><p>电房</p></li>
+</ul>
+</li>
+</ul>
+<p>Insulation</p>
+<ul class="simple">
+<li><p>Greater R value, greater resistance to heat flow</p></li>
+</ul>
+<p>HVAC</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Advantage</p></th>
+<th class="head"><p>Disadvantage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Electrical baseboard heating</p></td>
+<td><p>没用排管道<br>没用锅炉<br>独立控制<br>反应较快</p></td>
+<td><p>没有空气过滤<br>加热片占地方</p></td>
+</tr>
+<tr class="row-odd"><td><p>Central gas-fired forced hot air</p></td>
+<td><p>反应最快<br>有空气过滤</p></td>
+<td><p>要排管道<br>有时有气流</p></td>
+</tr>
+<tr class="row-even"><td><p>Central gas-fired forced hot water with room baseboard units</p></td>
+<td><p>Steady consistent heat</p></td>
+<td><p>占地方<br>反应慢<br>不抗冻<br>没有空气过滤</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wood-fired space heater in living or family room</p></td>
+<td><p>便宜因为局部加热<br></p></td>
+<td><p>局部加热<br>加燃料不方便<br>防烟尘</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="common-defects-in-building-design-and-construction">
+<h3>Common defects in building design and construction<a class="headerlink" href="#common-defects-in-building-design-and-construction" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Substructure and superstructure inspection</p>
+<ul class="simple">
+<li><p>Cracks, gaps, slippage, or bulges that show up on siding or around any opening, such as windows and doors, can indicate structural movement.</p></li>
+<li><p>Cracks in foundation are result of settling from</p>
+<ul>
+<li><p>penetration of frost under foundation</p></li>
+<li><p>excavation or alteration of original ground line if structure was constructed according to code</p></li>
+<li><p>improper installation of footings</p></li>
+<li><p>perimeter drainage system</p></li>
+<li><p>earthquake.</p></li>
+</ul>
+</li>
+<li><p>Cracks</p>
+<ul>
+<li><p>if sharp, recent and occurring</p></li>
+<li><p>if rounded and smooth edges, distress is old and stopped</p></li>
+<li><p>if uneven, settle unevenly.</p></li>
+</ul>
+</li>
+<li><p>Smell of air, moisture or cold draft of walls and lumber overhead, distress inside.</p></li>
+<li><p>Dry rot or insect infestation can indicate serious problems with foundation.</p></li>
+<li><p>If smell of mildew is present, presence of ground water and cracks are expected.</p></li>
+<li><p>Sloping floors due to inadequate foundation.</p></li>
+</ul>
+<p>Roof inspection</p>
+<ul class="simple">
+<li><p>Gravel should cover roof unifromly, and flat roof should drain properly.</p></li>
+</ul>
+<p>Insulation inspection</p>
+<ul class="simple">
+<li><p>Signs of dampness or mould of wall surface.</p></li>
+</ul>
+<p>Electrical systems inspection</p>
+<ul class="simple">
+<li><p>Common types of wire</p>
+<ul>
+<li><p>knob and tube wiring</p></li>
+<li><p>aluminum wiring</p></li>
+<li><p>copper wiring.</p></li>
+</ul>
+</li>
+</ul>
+<p>Plumbing inspection</p>
+<ul class="simple">
+<li><p>Water supply pipe</p>
+<ul>
+<li><p>copper</p></li>
+<li><p>plastic</p></li>
+<li><p>galvanized</p>
+<ul>
+<li><p>reduced pressure</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Swage</p>
+<ul>
+<li><p>lead</p>
+<ul>
+<li><p>leak with age</p></li>
+</ul>
+</li>
+<li><p>cast iron</p>
+<ul>
+<li><p>inflexible and leak due to movement</p></li>
+</ul>
+</li>
+<li><p>ABC.</p></li>
+</ul>
+</li>
+</ul>
+<p>Housing defects</p>
+<ul class="simple">
+<li><p>Design defects</p></li>
+<li><p>Visible defects</p>
+<ul>
+<li><p>by improper installation</p></li>
+<li><p>by low quality products</p></li>
+<li><p>by improper use and treatment</p></li>
+<li><p>by inadequate maintenance</p></li>
+</ul>
+</li>
+<li><p>Invisible defects</p>
+<ul>
+<li><p>by omission</p></li>
+<li><p>by improper installation</p></li>
+<li><p>by improper materials</p></li>
+<li><p>by improper maintenance.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="components-of-greened-home-and-various-rating-services-and-programs">
+<h3>Components of greened home and various rating services and programs<a class="headerlink" href="#components-of-greened-home-and-various-rating-services-and-programs" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Components</p>
+<ul class="simple">
+<li><p>Mechanical ventilation</p></li>
+<li><p>Exhaust only ventilation</p></li>
+<li><p>Circulation</p></li>
+<li><p>High-efficiency furnaces</p></li>
+<li><p>Weather barriers</p></li>
+<li><p>Vapour barriers</p></li>
+<li><p>Continuous air barrier</p></li>
+<li><p>Heat barrier</p></li>
+<li><p>ENERGY STAR <span class="math notranslate nohighlight">\(^{\circledR}\)</span></p></li>
+</ul>
+<p>Programs</p>
+<ul class="simple">
+<li><p>EnerGuide</p></li>
+<li><p>ENERGY STAR <span class="math notranslate nohighlight">\(^{\circledR}\)</span></p></li>
+<li><p>Power Smart</p></li>
+<li><p>R-2000</p></li>
+<li><p>BUILT GREEN <span class="math notranslate nohighlight">\(^{\circledR}\)</span></p></li>
+<li><p>LEED <span class="math notranslate nohighlight">\(^{\circledR}\)</span> for Homes</p></li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="takeaways">
+<h3>Takeaways<a class="headerlink" href="#takeaways" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Glassfibre batt is most common type of wall insulation, not rigid glassfibre.</p></li>
+<li><p>Slab is part of foundation system.</p></li>
+<li><p>Cement board siding is a type of siding that has increased in popularity due to its durability and reliability.</p></li>
+<li><p>Thermal broken frames are split into two sections between the outside and inside of the house to reduce heat conduction.</p></li>
+<li><p>Exterior wall supports structure as they should, not interior wall.</p></li>
+<li><p>Lack of ventilation doesn’t cause cracks in outside walls.</p></li>
+<li><p>Uneven crack is evidence of uneven settlement.</p></li>
+<li><p>Large cracks in wall or ceiling finish on upper floors indicate structural distress.</p></li>
+<li><p>Flooring is generally installed over a wood or concrete subfloor, and carpet generally has a layer of foam underlay as well.</p></li>
+<li><p>Polystyrene insulation is a rigid insulation that is used for sheathing insulation on wall and floor surfaces.</p></li>
+<li><p>Header is structural member, usually wood, placed at top of window openings.</p></li>
+<li><p>Rafter is structural member that supports roof deck.</p></li>
+<li><p>Dormer is roof extensions used to provide extra floor area and windows for upper level.</p></li>
+<li><p>Damproofing is material applied to foundation walls to seal minor capillary pores in the concrete.</p></li>
+<li><p>If home is less than 25 years old, size of main breaker usually determines service.</p></li>
+<li><p>The Canadian Electrical Code requires that new or substantially renovated houses of more than 80 square metres have a service capacity of at least 100 amps.</p></li>
+<li><p>Aluminum is not commonly used for water supply piping.</p></li>
+<li><p>Wood-frame exterior wall buildup from inside outward: interior finish, vapour barrier, insulation, wood frame, plywood sheathing, building paper, exterior siding.</p></li>
+<li><p>Polyethylene vapour barrier must be used immediately under the interior wood panelling on the perimeter walls of a western platform wood-frame house in order to ensure proper function of the vapour barrier.</p></li>
+<li><p>Zinc strips discourage moss growth on a roof.</p></li>
+<li><p>Concrete framing is the most common type of construction today for high-rise apartment buildings. This is because most high-rise residential buildings normally require a two-hour fire-rating for floors and columns and concrete will achieve this rating without any additional protection for most applications.</p></li>
+<li><p>The rise is the height difference of each step, and the run is the depth of the step.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch19.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 19</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch21.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 21</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

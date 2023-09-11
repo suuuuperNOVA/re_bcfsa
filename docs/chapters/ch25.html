@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 25 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 26" href="ch26.html" />
+    <link rel="prev" title="Chapter 24" href="ch24.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch25.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-marketing">
+   Introduction to Marketing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-of-target-markets-in-re">
+     Purpose of target markets in RE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#needs-and-motives-in-marketing-theories">
+     Needs and motives in marketing theories
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#product-positioning-and-application">
+     Product positioning and application
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#marketing-and-promotional-mix">
+     Marketing and promotional mix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#smart-and-business-goals">
+     SMART and business goals
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#personal-brand">
+     Personal brand
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#components-for-visual-advertisements">
+     Components for visual advertisements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#different-marketing-methods-and-types-of-advertisements">
+     Different marketing methods and types of advertisements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#listing-presentation-and-listing-market-program">
+     Listing presentation and listing market program
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-25">
+<h1>Chapter 25<a class="headerlink" href="#chapter-25" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-to-marketing">
+<h2>Introduction to Marketing<a class="headerlink" href="#introduction-to-marketing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="purpose-of-target-markets-in-re">
+<h3>Purpose of target markets in RE<a class="headerlink" href="#purpose-of-target-markets-in-re" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>One-size-fits-all approach doesn’t work well, not allowing RE licensee to become an expert in one particular area</p></li>
+<li><p>Limited resources and strong competition.</p></li>
+</ul>
+<p>Selection of target markets</p>
+<ul class="simple">
+<li><p>Property type</p></li>
+<li><p>Location</p></li>
+<li><p>Consumer type, etc.</p></li>
+</ul>
+<div class="section" id="needs-and-motives-in-marketing-theories">
+<h3>Needs and motives in marketing theories<a class="headerlink" href="#needs-and-motives-in-marketing-theories" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Needs of buyers and sellers in RE</p>
+<ul class="simple">
+<li><p>Information</p></li>
+<li><p>Knowledge and skills</p></li>
+<li><p>Trust and confidentiality</p></li>
+</ul>
+<p><strong>Shopping Behavior Model</strong> (Effort by consumer downwards)</p>
+<ul class="simple">
+<li><p>Specialty goods<br>Products and services possess characteristic causing consumer to want that particular product or service and no other substitute</p>
+<ul>
+<li><p>services of highly skilled professional</p></li>
+<li><p>usually high priced, complex and unusual</p></li>
+</ul>
+</li>
+<li><p>Shopping goods<br>Purchases only after they have made comparisons of competing goods</p>
+<ul>
+<li><p>like homes, cars, appliances and RE services</p></li>
+<li><p>more expensive than convenience goods, and purchased less frequently</p></li>
+</ul>
+</li>
+<li><p>Convenience goods<br>Products and services that consumer purchases frequently and uses immediately</p>
+<ul>
+<li><p>like groceries</p></li>
+</ul>
+</li>
+<li><p>Unsought goods<br>Potential consumers don’t necessarily want or know about, are purchased based on fear or as a form of precaution</p>
+<ul>
+<li><p>like life insurance.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Process Model of Buying Behavior</strong></p>
+<ol class="simple">
+<li><p>Felt need</p>
+<ul class="simple">
+<li><p>trigger</p></li>
+</ul>
+</li>
+<li><p>Pre-purchases activity</p>
+<ul class="simple">
+<li><p>gather information</p></li>
+<li><p>become knowledgeable</p></li>
+<li><p>very important</p></li>
+</ul>
+</li>
+<li><p>Purchase activity</p>
+<ul class="simple">
+<li><p>negotiation and signing listing agreement</p></li>
+</ul>
+</li>
+<li><p>Post-purchase activity</p></li>
+</ol>
+<div class="section" id="product-positioning-and-application">
+<h3>Product positioning and application<a class="headerlink" href="#product-positioning-and-application" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Product positioning
+: Position product or services holds within consumers’ minds.</p>
+<p>Product differentiation by product attribute</p>
+<ul class="simple">
+<li><p>cater to needs of market</p></li>
+<li><p>develop advertising appeals.</p></li>
+</ul>
+<p>Product differentiation strategies</p>
+<ul class="simple">
+<li><p>Undifferentiated marketing</p>
+<ul>
+<li><p>single product to all</p></li>
+</ul>
+</li>
+<li><p>Differentiated marketing</p>
+<ul>
+<li><p>different marketing programs for different market segments</p></li>
+</ul>
+</li>
+<li><p>Niche marketing</p>
+<ul>
+<li><p>Small, but active and growing, target market.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="marketing-and-promotional-mix">
+<h3>Marketing and promotional mix<a class="headerlink" href="#marketing-and-promotional-mix" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Marketing mix</strong>
+: Details of product or service that is being offered.</p>
+<ul class="simple">
+<li><p>Product</p></li>
+<li><p>Place</p></li>
+<li><p>Price</p>
+<ul>
+<li><p>Value pricing<br>Balance between quality and price
+-Prestige pricing<br>Uniqueness or premium quality</p></li>
+<li><p>Cost-plus pricing<br>Add desired profit margin</p></li>
+<li><p>Mark-up pricing<br>Add pre-determined percentage</p></li>
+<li><p>Penetration pricing<br>Low during early stages to gain market share</p></li>
+<li><p>Skimming pricing<br>Opposite of penetration</p></li>
+<li><p>Meet or beat competitors<br>Match or undercut rivals</p></li>
+<li><p>Tiered pricing</p></li>
+<li><p>Promotion pricing</p></li>
+</ul>
+</li>
+<li><p>Promotion</p></li>
+</ul>
+<p><strong>Promotional mix</strong>
+: Proper blending of components to satisfy needs of target market and to accomplish desired promotional objectives.</p>
+<ul class="simple">
+<li><p>Personal selling<br>Face-to-face communication with potential customer</p>
+<ul>
+<li><p>flexibility</p></li>
+<li><p>for complex or expensive products</p></li>
+</ul>
+</li>
+<li><p>Advertising</p>
+<ul>
+<li><p>Any paid form of non-personal sales presentation</p></li>
+</ul>
+</li>
+<li><p>Public relations</p>
+<ul>
+<li><p>公关，与personal selling不同</p></li>
+<li><p>enhance image,recognition, and reputation</p></li>
+</ul>
+</li>
+<li><p>Sales promotion</p>
+<ul>
+<li><p>不属于其他项</p></li>
+</ul>
+</li>
+<li><p>Publicity<br>Communications to public about licensee or services by people not employed by licensee</p>
+<ul>
+<li><p>articles</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="smart-and-business-goals">
+<h3>SMART and business goals<a class="headerlink" href="#smart-and-business-goals" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>SMART to develop effective business goals<br>
+Specific</p>
+<ul class="simple">
+<li><p>Who</p></li>
+<li><p>What</p></li>
+<li><p>Where</p></li>
+<li><p>Why</p></li>
+<li><p>When of a goal</p></li>
+</ul>
+<p>Measurable</p>
+<ul class="simple">
+<li><p>specific dates</p></li>
+<li><p>quantities</p></li>
+<li><p>indicators</p></li>
+</ul>
+<p>Achievable</p>
+<ul class="simple">
+<li><p>realistic and attainable</p></li>
+</ul>
+<p>Relevant</p>
+<ul class="simple">
+<li><p>drive business forward</p></li>
+</ul>
+<p>Timely</p>
+<ul class="simple">
+<li><p>realistic timeline</p></li>
+</ul>
+<p>Market budget</p>
+<ul class="simple">
+<li><p>Percentage-of-sale method</p></li>
+<li><p>Follow-the-competition method</p></li>
+<li><p>Objective/Task method</p></li>
+</ul>
+<div class="section" id="personal-brand">
+<h3>Personal brand<a class="headerlink" href="#personal-brand" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Personal brand
+: Theme of personal business, encompassing a variety of attributes, that distinguishes business from its competitors.</p>
+<ul class="simple">
+<li><p>Keep simple</p></li>
+<li><p>Be consistent</p></li>
+<li><p>Integrate brand</p></li>
+<li><p>Be different</p></li>
+</ul>
+<div class="section" id="components-for-visual-advertisements">
+<h3>Components for visual advertisements<a class="headerlink" href="#components-for-visual-advertisements" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><em><strong>Copy strategy platform</strong></em>
+: Plan that guides an advertisement, also called creative strategy. First stage in design of advertisement.</p>
+<ul class="simple">
+<li><p>Objectives</p></li>
+<li><p>Target audience</p></li>
+<li><p>Selling idea</p></li>
+<li><p>Secondary feature</p></li>
+</ul>
+<p><strong>Layout</strong>
+: Arrangement of advertisement, including headline, copy, visualizations, and signature.</p>
+<p>Design points to consider</p>
+<ul class="simple">
+<li><p>Focal point</p>
+<ul>
+<li><p>10 o’clock position is first focus (headline position)</p></li>
+<li><p>then move upward</p></li>
+</ul>
+</li>
+<li><p>Aesthetic considerations</p>
+<ul>
+<li><p>balance</p>
+<ul>
+<li><p>formal to use symmetric arrangements</p></li>
+<li><p>informal to use asymmetric</p></li>
+</ul>
+</li>
+<li><p>unity</p>
+<ul>
+<li><p>elements work together</p></li>
+</ul>
+</li>
+<li><p>flow</p>
+<ul>
+<li><p>simple, from top to bottom</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Control of white space</p>
+<ul>
+<li><p>use white space to enable other elements to stand out</p></li>
+<li><p>make headline more prominent</p></li>
+</ul>
+</li>
+<li><p>Color</p>
+<ul>
+<li><p>stand out</p></li>
+<li><p>create mood.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="different-marketing-methods-and-types-of-advertisements">
+<h3>Different marketing methods and types of advertisements<a class="headerlink" href="#different-marketing-methods-and-types-of-advertisements" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Types of advertisements</p>
+<ul class="simple">
+<li><p>Brochures</p></li>
+<li><p>Direct mail and post cards</p></li>
+<li><p>Classified advertisements</p></li>
+<li><p>Newspaper and magazine advertisements</p></li>
+<li><p>Online advertisements</p></li>
+<li><p>Google Ads</p></li>
+<li><p>Property signs</p></li>
+<li><p>Radio and television advertisements</p></li>
+<li><p>Billboards, bus ads, and bench ads</p></li>
+</ul>
+<p>Types of marketing</p>
+<ul class="simple">
+<li><p>Stationary, forms and business cards</p></li>
+<li><p>Online marketing</p></li>
+<li><p>Guerrilla marketing</p></li>
+<li><p>Telemarketing</p></li>
+<li><p>Personal selling</p></li>
+<li><p>Public relations and publicity</p></li>
+<li><p>Sales promotion</p></li>
+</ul>
+<div class="section" id="listing-presentation-and-listing-market-program">
+<h3>Listing presentation and listing market program<a class="headerlink" href="#listing-presentation-and-listing-market-program" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Written listing presentation</p>
+<ul class="simple">
+<li><p>Personal introduction</p></li>
+<li><p>Team introduction</p></li>
+<li><p>About brokerage</p></li>
+<li><p>Experience</p></li>
+<li><p>Overview of listing marketing plan</p></li>
+<li><p>CMA</p></li>
+<li><p>Showcasing strengths</p></li>
+<li><p>Testimonials</p></li>
+<li><p>Supplemental documents</p></li>
+</ul>
+<p>Listing marketing program</p>
+<ul class="simple">
+<li><p>Set listing goals</p></li>
+<li><p>Listing message</p></li>
+<li><p>Listing budget</p></li>
+<li><p>Track and report listing market plan</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch24.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 24</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch26.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 26</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

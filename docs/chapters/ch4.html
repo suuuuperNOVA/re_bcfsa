@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 4 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 5" href="ch5.html" />
+    <link rel="prev" title="Chapter 3" href="ch3.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch4.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-subdivision-of-land-and-title-registration-in-bc">
+   The Subdivision of Land and Title Registration in BC
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#who-owns-the-land">
+     Who owns the land
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-land-is-subdivided">
+     How land is subdivided
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subdivisions">
+     Subdivisions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-strata-developments-are-created">
+     How strata developments are created
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-the-common-law-dealing-with-the-transfer-of-estates-and-interests-in-land-has-been-changed-by-the-torrens-system-of-title-registration">
+     How the common law dealing with the transfer of estates and interests in land has been changed by the Torrens system of title registration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-of-the-torrens-system-and-how-it-is-achieved">
+     Purpose of the Torrens system and how it is achieved
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#main-components-of-our-torrens-system">
+     Main components of our Torrens system
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#process-for-conducting-a-search-of-title">
+     Process for conducting a search of title
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#when-a-manufactured-home-must-be-registered">
+     When a manufactured home must be registered
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-4">
+<h1>Chapter 4<a class="headerlink" href="#chapter-4" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-subdivision-of-land-and-title-registration-in-bc">
+<h2>The Subdivision of Land and Title Registration in BC<a class="headerlink" href="#the-subdivision-of-land-and-title-registration-in-bc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="who-owns-the-land">
+<h3>Who owns the land<a class="headerlink" href="#who-owns-the-land" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Provincial Crown</p></li>
+<li><p>Federal Crown</p></li>
+<li><p>Privately owned lands</p></li>
+<li><p>Treaty settlement lands</p></li>
+<li><p>Aboriginal title</p>
+<ul>
+<li><p>cannot be sold except to Crown</p></li>
+<li><p>established by court or contractual agreement between Crown and Aboriginal group (使用早于殖民)</p></li>
+<li><p>developments require permission of Aboriginal title holders.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Crown ownership</strong>
+: Provincial and federal lands.</p>
+<ul class="simple">
+<li><p>Not subdivided under <em>Land Title Act</em></p></li>
+<li><p>Federal lands</p>
+<ul>
+<li><p>Indian reserves<br>for the use and benefit of First Nations</p></li>
+<li><p>national parks</p></li>
+<li><p>national defense areas</p></li>
+<li><p>federal habours.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Treaty settlement lands</strong>
+: Each First Nation has extensive governance authority over the treaty lands.</p>
+<div class="section" id="how-land-is-subdivided">
+<h3>How land is subdivided<a class="headerlink" href="#how-land-is-subdivided" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Under <em>Land Title Act</em> and all local bylaws</p></li>
+<li><p>Require regulatory approval</p></li>
+<li><p>Dedicate some land as road, park, services at its own expense</p></li>
+<li><p>Subdivision plan at Land Title Office.</p></li>
+</ul>
+<div class="section" id="subdivisions">
+<h3>Subdivisions<a class="headerlink" href="#subdivisions" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Traditional</strong>
+: Two dimensional subdivision.</p>
+<p><strong>Strata title</strong>
+: Strata owner owns the strata lot plus their proportionate share of the common property.</p>
+<p><strong>Bare land strata development</strong>
+: Stratification of land rather than a building.</p>
+<p><strong>Air space parcel</strong></p>
+<p>Strata principles</p>
+<ul class="simple">
+<li><p>Strata is a strata</p></li>
+<li><p>Strata scheme is self-enforcing</p></li>
+<li><p>Reserve land subject to leasehold landlord provisions.</p></li>
+</ul>
+<div class="section" id="how-strata-developments-are-created">
+<h3>How strata developments are created<a class="headerlink" href="#how-strata-developments-are-created" title="Permalink to this headline">¶</a></h3>
+</div>
+<ol class="simple">
+<li><p>Approval from local government</p></li>
+<li><p>Near completion</p></li>
+<li><p>Deposit strata plan at Land Title Office to show individual lots and common property</p></li>
+<li><p>Land Title Office then issues a certificate of indefeasible title for each newly created strata lot.</p></li>
+</ol>
+<p><strong>Leasehold strata development</strong></p>
+<ul class="simple">
+<li><p>Leased for a minimum of 50 years</p></li>
+<li><p>Register against the land as a charge</p></li>
+<li><p>Develop and file leasehold strata plan.</p></li>
+</ul>
+<div class="section" id="how-the-common-law-dealing-with-the-transfer-of-estates-and-interests-in-land-has-been-changed-by-the-torrens-system-of-title-registration">
+<h3>How the common law dealing with the transfer of estates and interests in land has been changed by the Torrens system of title registration<a class="headerlink" href="#how-the-common-law-dealing-with-the-transfer-of-estates-and-interests-in-land-has-been-changed-by-the-torrens-system-of-title-registration" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Deed</strong>
+: Any document under seal. A document used to transfer an interest in land from one party to another.</p>
+<p><strong>Void deed</strong></p>
+<ul class="simple">
+<li><p>Forged deed</p></li>
+<li><p>In exchange for illegal act</p></li>
+<li><p>Not my deed.</p></li>
+</ul>
+<p>Void deed can recover by the rightful owner in common law.</p>
+<div class="section" id="purpose-of-the-torrens-system-and-how-it-is-achieved">
+<h3>Purpose of the Torrens system and how it is achieved<a class="headerlink" href="#purpose-of-the-torrens-system-and-how-it-is-achieved" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Provide certainty in the holding of estates and interests in real property</p></li>
+<li><p>Remove the need for reviewing old title documents</p></li>
+<li><p>Guarantees</p>
+<ul>
+<li><p>accurate reflection of true state of title</p></li>
+<li><p>only relevant information source</p></li>
+</ul>
+</li>
+</ul>
+<p>Registration of a ==fee simple interest is absolute proof== of ownership, so long as that interest was acquired in <strong>good faith</strong> and <strong>for valuable consideration</strong>.</p>
+<div class="section" id="main-components-of-our-torrens-system">
+<h3>Main components of our Torrens system<a class="headerlink" href="#main-components-of-our-torrens-system" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Principle of indefeasibility</strong></p>
+<p>Exceptions:</p>
+<ul class="simple">
+<li><p>Reservations contained in the original or other Crown grant</p></li>
+<li><p>Federal or Provincial or Municipal taxes, rates, charges or assessments, etc.</p></li>
+<li><p>Leases <span class="math notranslate nohighlight">\(\leq\)</span> 3 years</p></li>
+<li><p>Highways or public rights of way, watercourses, public easements, etc.</p></li>
+<li><p>Expropriation or to an escheat</p></li>
+<li><p>Registered charges are not indefeasible</p></li>
+<li><p>The right of a person to show that the land is, by wrong description of boundaries, included in the certificate of title</p></li>
+<li><p>Fraud, including forgery, by the registered owner</p></li>
+<li><p>A restrictive condition imposed on the land by the Forest Act that is endorsed on title.</p></li>
+</ul>
+<p><strong>Registration principle</strong></p>
+<p><strong>Abolition of the doctrine of notice</strong></p>
+<p>Knowledge of a pre-existing unregistered interest does not constitute fraud unless that knowledge is combined with dishonest conduct.</p>
+<p><strong>Assurance fund</strong></p>
+<p>Conditions for compensation</p>
+<ul class="simple">
+<li><p>No fault of their own</p></li>
+<li><p>If common law applies, claimant would have recovered</p></li>
+<li><p>Cannot recover by court action.</p></li>
+</ul>
+<div class="section" id="process-for-conducting-a-search-of-title">
+<h3>Process for conducting a search of title<a class="headerlink" href="#process-for-conducting-a-search-of-title" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Charge
+: Include all encumbrances, interests in land less than a fee simple.</p>
+<p>Conducting a title search means obtaining a copy of the certificate of title through <em>myLTSA</em> and reviewing that title. If not,</p>
+<ul class="simple">
+<li><p>Liability to purchaser and vendor</p></li>
+<li><p>Loss of commission</p></li>
+<li><p>Professional discipline if a complaint is registered with BCFSA.</p></li>
+</ul>
+<p>Items on title</p>
+<ul class="simple">
+<li><p>Duplicate certificate of title (None outstanding)</p></li>
+<li><p>Caveat</p>
+<ul>
+<li><p>notice registered against title, lasting 2 months and then automatically lapsed</p></li>
+<li><p>if wrong, compensation required</p></li>
+</ul>
+</li>
+<li><p>Certificate of pending litigation</p>
+<ul>
+<li><p>remedy against CPL improperly filed</p></li>
+</ul>
+</li>
+<li><p>Builders lien</p>
+<ul>
+<li><p>filed by subcontractors</p></li>
+<li><p>45 days to file a lien after completion</p></li>
+<li><p>last 1 year</p></li>
+<li><p>claimant to begin a lawsuit and file a CPL within 21 days or have the lien removed if owner speeds up process</p></li>
+<li><p>developer is liable if the general contractor defaults</p></li>
+</ul>
+</li>
+<li><p>Judgement</p>
+<ul>
+<li><p>2 years, automatically expires</p></li>
+</ul>
+</li>
+<li><p>Section 219 covenant</p>
+<ul>
+<li><p>positive or negative in nature</p></li>
+<li><p>restrict the uses of land in question by government</p></li>
+<li><p>restrict subdivision or what built</p></li>
+</ul>
+</li>
+<li><p>Notice of special waste</p>
+<ul>
+<li><p>contamination</p></li>
+<li><p>danger</p></li>
+</ul>
+</li>
+<li><p>Heritage designation</p>
+<ul>
+<li><p>HCA applies to a property not designated.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="when-a-manufactured-home-must-be-registered">
+<h3>When a manufactured home must be registered<a class="headerlink" href="#when-a-manufactured-home-must-be-registered" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>The home itself and the transfer need to be registered.</p>
+<p>Moving needs a transport permit valid for 30 days.</p>
+<p>Who needs to register</p>
+<ul class="simple">
+<li><p>Manufacturer</p>
+<ul>
+<li><p>In BC, registered at factory</p></li>
+</ul>
+</li>
+<li><p>Importer</p></li>
+<li><p>Vendor</p></li>
+<li><p>Ownership.</p></li>
+</ul>
+<p>Before listing, licensees need to check if the manufactured home is registered.</p>
+<p>If manufactured home is a fixture, Land Title Act and Home Buyer Rescission Period Regulation extend.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch3.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Chapter 3</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch5.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 5</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

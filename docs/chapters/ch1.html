@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 1 &#8212; RE BCFSA Notes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 2" href="ch2.html" />
+    <link rel="prev" title="Welcome to RE License 秘籍" href="../intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RE BCFSA Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to RE License 秘籍
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch3.html">
+   Chapter 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch6.html">
+   Chapter 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch9.html">
+   Chapter 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10.html">
+   Chapter 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch11.html">
+   Chapter 11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch12.html">
+   Chapter 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch13.html">
+   Chapter 13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch14.html">
+   Chapter 14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch15.html">
+   Chapter 15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch16.html">
+   Chapter 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch17.html">
+   Chapter 17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch18.html">
+   Chapter 18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch19.html">
+   Chapter 19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch20.html">
+   Chapter 20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch21.html">
+   Chapter 21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch22.html">
+   Chapter 22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch23.html">
+   Chapter 23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch24.html">
+   Chapter 24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch25.html">
+   Chapter 25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch26.html">
+   Chapter 26
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/ch1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentals-of-law">
+   Fundamentals of Law
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sources-of-laws">
+     Sources of laws
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stare-decisis-br">
+     <em>
+      Stare decisis
+     </em>
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-law-vs-equitable-principles">
+     Common law vs. Equitable principles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#federal-provincial-and-municipal-governments-power-to-pass-statues">
+     Federal, provincial, and municipal governments’ power to pass statues
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#public-law-vs-private-law">
+     Public law vs. Private law
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#historical-basis-of-real-property-law">
+     Historical basis of real property law
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jurisdiction-of-administrative-tribunals-in-bc">
+     Jurisdiction of administrative tribunals in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trial-courts-in-bc">
+     Trial courts in BC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#appeal-process-for-each-court">
+     Appeal process for each court
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trial-court-vs-appellate-court">
+     Trial court vs. Appellate court
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-in-a-typical-court-case">
+     Steps in a typical court case
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-settles-before-trial">
+     Why settles before trial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methods-of-enforcing-a-judgement">
+     Methods of enforcing a judgement
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purposes-of-limitation-periods">
+     Purposes of limitation periods
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-1">
+<h1>Chapter 1<a class="headerlink" href="#chapter-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fundamentals-of-law">
+<h2>Fundamentals of Law<a class="headerlink" href="#fundamentals-of-law" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sources-of-laws">
+<h3>Sources of laws<a class="headerlink" href="#sources-of-laws" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Common law</strong><br></p>
+<ul class="simple">
+<li><p>Princples and rules from ancient customs and usages of ppl which are enforced by courts.</p></li>
+<li><p>Includes equitable principles.</p></li>
+</ul>
+<p><strong>Statute law</strong>
+: Law passed by federal, provincial, and municipal governments.</p>
+<div class="section" id="stare-decisis-br">
+<h3><em>Stare decisis</em><br><a class="headerlink" href="#stare-decisis-br" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Let the former decision stand</p></li>
+<li><p>Doctrine of common law system</p></li>
+</ul>
+<div class="section" id="common-law-vs-equitable-principles">
+<h3>Common law vs. Equitable principles<a class="headerlink" href="#common-law-vs-equitable-principles" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Harsh rules vs. Fairness, justness, and right</p></li>
+<li><p>Equitable principles take priority with conflicts.</p></li>
+<li><p>Equitable remedies are awarded, such as <strong>specific performance</strong> and <strong>injunction</strong>.</p></li>
+</ul>
+<div class="section" id="federal-provincial-and-municipal-governments-power-to-pass-statues">
+<h3>Federal, provincial, and municipal governments’ power to pass statues<a class="headerlink" href="#federal-provincial-and-municipal-governments-power-to-pass-statues" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Federal has the power in <strong>Constitution</strong> in:</p>
+<ul>
+<li><p>banking, bankruptcy, currency</p></li>
+<li><p>postal services, shipping, fisheries</p></li>
+<li><p>marriage and devorce</p></li>
+<li><p>criminal, patents, copyrights, national defence, and others left over.</p></li>
+</ul>
+</li>
+<li><p>Provincial has the power in <strong>Constitution</strong> in</p>
+<ul>
+<li><p>property and civil rights</p></li>
+<li><p>municipal institutions</p></li>
+<li><p>education and administration of justice</p></li>
+<li><p>others purely local.</p></li>
+</ul>
+</li>
+<li><p>Municipal has <strong>no power</strong> in Constitution, but can pass bylaws within jurisdiction under constitution which are carved out of provincial power.</p></li>
+</ul>
+<div class="section" id="public-law-vs-private-law">
+<h3>Public law vs. Private law<a class="headerlink" href="#public-law-vs-private-law" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Public law</strong>
+: Law regulates disputes between individuals and the public (e.g. one against the state), including <strong>tax, constitutional, and criminal laws</strong>.</p>
+<p><strong>Private law</strong>
+: Law deals with disputes with two or more individuals.</p>
+<div class="section" id="historical-basis-of-real-property-law">
+<h3>Historical basis of real property law<a class="headerlink" href="#historical-basis-of-real-property-law" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>The Crown possesses underlying title to all lands.</p>
+<div class="section" id="jurisdiction-of-administrative-tribunals-in-bc">
+<h3>Jurisdiction of administrative tribunals in BC<a class="headerlink" href="#jurisdiction-of-administrative-tribunals-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Civil Resolution Tribunal covers:</p>
+<ul class="simple">
+<li><p>All  strata corporation disputes, including non-payment of strata fees, or non-enforcement of strata bylaws (<strong>no limit</strong>)</p></li>
+<li><p>Small claims (<strong><span class="math notranslate nohighlight">\(\leq\)</span> $5,000</strong>)</p></li>
+<li><p>Vehicle accident injury</p></li>
+<li><p>No right to deal with Human Rights Code, libel, slander, claim aganist governments</p></li>
+<li><p>Only for events arising within BC.</p></li>
+</ul>
+<p>3 phases:</p>
+<ul class="simple">
+<li><p>Negotiation</p></li>
+<li><p>Facilitation</p></li>
+<li><p>Adjudication</p></li>
+<li><p>Appeal to BC Supreme Court for review and overturned if unreasonable.</p></li>
+</ul>
+<p>Advantages:</p>
+<ul class="simple">
+<li><p>Online</p></li>
+<li><p>Less cost and less time.</p></li>
+</ul>
+<div class="section" id="trial-courts-in-bc">
+<h3>Trial courts in BC<a class="headerlink" href="#trial-courts-in-bc" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Small Claims Court</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\leq\)</span> $35,000</p></li>
+<li><p>Territorial limitation (happened in BC, or defendant living or having business in BC)</p></li>
+</ul>
+<p><strong>Supreme Court of BC</strong>
+: No limit</p>
+<div class="section" id="appeal-process-for-each-court">
+<h3>Appeal process for each court<a class="headerlink" href="#appeal-process-for-each-court" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Small Claims Court</strong><br></p>
+<ul class="simple">
+<li><p>Appeal to BC Supreme Court</p></li>
+<li><p>If allows, <strong>evidence reheard</strong>.</p></li>
+</ul>
+<p><strong>BC Supreme Court</strong><br></p>
+<ul class="simple">
+<li><p>Appeal to BC Court of Appeal</p></li>
+<li><p>A panel of judges.</p></li>
+</ul>
+<p><strong>BC Court of Appeal</strong><br></p>
+<ul class="simple">
+<li><p>Appeal to Supreme Court of Canada</p></li>
+<li><p>Decide if hear</p></li>
+<li><p>A panel of a minimum of 5 judges.</p></li>
+</ul>
+<p><strong>For licensee</strong><br></p>
+<ul class="simple">
+<li><p>Disciplinary order from BC Financial Services Authority</p></li>
+<li><p>Appeal to Financial Services Tribunal</p></li>
+<li><p>Then, appeal to BC Supreme Court.</p></li>
+</ul>
+<div class="section" id="trial-court-vs-appellate-court">
+<h3>Trial court vs. Appellate court<a class="headerlink" href="#trial-court-vs-appellate-court" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Appellate courts don’t rehear evidence, but review the legal principles.</p>
+<div class="section" id="steps-in-a-typical-court-case">
+<h3>Steps in a typical court case<a class="headerlink" href="#steps-in-a-typical-court-case" title="Permalink to this headline">¶</a></h3>
+</div>
+<ol class="simple">
+<li><p>Written pleading<br>agreement on what they disagree</p></li>
+<li><p>Discovery<br>bring out relevant evidence, like min-trial without a judge</p></li>
+<li><p>Trial</p></li>
+<li><p>Judgement<br><em>Court costs are within the court’s discretion to award.</em></p></li>
+</ol>
+<div class="section" id="why-settles-before-trial">
+<h3>Why settles before trial<a class="headerlink" href="#why-settles-before-trial" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul class="simple">
+<li><p>Risk of paying court cost</p></li>
+<li><p>Pre-trial process clarify points.</p></li>
+</ul>
+<p>Alternatives to litigation:<br></p>
+<ul class="simple">
+<li><p>Mediation</p>
+<ul>
+<li><p>cheap</p></li>
+</ul>
+</li>
+<li><p>Arbitration</p>
+<ul>
+<li><p>flexibility, privacy, speed and freedom to a choose decision maker.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="methods-of-enforcing-a-judgement">
+<h3>Methods of enforcing a judgement<a class="headerlink" href="#methods-of-enforcing-a-judgement" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Execution</strong>
+: A writ of execution issued by <strong>court</strong> to <strong>sheriff</strong> directing seizure and sale of debtor’s assets to pay the judgment plus the cost of seizure.</p>
+<p>Remedies against  Land</p>
+<ul class="simple">
+<li><p>Not enforcement method</p></li>
+<li><p>Register a charge against title</p></li>
+<li><p>Apply to the court for a judicial sale.</p></li>
+</ul>
+<p><strong>Garnishing order</strong>
+: Order the third party to pay the money into the court instead of debtor. 70% of wages are exempt from seizure.</p>
+<div class="section" id="purposes-of-limitation-periods">
+<h3>Purposes of limitation periods<a class="headerlink" href="#purposes-of-limitation-periods" title="Permalink to this headline">¶</a></h3>
+</div>
+<p><strong>Basic limitation period = 2 years</strong><br>applies to most civil claims on the day the claim is discovered unless liability is acknowledged.<br><strong>ULP = 15 years</strong></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Welcome to RE License 秘籍</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 2</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By SuperNOVA<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
