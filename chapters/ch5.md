@@ -117,7 +117,7 @@ Through RE
 **Confirm existence of corporate entity**<br>Also verify corporation's name, address and names of directors.
 
 **Identify beneficial ownership**
-1. Obtain beneficial ownersip information including
+1. Obtain beneficial ownership information including
     - names of all directors
     - names of and addresses of beneficial owners
 1.  Confirm information validity
@@ -134,9 +134,10 @@ Reasonable grounds to suspect:
 - A step below reasonable grounds to believe.
 
 Suspect is based on:
-- Fact<br>Actual evernt, action, occurance, or element that exists
+- Fact<br>Actual event, action, occurrence, or element that exists
 - Context
 - ML/TF indicators - inconsistency
+  
 |ML/TF indicators|Description|
 |---|---|
 |General|Use of corporate entity, trusts, and nominees<br>Cash purchases<br>Unregulated lenders<br>Foreign ownership|
