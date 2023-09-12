@@ -97,7 +97,7 @@ Written disclosure
 Ensure that the public has confidence in RE profession
 - Licensees are boots on the ground
 - Many consumers do not file complaints
-- Consumer complaints often occur 'after the fact
+- Consumer complaints often occur after the fact
 - Power of peer pressure.
 
 > ### Obligations to report under RESA, the Rules, and general professionalism

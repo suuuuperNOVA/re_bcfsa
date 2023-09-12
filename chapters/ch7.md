@@ -38,7 +38,7 @@ Purchaser can obtain access to strata corporation's records by
     - less than $15
 
 **Strata council**
-: Executive body elected by the strata lot owners to carry out the duties of the strata corporation abd oversee its affairs (e.g. budget). Only owners are eligible to sit on the council.
+: Executive body elected by the strata lot owners to carry out the duties of the strata corporation and oversee its affairs (e.g. budget). Only owners are eligible to sit on the council.
 
 Developer serves as the 1st council once depositing strata plan.
 

@@ -78,10 +78,10 @@ Discharge of interest:
 > ### Scope and extent of ownership of land
 
 - Airspace<br>
-Landowner can make effective us.
+Landowner can make effective use
 - Subsurface
 - Water<br>
-Licence for groundwater.
+License for groundwater
 - Support
 
 > ### Fixture vs. Chattel

@@ -68,7 +68,7 @@ Rule
     - service agreement between client and brokerage
     - each branch must have a managing broker
     - keep records for at least 7 years
-    -file financial statement, accountant's report, activity report within 120 days after the end of each fiscal year.
+    - file financial statement, accountant's report, activity report within 120 days after the end of each fiscal year.
 
 - Managing broker
     - licensed with only 1 brokerage except brokerages that are affiliated

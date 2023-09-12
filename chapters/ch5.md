@@ -136,7 +136,8 @@ Reasonable grounds to suspect:
 Suspect is based on:
 - Fact<br>Actual event, action, occurrence, or element that exists
 - Context
-- ML/TF indicators - inconsistency
+- ML/TF indicators 
+    - inconsistency
   
 |ML/TF indicators|Description|
 |---|---|
